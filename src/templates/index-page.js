@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
       }
       title={title}
       subtitle={subtitle}
-      skills_list={skills_list}
+      skillItems={skills_list.skills}
     />  
   </div>
 )
@@ -39,6 +39,15 @@ const IndexPage = ({ data }) => {
       />
     </Layout>
   )
+}
+
+IndexPageTemplate.propTypes = {
+  background_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  skills_list: PropTypes.shape({
+    skills: PropTypes.array,
+  }),
 }
 
 IndexPage.propTypes = {
@@ -66,7 +75,9 @@ export const pageQuery = graphql`
           title
           subtitle
           skills_list {
-            skill
+            skills {
+              skill
+            }
           }
         }
       }
