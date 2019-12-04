@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  background_image: /img/retro-futuristic-landscape-background-flat-design_23-2148249867.jpg
+  background_image: /img/hero_background.jpg
   title: Amit Patel
 ---
 
