@@ -11,6 +11,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         background_image={data.hero.background_image}
         title={data.hero.title}
         subtitle={data.hero.subtitle}
+        skills_list={skills_list.hero.skills_list}
       />
     )
   } else {

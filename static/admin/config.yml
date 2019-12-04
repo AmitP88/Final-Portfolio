@@ -22,5 +22,17 @@ collections:
                 {label: Background Image, name: background_image, widget: image},
                 {label: Title, name: title, widget: string},
                 {label: Subtitle, name: subtitle, widget: string},
+                {
+                  label: Skills List,
+                  name: skills_list,
+                  widget: list,
+                  fields: [
+                    {
+                      label: Skill,
+                      name: skill,
+                      widget: string
+                    }
+                  ]
+                }
               ]
             }

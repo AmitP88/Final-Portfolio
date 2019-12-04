@@ -10,6 +10,7 @@ export const IndexPageTemplate = ({
   background_image,
   title,
   subtitle,
+  skills_list,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -20,6 +21,7 @@ export const IndexPageTemplate = ({
       }
       title={title}
       subtitle={subtitle}
+      skills_list={skills_list}
     />  
   </div>
 )
@@ -33,6 +35,7 @@ const IndexPage = ({ data }) => {
         background_image={frontmatter.hero.background_image}
         title={frontmatter.hero.title}
         subtitle={frontmatter.hero.subtitle}
+        skills_list={frontmatter.hero.skills_list}
       />
     </Layout>
   )
@@ -62,6 +65,9 @@ export const pageQuery = graphql`
           }
           title
           subtitle
+          skills_list {
+            skill
+          }
         }
       }
     }
