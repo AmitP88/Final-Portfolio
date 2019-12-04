@@ -21,5 +21,6 @@ collections:
               fields: [
                 {label: Background Image, name: background_image, widget: image},
                 {label: Title, name: title, widget: string},
+                {label: Subtitle, name: subtitle, widget: string},
               ]
             }

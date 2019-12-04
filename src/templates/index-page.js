@@ -9,6 +9,7 @@ import Layout from '../components/Layout'
 export const IndexPageTemplate = ({
   background_image,
   title,
+  subtitle,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -18,6 +19,7 @@ export const IndexPageTemplate = ({
         background_image
       }
       title={title}
+      subtitle={subtitle}
     />  
   </div>
 )
@@ -30,6 +32,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         background_image={frontmatter.hero.background_image}
         title={frontmatter.hero.title}
+        subtitle={frontmatter.hero.subtitle}
       />
     </Layout>
   )
@@ -58,6 +61,7 @@ export const pageQuery = graphql`
             }
           }
           title
+          subtitle
         }
       }
     }
