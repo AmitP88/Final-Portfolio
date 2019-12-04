@@ -4,6 +4,7 @@ import { IndexPageTemplate } from '../../templates/index-page'
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
+  const skills = entrySkills ? entrySkills.toJS() : []
 
   if (data) {
     return (
@@ -11,7 +12,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         background_image={data.hero.background_image}
         title={data.hero.title}
         subtitle={data.hero.subtitle}
-        skills_list={skills_list.hero.skills_list}
+        skills_list={{ skills }}
       />
     )
   } else {
