@@ -19,12 +19,16 @@
 .hero_subtitle
   color: aliceblue
   font-size: larger
+  padding-top: 10px
 
 .skills_list_container
   width: fit-content
   padding: 2%
 
 @media screen and (min-width: 200px) and (max-width: 767px)
+  .Hero
+    height: 100vh
+
   .hero_title
     text-align: center
 
@@ -34,11 +38,17 @@
   .skills_list_container
     position: absolute
     left: 50%
-    bottom: 20%
+    bottom: 0
     -webkit-transform: translateX(-50%)
     transform: translateX(-50%)
 
 @media screen and (min-width: 768px)
+  .Hero
+    height: 80vh
+
+  .intro
+    width: 50%
+
   .skills_list_container
     position: absolute
     bottom: 20%

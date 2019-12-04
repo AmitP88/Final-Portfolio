@@ -6,12 +6,13 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
     {
       background: `url(${background_image})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center center',
-      height: '80vh'
+      backgroundPosition: 'center center'
     }
   }>
-    <h1 className='hero_title'>{title}</h1>
-    <h3 className='hero_subtitle'>{subtitle}</h3>
+    <div className='intro'>
+      <h1 className='hero_title'>{title}</h1>
+      <h3 className='hero_subtitle'>{subtitle}</h3>    
+    </div>
     <div className='skills_list_container'>
       {skillItems.map(({ skill }, keys) => {
         return (

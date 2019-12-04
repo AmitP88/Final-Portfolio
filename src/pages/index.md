@@ -3,7 +3,7 @@ templateKey: index-page
 hero:
   background_image: /img/background-image-1273097_1280.jpg
   title: Hi! I'm Amit and I'm a Front End Developer
-  subtitle: Let's make something awesome
+  subtitle: I enjoy building React projects, working with JavaScript, and making UI that looks interesting. Let's make something awesome.
   skills_list:
     skills:
       - skill: 'HTML5'
