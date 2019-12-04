@@ -2,19 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
+import Hero from '../components/sections/Hero'
 import Layout from '../components/Layout'
 
+
 export const IndexPageTemplate = ({
-  title
+  background_image,
+  title,
 }) => (
-  <div>
-    {title}
+  <div className='homepage'>
+    <Hero 
+      background_image={
+        !!background_image.childImageSharp ?
+        background_image.childImageSharp.fluid.src :
+        background_image
+      }
+      title={title}
+    />  
   </div>
 )
-
-IndexPageTemplate.propTypes = {
-  title: PropTypes.string
-}
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -22,7 +28,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        title={frontmatter.title}
+        background_image={frontmatter.hero.background_image}
+        title={frontmatter.hero.title}
       />
     </Layout>
   )
@@ -42,7 +49,16 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
+        hero {
+          background_image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          title
+        }
       }
     }
   }

@@ -1,4 +1,6 @@
 ---
 templateKey: index-page
-title: This is a blank deployed starter using netlifyCMS & Gatsby.
+hero:
+  background_image: /img/hero_background.jpg
+  title: Amit Patel
 ---

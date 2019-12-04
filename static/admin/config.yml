@@ -14,4 +14,12 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
+          - {
+              label: Hero Section,
+              name: hero,
+              widget: object,
+              fields: [
+                {label: Background Image, name: background_image, widget: image},
+                {label: Title, name: title, widget: string},
+              ]
+            }
