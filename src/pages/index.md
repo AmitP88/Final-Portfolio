@@ -12,5 +12,8 @@ hero:
       - skill: 'React'
       - skill: 'Redux'
       - skill: 'Git'
+middlestate:
+  logo: /img/white_mdst_logo.jpg
+  mdst_heading: MiddleState, LLC Projects
 ---
 

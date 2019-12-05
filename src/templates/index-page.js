@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Hero from '../components/sections/Hero'
+import MiddleState from '../components/sections/MiddleState'
 import Layout from '../components/Layout'
 
 
@@ -11,6 +12,8 @@ export const IndexPageTemplate = ({
   title,
   subtitle,
   skills_list,
+  logo,
+  mdst_heading,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -22,7 +25,15 @@ export const IndexPageTemplate = ({
       title={title}
       subtitle={subtitle}
       skillItems={skills_list.skills}
-    />  
+    />
+    <MiddleState
+      logo={
+        !!logo.childImageSharp ?
+        logo.childImageSharp.fluid.src :
+        logo
+      }
+      mdst_heading={mdst_heading}
+    />
   </div>
 )
 
@@ -36,6 +47,8 @@ const IndexPage = ({ data }) => {
         title={frontmatter.hero.title}
         subtitle={frontmatter.hero.subtitle}
         skills_list={frontmatter.hero.skills_list}
+        logo={frontmatter.middlestate.logo}
+        mdst_heading={frontmatter.middlestate.mdst_heading}
       />
     </Layout>
   )
@@ -48,6 +61,8 @@ IndexPageTemplate.propTypes = {
   skills_list: PropTypes.shape({
     skills: PropTypes.array,
   }),
+  logo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  mdst_heading: PropTypes.string,
 }
 
 IndexPage.propTypes = {
@@ -64,6 +79,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
+
         hero {
           background_image {
             childImageSharp {
@@ -80,6 +96,18 @@ export const pageQuery = graphql`
             }
           }
         }
+
+        middlestate {
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          mdst_heading
+        }
+
       }
     }
   }

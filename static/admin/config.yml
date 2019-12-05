@@ -25,3 +25,12 @@ collections:
                 {label: Skills List, name: skills_list, widget: object, fields: [{label: Skills, name: skills, widget: list, fields:[{label: Skill, name: skill, widget: string}]}]}
               ]
             }
+          - {
+              label: MiddleState Section,
+              name: middlestate,
+              widget: object,
+              fields: [
+                {label: Logo, name: logo, widget: image},
+                {label: Heading, name: mdst_heading, widget: string},
+              ]
+            }
