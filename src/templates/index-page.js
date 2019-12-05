@@ -14,6 +14,12 @@ export const IndexPageTemplate = ({
   skills_list,
   logo,
   mdst_heading,
+  gf_screenshot,
+  gf_name,
+  gf_tech,
+  gf_description,
+  gf_website,
+  gf_repo,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -33,6 +39,16 @@ export const IndexPageTemplate = ({
         logo
       }
       mdst_heading={mdst_heading}
+      gf_screenshot={
+        !!gf_screenshot.childImageSharp ?
+        gf_screenshot.childImageSharp.fluid.src :
+        gf_screenshot
+      }
+      gf_name={gf_name}
+      gf_tech={gf_tech}
+      gf_description={gf_description}
+      gf_website={gf_website}
+      gf_repo={gf_repo}
     />
   </div>
 )
@@ -49,6 +65,12 @@ const IndexPage = ({ data }) => {
         skills_list={frontmatter.hero.skills_list}
         logo={frontmatter.middlestate.logo}
         mdst_heading={frontmatter.middlestate.mdst_heading}
+        gf_screenshot={frontmatter.middlestate.grizzlyfest.screenshot}
+        gf_name={frontmatter.middlestate.grizzlyfest.name}
+        gf_tech={frontmatter.middlestate.grizzlyfest.tech_used}
+        gf_description={frontmatter.middlestate.grizzlyfest.description}
+        gf_website={frontmatter.middlestate.grizzlyfest.website_link}
+        gf_repo={frontmatter.middlestate.grizzlyfest.repo_link}
       />
     </Layout>
   )
@@ -63,6 +85,12 @@ IndexPageTemplate.propTypes = {
   }),
   logo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   mdst_heading: PropTypes.string,
+  gf_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  gf_name: PropTypes.string,
+  gf_tech: PropTypes.string,
+  gf_description: PropTypes.string,
+  gf_website: PropTypes.string,
+  gf_repo: PropTypes.string,
 }
 
 IndexPage.propTypes = {
@@ -106,6 +134,21 @@ export const pageQuery = graphql`
             }
           }
           mdst_heading
+          grizzlyfest {
+            screenshot {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            name
+            tech_used
+            description
+            website_link
+            repo_link
+          }
+
         }
 
       }

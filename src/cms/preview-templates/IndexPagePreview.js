@@ -16,6 +16,10 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         skills_list={{ skills }}
         logo={data.middlestate.logo}
         mdst_heading={data.middlestate.mdst_heading}
+        gf_screenshot={data.middlestate.grizzlyfest.screenshot}
+        gf_name={data.middlestate.grizzlyfest.name}
+        gf_tech={data.middlestate.grizzlyfest.tech_used}
+        gf_description={data.middlestate.grizzlyfest.description}
       />
     )
   } else {
