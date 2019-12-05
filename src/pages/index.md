@@ -16,18 +16,21 @@ middlestate:
   logo: /img/white_mdst_logo.jpg
   mdst_heading: MiddleState, LLC Projects
   grizzlyfest:
+    screenshot: /img/grizzlyfest.png
     name: Grizzlyfest
     tech_used: Jade, Pug
     description: This is a jade/pug website
     website_link: website link
     repo_link: repo link
   cellar_door:
+    screenshot: /img/cellardoor.png
     name: Cellar Door
     tech_used: NetlifyCMS, Gatsby, Sass
     description: This is a netlify/gatsby website
     website_link: website link
     repo_link: repo link
   dataharvest:
+    screenshot: /img/dataharvest.png
     name: Data Harvest
     tech_used: NetlifyCMS, Gatsby, Sass
     description: This is a netlify/gatsby website

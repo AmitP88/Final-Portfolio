@@ -37,6 +37,7 @@ collections:
                   name: grizzlyfest,
                   widget: object,
                   fields: [
+                    {label: Screenshot, name: screenshot, widget: image},
                     {label: Name, name: name, widget: string},
                     {label: Technologies Used, name: tech_used, widget: string},
                     {label: Description, name: description, widget: text},
@@ -49,6 +50,7 @@ collections:
                   name: cellar_door,
                   widget: object,
                   fields: [
+                    {label: Screenshot, name: screenshot, widget: image},
                     {label: Name, name: name, widget: string},
                     {label: Technologies Used, name: tech_used, widget: string},
                     {label: Description, name: description, widget: text},
@@ -61,6 +63,7 @@ collections:
                   name: dataharvest,
                   widget: object,
                   fields: [
+                    {label: Screenshot, name: screenshot, widget: image},
                     {label: Name, name: name, widget: string},
                     {label: Technologies Used, name: tech_used, widget: string},
                     {label: Description, name: description, widget: text},
