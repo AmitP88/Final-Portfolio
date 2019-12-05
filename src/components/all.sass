@@ -1,7 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import "~bulma"
 
-/* Intro animations - Source: https://codepen.io/fabriceleven/pen/QjZjPG?editors=1100  */
+/* Hero section animations - Source: https://codepen.io/fabriceleven/pen/QjZjPG?editors=1100  */
 .animate
   -webkit-animation-duration: 1s
   animation-duration: 1s
@@ -92,6 +92,22 @@
 .skill
   color: white
 
+/* MiddleState Section */
+.heading_container
+  text-align: center
+
+.heading
+  height: 90%
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: none
+
+.logo
+  height: 2em
+  width: auto
+
 @media screen and (min-width: 200px) and (max-width: 600px)
   .Hero
     height: 120vh
@@ -109,6 +125,9 @@
     -webkit-transform: translateX(-50%)
     transform: translateX(-50%)
 
+  .heading
+    font-size: inherit
+
 @media screen and (min-width: 601px)
   .Hero
     height: 80vh
@@ -120,6 +139,9 @@
     position: absolute
     bottom: 20%
     right: 10%
+
+  .heading
+    font-size: x-large
 
 @media screen and (min-width: 1024px)
   .navbar
@@ -150,3 +172,6 @@
 
   .navItem:hover:after
     transform: scaleX(1)
+
+  .heading
+    font-size: xx-large
