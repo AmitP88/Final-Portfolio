@@ -20,7 +20,7 @@ const MiddleState = ({
         </div>
         <div className='project_content'>
           <h1>{gf_name}</h1>
-          <h3>{gf_tech}</h3>
+          <h3>Tech Used: {gf_tech}</h3>
           <p>{gf_description}</p>
           <div className='buttons_container'>
             <a href={gf_website}>
