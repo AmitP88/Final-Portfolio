@@ -1,7 +1,43 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import "~bulma"
 
+/* Intro animations - Source: https://codepen.io/fabriceleven/pen/QjZjPG?editors=1100  */
+.animate
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
 
+.one
+  -webkit-animation-delay: 0.4s
+  -moz-animation-delay: 0.4s
+  animation-delay: 0.4s
+
+@-webkit-keyframes fadeInLeft
+  from
+    opacity: 0
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+
+@keyframes fadeInLeft
+  from
+    opacity: 0
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+
+.fadeInLeft
+  -webkit-animation-name: fadeInLeft
+  animation-name: fadeInLeft
  
 
 

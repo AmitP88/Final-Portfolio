@@ -9,7 +9,7 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
       backgroundPosition: 'center center'
     }
   }>
-    <div className='intro'>
+    <div className='intro animate fadeInLeft one'>
       <h1 className='hero_title'>{title}</h1>
       <h3 className='hero_subtitle'>{subtitle}</h3>    
     </div>
