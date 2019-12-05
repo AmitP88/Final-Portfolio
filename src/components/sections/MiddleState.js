@@ -15,8 +15,13 @@ const MiddleState = ({
     <h1 className='heading'><img src={logo} className='logo' alt='middlestate_logo' />{mdst_heading}</h1>
     <div className='mdst_project'>
       <div className='grizzlyfest'>
-        <div className='image_container'>
-          <img src={gf_screenshot} alt='grizzlyfest screenshot'/>
+        <div className='image_container' style={
+          {
+            background: `url(${gf_screenshot})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center'
+          }
+        }>
         </div>
         <div className='project_content'>
           <h1>{gf_name}</h1>
