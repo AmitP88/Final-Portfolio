@@ -1,13 +1,21 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import "~bulma"
 
+
+
+/* NavBar */
+.container
+  position: fixed
+
+.navbar-brand
+  background-color: white
+
 .navbar .navbar-menu
   box-shadow:none !important
 
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 
-/* NavBar */
 .navItem
   padding: 10px 25px
   text-align: center
@@ -73,8 +81,9 @@
 
 @media screen and (min-width: 1024px)
   .navbar
-    padding-top: 10px
-    padding-bottom: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    height: 70px
 
   .navbar-menu
     display: flex
