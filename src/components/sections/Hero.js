@@ -13,13 +13,14 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
       <h1 className='hero_title'>{title}</h1>
       <h3 className='hero_subtitle'>{subtitle}</h3>    
     </div>
-    <div className='skills_list_container'>
+    <fieldset className='skills_list_container'>
+      <legend>Skills</legend>
       {skillItems.map(({ skill }, keys) => {
         return (
           <h4 key={keys} className='skill'>{skill}</h4>
         )
       })}
-    </div>
+    </fieldset>
   </section>
 )
 
