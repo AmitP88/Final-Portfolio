@@ -13,23 +13,25 @@ const MiddleState = ({
 }) => (
   <div className='MiddleState section'>
     <h1 className='heading'><img src={logo} className='logo' alt='middlestate_logo' />{mdst_heading}</h1>
-    <div className='grizzlyfest'>
-      <div className='image_container'>
-        <img src={gf_screenshot} alt='grizzlyfest screenshot'/>
-      </div>
-      <div className='project_content'>
-        <h1 className='mdst_project_name'>{gf_name}</h1>
-        <h3 className='mdst_project_tech'>{gf_tech}</h3>
-        <p className='mdst_project_description'>{gf_description}</p>
-        <div className='buttons_container'>
-          <a href={gf_website}>
-            <button>Website</button>        
-          </a>
-          <a href={gf_repo}>
-            <button>Github</button>        
-          </a>        
+    <div className='mdst_project'>
+      <div className='grizzlyfest'>
+        <div className='image_container'>
+          <img src={gf_screenshot} alt='grizzlyfest screenshot'/>
         </div>
-      </div>
+        <div className='project_content'>
+          <h1>{gf_name}</h1>
+          <h3>{gf_tech}</h3>
+          <p>{gf_description}</p>
+          <div className='buttons_container'>
+            <a href={gf_website}>
+              <button>Website</button>        
+            </a>
+            <a href={gf_repo}>
+              <button>Github</button>        
+            </a>        
+          </div>
+        </div>
+      </div>    
     </div>
   </div>
 )
