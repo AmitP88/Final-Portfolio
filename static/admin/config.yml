@@ -32,5 +32,41 @@ collections:
               fields: [
                 {label: Logo, name: logo, widget: image},
                 {label: Heading, name: mdst_heading, widget: string},
+                {
+                  label: Grizzlyfest Project,
+                  name: grizzlyfest,
+                  widget: object,
+                  fields: [
+                    {label: Name, name: name, widget: string},
+                    {label: Technologies Used, name: tech_used, widget: string},
+                    {label: Description, name: description, widget: text},
+                    {label: Website Link, name: website_link, widget: string},
+                    {label: Repo Link, name: repo_link, widget: string}
+                  ]
+                },
+                {
+                  label: Cellar Door Project,
+                  name: cellar_door,
+                  widget: object,
+                  fields: [
+                    {label: Name, name: name, widget: string},
+                    {label: Technologies Used, name: tech_used, widget: string},
+                    {label: Description, name: description, widget: text},
+                    {label: Website Link, name: website_link, widget: string},
+                    {label: Repo Link, name: repo_link, widget: string}
+                  ]
+                },
+                {
+                  label: DataHarvest Project,
+                  name: dataharvest,
+                  widget: object,
+                  fields: [
+                    {label: Name, name: name, widget: string},
+                    {label: Technologies Used, name: tech_used, widget: string},
+                    {label: Description, name: description, widget: text},
+                    {label: Website Link, name: website_link, widget: string},
+                    {label: Repo Link, name: repo_link, widget: string}
+                  ]
+                }
               ]
             }
