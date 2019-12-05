@@ -13,13 +13,13 @@ const MiddleState = ({
 }) => (
   <div className='MiddleState section'>
     <h1 className='heading'><img src={logo} className='logo' alt='middlestate_logo' />{mdst_heading}</h1>
-    <div className='mdst_project'>
       <div className='grizzlyfest'>
         <div className='image_container' style={
           {
             background: `url(${gf_screenshot})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center center'
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat'
           }
         }>
         </div>
@@ -38,8 +38,7 @@ const MiddleState = ({
           </div>        
         */}
         </div>
-      </div>    
-    </div>
+      </div>
   </div>
 )
 

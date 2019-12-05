@@ -110,14 +110,26 @@
 /* Grizzlyfest Project */
 .grizzlyfest
   position: absolute
-  height: 50%
+  height: 70%
   width: 90%
   margin: 5%
   background-color: crimson
+  border: 1px solid black
 
+.grizzlyfest > .image_container
+  position: absolute
+  width: 70%
+  height: 100%
+  z-index: 0
 
-
-
+.grizzlyfest > .project_content
+  position: absolute
+  width: 60%
+  height: 100%
+  background-color: lightgreen
+  right: 0
+  z-index: 1
+  clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%, 30% 0%)
 
 
 
