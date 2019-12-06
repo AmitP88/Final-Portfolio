@@ -26,6 +26,12 @@ export const IndexPageTemplate = ({
   cd_description,
   cd_website,
   cd_repo,
+  dh_screenshot,
+  dh_name,
+  dh_tech,
+  dh_description,
+  dh_website,
+  dh_repo,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -65,6 +71,17 @@ export const IndexPageTemplate = ({
       cd_description={cd_description}
       cd_website={cd_website}
       cd_repo={cd_repo}
+
+      dh_screenshot={
+        !!dh_screenshot.childImageSharp ?
+        dh_screenshot.childImageSharp.fluid.src :
+        dh_screenshot
+      }
+      dh_name={dh_name}
+      dh_tech={dh_tech}
+      dh_description={dh_description}
+      dh_website={dh_website}
+      dh_repo={dh_repo}
     />
   </div>
 )
@@ -93,6 +110,12 @@ const IndexPage = ({ data }) => {
         cd_description={frontmatter.middlestate.cellardoor.description}
         cd_website={frontmatter.middlestate.cellardoor.website_link}
         cd_repo={frontmatter.middlestate.cellardoor.repo_link}
+        dh_screenshot={frontmatter.middlestate.dataharvest.screenshot}
+        dh_name={frontmatter.middlestate.dataharvest.name}
+        dh_tech={frontmatter.middlestate.dataharvest.tech_used}
+        dh_description={frontmatter.middlestate.dataharvest.description}
+        dh_website={frontmatter.middlestate.dataharvest.website_link}
+        dh_repo={frontmatter.middlestate.dataharvest.repo_link}
       />
     </Layout>
   )
@@ -119,6 +142,12 @@ IndexPageTemplate.propTypes = {
   cd_description: PropTypes.string,
   cd_website: PropTypes.string,
   cd_repo: PropTypes.string,
+  dh_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  dh_name: PropTypes.string,
+  dh_tech: PropTypes.string,
+  dh_description: PropTypes.string,
+  dh_website: PropTypes.string,
+  dh_repo: PropTypes.string,
 }
 
 IndexPage.propTypes = {
@@ -178,6 +207,21 @@ export const pageQuery = graphql`
           }
 
           cellardoor {
+            screenshot {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            name
+            tech_used
+            description
+            website_link
+            repo_link
+          }
+
+          dataharvest {
             screenshot {
               childImageSharp {
                 fluid(maxWidth: 2048, quality: 100) {

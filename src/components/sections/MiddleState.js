@@ -16,6 +16,12 @@ const MiddleState = ({
   cd_description,
   cd_website,
   cd_repo,
+  dh_screenshot,
+  dh_name,
+  dh_tech,
+  dh_description,
+  dh_website,
+  dh_repo,
 }) => (
   <div className='MiddleState section'>
     <h1 className='heading'><img src={logo} className='logo' alt='middlestate_logo' />{mdst_heading}</h1>
@@ -69,7 +75,30 @@ const MiddleState = ({
         </div>
       </div>
 
-
+      <div className='dataharvest'>
+        <div className='image_container' style={
+          {
+            background: `url(${dh_screenshot})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat'
+          }
+        }>
+        </div>
+        <div className='project_content'>
+          <h1>{dh_name}</h1>
+          <h3>Tech Used: {dh_tech}</h3>
+          <p>{dh_description}</p>
+          <div className='buttons_container'>
+            <a href={dh_website}>
+              <button>Website</button>        
+            </a>
+            <a href={dh_repo}>
+              <button>Github</button>        
+            </a>        
+          </div>
+        </div>
+      </div>
 
 
   </div>
@@ -91,6 +120,13 @@ MiddleState.propTypes = {
   cd_description: PropTypes.string,
   cd_website: PropTypes.string,
   cd_repo: PropTypes.string,
+
+  dh_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  dh_name: PropTypes.string,
+  dh_tech: PropTypes.string,
+  dh_description: PropTypes.string,
+  dh_website: PropTypes.string,
+  dh_repo: PropTypes.string,
 }
 
 export default MiddleState

@@ -29,6 +29,13 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         cd_description={data.middlestate.cellardoor.description}
         cd_website={data.middlestate.cellardoor.website_link}
         cd_repo={data.middlestate.cellardoor.repo_link}
+
+        dh_screenshot={data.middlestate.dataharvest.screenshot}
+        dh_name={data.middlestate.dataharvest.name}
+        dh_tech={data.middlestate.dataharvest.tech_used}
+        dh_description={data.middlestate.dataharvest.description}
+        dh_website={data.middlestate.dataharvest.website_link}
+        dh_repo={data.middlestate.dataharvest.repo_link}
       />
     )
   } else {
