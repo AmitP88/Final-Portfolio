@@ -24,7 +24,6 @@ const MiddleState = ({
         }>
         </div>
         <div className='project_content'>
-        {/*
           <h1>{gf_name}</h1>
           <h3>Tech Used: {gf_tech}</h3>
           <p>{gf_description}</p>
@@ -35,8 +34,7 @@ const MiddleState = ({
             <a href={gf_repo}>
               <button>Github</button>        
             </a>        
-          </div>        
-        */}
+          </div>
         </div>
       </div>
   </div>
