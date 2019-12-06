@@ -204,8 +204,11 @@
   .heading
     font-size: inherit
 
-  .grizzlyfest > .image_container, .cellardoor > .image_container
+  .grizzlyfest > .image_container
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%, 0% 0%)
+
+  .cellardoor > .image_container
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%, 0% 0%)
 
 @media screen and (min-width: 601px)
   .Hero
@@ -240,13 +243,13 @@
     left: 5%
     border: 1px solid lightgray
 
-  .grizzlyfest > .image_container, .cellardoor > .image_container
+  .grizzlyfest > .image_container
     position: absolute
     width: 70%
     height: 100%
     z-index: 0
 
-  .grizzlyfest > .project_content, .cellardoor > .project_content
+  .grizzlyfest > .project_content, 
     position: absolute
     width: 60%
     height: 100%
@@ -266,6 +269,36 @@
       margin-left: 15%
       button
         cursor: pointer
+
+  .cellardoor > .image_container
+    position: absolute
+    width: 70%
+    height: 100%
+    z-index: 0
+    right: 0
+
+  .cellardoor > .project_content
+    position: absolute
+    width: 60%
+    height: 100%
+    background-color: white
+    z-index: 1
+    left: 0
+    clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%, 0% 0%)
+    h1
+      margin-top: 5%
+      margin-right: 25%
+      padding-top: 2%
+    h3
+      margin-right: 25%
+    p
+      padding: 2% 30% 0% 10%
+    .buttons_container
+      margin-right: 15%
+      button
+        cursor: pointer
+
+
 
 
 @media screen and (min-width: 1024px)
