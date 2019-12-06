@@ -10,6 +10,12 @@ const MiddleState = ({
   gf_description,
   gf_website,
   gf_repo,
+  cd_screenshot,
+  cd_name,
+  cd_tech,
+  cd_description,
+  cd_website,
+  cd_repo,
 }) => (
   <div className='MiddleState section'>
     <h1 className='heading'><img src={logo} className='logo' alt='middlestate_logo' />{mdst_heading}</h1>
@@ -37,6 +43,35 @@ const MiddleState = ({
           </div>
         </div>
       </div>
+
+      <div className='cellardoor'>
+        <div className='image_container' style={
+          {
+            background: `url(${cd_screenshot})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat'
+          }
+        }>
+        </div>
+        <div className='project_content'>
+          <h1>{cd_name}</h1>
+          <h3>Tech Used: {cd_tech}</h3>
+          <p>{cd_description}</p>
+          <div className='buttons_container'>
+            <a href={cd_website}>
+              <button>Website</button>        
+            </a>
+            <a href={cd_repo}>
+              <button>Github</button>        
+            </a>        
+          </div>
+        </div>
+      </div>
+
+
+
+
   </div>
 )
 
@@ -49,6 +84,13 @@ MiddleState.propTypes = {
   gf_description: PropTypes.string,
   gf_website: PropTypes.string,
   gf_repo: PropTypes.string,
+
+  cd_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  cd_name: PropTypes.string,
+  cd_tech: PropTypes.string,
+  cd_description: PropTypes.string,
+  cd_website: PropTypes.string,
+  cd_repo: PropTypes.string,
 }
 
 export default MiddleState

@@ -20,6 +20,15 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         gf_name={data.middlestate.grizzlyfest.name}
         gf_tech={data.middlestate.grizzlyfest.tech_used}
         gf_description={data.middlestate.grizzlyfest.description}
+        gf_website={data.middlestate.grizzlyfest.website_link}
+        gf_repo={data.middlestate.grizzlyfest.repo_link}
+
+        cd_screenshot={data.middlestate.cellardoor.screenshot}
+        cd_name={data.middlestate.cellardoor.name}
+        cd_tech={data.middlestate.cellardoor.tech_used}
+        cd_description={data.middlestate.cellardoor.description}
+        cd_website={data.middlestate.cellardoor.website_link}
+        cd_repo={data.middlestate.cellardoor.repo_link}
       />
     )
   } else {

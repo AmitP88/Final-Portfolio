@@ -15,7 +15,7 @@ hero:
     looks interesting. Let's make something awesome.
   title: Hi! I'm Amit and I'm a Front End Developer
 middlestate:
-  cellar_door:
+  cellardoor:
     description: This is a netlify/gatsby website
     name: Cellar Door
     repo_link: repo link

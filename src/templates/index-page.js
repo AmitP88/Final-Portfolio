@@ -20,6 +20,12 @@ export const IndexPageTemplate = ({
   gf_description,
   gf_website,
   gf_repo,
+  cd_screenshot,
+  cd_name,
+  cd_tech,
+  cd_description,
+  cd_website,
+  cd_repo,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -49,6 +55,16 @@ export const IndexPageTemplate = ({
       gf_description={gf_description}
       gf_website={gf_website}
       gf_repo={gf_repo}
+      cd_screenshot={
+        !!cd_screenshot.childImageSharp ?
+        cd_screenshot.childImageSharp.fluid.src :
+        cd_screenshot
+      }
+      cd_name={cd_name}
+      cd_tech={cd_tech}
+      cd_description={cd_description}
+      cd_website={cd_website}
+      cd_repo={cd_repo}
     />
   </div>
 )
@@ -71,6 +87,12 @@ const IndexPage = ({ data }) => {
         gf_description={frontmatter.middlestate.grizzlyfest.description}
         gf_website={frontmatter.middlestate.grizzlyfest.website_link}
         gf_repo={frontmatter.middlestate.grizzlyfest.repo_link}
+        cd_screenshot={frontmatter.middlestate.cellardoor.screenshot}
+        cd_name={frontmatter.middlestate.cellardoor.name}
+        cd_tech={frontmatter.middlestate.cellardoor.tech_used}
+        cd_description={frontmatter.middlestate.cellardoor.description}
+        cd_website={frontmatter.middlestate.cellardoor.website_link}
+        cd_repo={frontmatter.middlestate.cellardoor.repo_link}
       />
     </Layout>
   )
@@ -91,6 +113,12 @@ IndexPageTemplate.propTypes = {
   gf_description: PropTypes.string,
   gf_website: PropTypes.string,
   gf_repo: PropTypes.string,
+  cd_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  cd_name: PropTypes.string,
+  cd_tech: PropTypes.string,
+  cd_description: PropTypes.string,
+  cd_website: PropTypes.string,
+  cd_repo: PropTypes.string,
 }
 
 IndexPage.propTypes = {
@@ -135,6 +163,21 @@ export const pageQuery = graphql`
           }
           mdst_heading
           grizzlyfest {
+            screenshot {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            name
+            tech_used
+            description
+            website_link
+            repo_link
+          }
+
+          cellardoor {
             screenshot {
               childImageSharp {
                 fluid(maxWidth: 2048, quality: 100) {
