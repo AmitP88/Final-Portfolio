@@ -42,5 +42,19 @@ middlestate:
     website_link: 'https://grizzlyfestival.com/'
   logo: /img/white_mdst_logo.jpg
   mdst_heading: 'MiddleState, LLC Projects'
+personal_projects:
+  personal_heading: Personal Projects
+  tictactoe:
+    screenshot: /img/TicTacToe.png
+    name: Unbeatable Tic Tac Toe
+    tech_list:
+      techs:
+        - tech: React
+        - tech: Redux
+        - tech: CSS3
+        - tech: JavaScript(ES6)
+    description: This is a description for tic tac toe
+    website_link: website link
+    repo_link: repo link
 ---
 
