@@ -32,4 +32,15 @@ const ProjectCard = ({
   </div>
 )
 
+ProjectCard.PropTypes = {
+  screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  name: PropTypes.string,
+  description: PropTypes.string,
+  techs: PropTypes.shape({
+    tech: PropTypes.arrayOf(PropTypes.string)
+  }),
+  website_link: PropTypes.string,
+  repo_link: PropTypes.string
+}
+
 export default ProjectCard
