@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectCard = ({
   screenshot,
