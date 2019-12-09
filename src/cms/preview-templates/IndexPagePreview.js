@@ -7,6 +7,15 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const entrySkills = entry.getIn(['data', 'skills_list', 'skills'])
   const skills = entrySkills ? entrySkills.toJS() : []
 
+  const entryTechs_tictactoe = entry.getIn(['data', 'personal_projects', 'tictactoe' , 'tech_list', 'techs'])
+  const techs_tictactoe = entryTechs_tictactoe ? entryTechs_tictactoe.toJS() : []
+
+  const entryTechs_simon = entry.getIn(['data', 'personal_projects', 'simon' , 'tech_list', 'techs'])
+  const techs_simon = entryTechs_simon ? entryTechs_simon.toJS() : []
+
+  const entryTechs_pomodoro = entry.getIn(['data', 'personal_projects', 'pomodoro' , 'tech_list', 'techs'])
+  const techs_pomodoro = entryTechs_pomodoro ? entryTechs_pomodoro.toJS() : []
+
   if (data) {
     return (
       <IndexPageTemplate
@@ -36,6 +45,29 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         dh_description={data.middlestate.dataharvest.description}
         dh_website={data.middlestate.dataharvest.website_link}
         dh_repo={data.middlestate.dataharvest.repo_link}
+
+        personal_heading={data.personal_projects.personal_heading}
+        tictactoe_screenshot={data.personal_projects.tictactoe.screenshot}
+        tictactoe_name={data.personal_projects.tictactoe.name}
+        tictactoe_description={data.personal_projects.tictactoe.description}
+        tictactoe_techs={{ techs_tictactoe }}
+        tictactoe_website_link={data.personal_projects.tictactoe.website_link}
+        tictactoe_repo_link={data.personal_projects.tictactoe.repo_link}
+
+        simon_screenshot={data.personal_projects.simon.screenshot}
+        simon_name={data.personal_projects.simon.name}
+        simon_description={data.personal_projects.simon.description}
+        simon_techs={{ techs_simon }}
+        simon_website_link={data.personal_projects.simon.website_link}
+        simon_repo_link={data.personal_projects.simon.repo_link}
+
+        pomodoro_screenshot={data.personal_projects.pomodoro.screenshot}
+        pomodoro_name={data.personal_projects.pomodoro.name}
+        pomodoro_description={data.personal_projects.pomodoro.description}
+        pomodoro_techs={{ techs_pomodoro }}
+        pomodoro_website_link={data.personal_projects.pomodoro.website_link}
+        pomodoro_repo_link={data.personal_projects.pomodoro.repo_link}
+
       />
     )
   } else {
