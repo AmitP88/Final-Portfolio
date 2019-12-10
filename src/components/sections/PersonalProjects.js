@@ -5,30 +5,7 @@ import { Animated } from 'react-animated-css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
-const PersonalProjects = ({
-  personal_heading,
-
-  tictactoe_screenshot,
-  tictactoe_name,
-  tictactoe_tech_list,
-  tictactoe_description,
-  tictactoe_website_link,
-  tictactoe_repo_link,
-
-  simon_screenshot,
-  simon_name,
-  simon_tech_list,
-  simon_description,
-  simon_website_link,
-  simon_repo_link,
-
-  pomodoro_screenshot,
-  pomodoro_name,
-  pomodoro_tech_list,
-  pomodoro_description,
-  pomodoro_website_link,
-  pomodoro_repo_link,
-}) => (
+const PersonalProjects = ({ personal_heading, tictactoe_screenshot, tictactoe_name, tictactoe_techItems, tictactoe_description, tictactoe_website_link, tictactoe_repo_link, simon_screenshot, simon_name, simon_techItems, simon_description, simon_website_link, simon_repo_link, pomodoro_screenshot, pomodoro_name, pomodoro_techItems, pomodoro_description, pomodoro_website_link, pomodoro_repo_link }) => (
   <div className="Projects-container" id="Projects">
     <Animated className="projects-animated" animationIn="fadeInDown" isVisible={true}>
         <h1 className="Projects-title">{personal_heading}</h1>
@@ -47,9 +24,9 @@ const PersonalProjects = ({
             <div className="flip-card-back">
                 <h3 className="techList-title">Tech Used</h3>
                 <ul>
-                  {tictactoe_tech_list.map(({ tech }, keys) => {
+                  {tictactoe_techItems.map(({ tictactoe_tech }, keys) => {
                     return (
-                      <li key={keys} className='techListItem'>{tech}</li>
+                      <li key={keys} className='techListItem'>{tictactoe_tech}</li>
                     )
                   })}
                 </ul>
@@ -74,9 +51,9 @@ const PersonalProjects = ({
             <div className="flip-card-back">
                 <h3 className="techList-title">Tech Used</h3>
                 <ul>
-                  {simon_tech_list.map(({ tech }, keys) => {
+                  {simon_techItems.map(({ simon_tech }, keys) => {
                     return (
-                      <li key={keys} className='techListItem'>{tech}</li>
+                      <li key={keys} className='techListItem'>{simon_tech}</li>
                     )
                   })}
                 </ul>
@@ -101,9 +78,9 @@ const PersonalProjects = ({
             <div className="flip-card-back">
                 <h3 className="techList-title">Tech Used</h3>
                 <ul>
-                  {pomodoro_tech_list.map(({ tech }, keys) => {
+                  {pomodoro_techItems.map(({ pomodoro_tech }, keys) => {
                     return (
-                      <li key={keys} className='techListItem'>{tech}</li>
+                      <li key={keys} className='techListItem'>{pomodoro_tech}</li>
                     )
                   })}
                 </ul>
@@ -127,7 +104,7 @@ PersonalProjects.propTypes = {
   tictactoe_name: PropTypes.string,
   tictactoe_description: PropTypes.string,
   tictactoe_techs: PropTypes.shape({
-    tech: PropTypes.arrayOf(PropTypes.string)
+    tictactoe_tech: PropTypes.arrayOf(PropTypes.string)
   }),
   tictactoe_website_link: PropTypes.string,
   tictactoe_repo_link: PropTypes.string,
@@ -136,7 +113,7 @@ PersonalProjects.propTypes = {
   simon_name: PropTypes.string,
   simon_description: PropTypes.string,
   simon_techs: PropTypes.shape({
-    tech: PropTypes.arrayOf(PropTypes.string)
+    simon_tech: PropTypes.arrayOf(PropTypes.string)
   }),
   simon_website_link: PropTypes.string,
   simon_repo_link: PropTypes.string,
@@ -145,7 +122,7 @@ PersonalProjects.propTypes = {
   pomodoro_name: PropTypes.string,
   pomodoro_description: PropTypes.string,
   pomodoro_techs: PropTypes.shape({
-    tech: PropTypes.arrayOf(PropTypes.string)
+    pomodoro_tech: PropTypes.arrayOf(PropTypes.string)
   }),
   pomodoro_website_link: PropTypes.string,
   pomodoro_repo_link: PropTypes.string,

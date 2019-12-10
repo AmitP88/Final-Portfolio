@@ -38,21 +38,21 @@ export const IndexPageTemplate = ({
 
   tictactoe_screenshot,
   tictactoe_name,
-  tictactoe_techs,
+  tictactoe_tech_list,
   tictactoe_description,
   tictactoe_website_link,
   tictactoe_repo_link,
 
   simon_screenshot,
   simon_name,
-  simon_techs,
+  simon_tech_list,
   simon_description,
   simon_website_link,
   simon_repo_link,
 
   pomodoro_screenshot,
   pomodoro_name,
-  pomodoro_techs,
+  pomodoro_tech_list,
   pomodoro_description,
   pomodoro_website_link,
   pomodoro_repo_link,
@@ -117,7 +117,7 @@ export const IndexPageTemplate = ({
         tictactoe_screenshot
       }
       tictactoe_name={tictactoe_name}
-      tictactoe_tech_list={tictactoe_techs.tech}
+      tictactoe_tech_list={tictactoe_tech_list.tictactoe_techs}
       tictactoe_description={tictactoe_description}
       tictactoe_website_link={tictactoe_website_link}
       tictactoe_repo_link={tictactoe_repo_link}
@@ -128,7 +128,7 @@ export const IndexPageTemplate = ({
         simon_screenshot
       }
       simon_name={simon_name}
-      simon_tech_list={simon_techs.tech}
+      simon_tech_list={simon_tech_list.simon_techs}
       simon_description={simon_description}
       simon_website_link={simon_website_link}
       simon_repo_link={simon_repo_link}
@@ -139,7 +139,7 @@ export const IndexPageTemplate = ({
         pomodoro_screenshot
       }
       pomodoro_name={pomodoro_name}
-      pomodoro_tech_list={pomodoro_techs.tech}
+      pomodoro_tech_list={pomodoro_tech_list.pomodoro_techs}
       pomodoro_description={pomodoro_description}
       pomodoro_website_link={pomodoro_website_link}
       pomodoro_repo_link={pomodoro_repo_link}
@@ -183,21 +183,21 @@ const IndexPage = ({ data }) => {
         personal_heading={frontmatter.personal_projects.personal_heading}
         tictactoe_screenshot={frontmatter.personal_projects.tictactoe.screenshot}
         tictactoe_name={frontmatter.personal_projects.tictactoe.name}
-        tictactoe_tech_list={frontmatter.personal_projects.tictactoe.tech_list}
+        tictactoe_tech_list={frontmatter.personal_projects.tictactoe.tictactoe_tech_list}
         tictactoe_description={frontmatter.personal_projects.tictactoe.description}
         tictactoe_website_link={frontmatter.personal_projects.tictactoe.website_link}
         tictactoe_repo_link={frontmatter.personal_projects.tictactoe.repo_link}
 
         simon_screenshot={frontmatter.personal_projects.simon.screenshot}
         simon_name={frontmatter.personal_projects.simon.name}
-        simon_tech_list={frontmatter.personal_projects.simon.tech_list}
+        simon_tech_list={frontmatter.personal_projects.simon.simon_tech_list}
         simon_description={frontmatter.personal_projects.simon.description}
         simon_website_link={frontmatter.personal_projects.simon.website_link}
         simon_repo_link={frontmatter.personal_projects.simon.repo_link}
 
         pomodoro_screenshot={frontmatter.personal_projects.pomodoro.screenshot}
         pomodoro_name={frontmatter.personal_projects.pomodoro.name}
-        pomodoro_tech_list={frontmatter.personal_projects.pomodoro.tech_list}
+        pomodoro_tech_list={frontmatter.personal_projects.pomodoro.pomodoro_tech_list}
         pomodoro_description={frontmatter.personal_projects.pomodoro.description}
         pomodoro_website_link={frontmatter.personal_projects.pomodoro.website_link}
         pomodoro_repo_link={frontmatter.personal_projects.pomodoro.repo_link}
@@ -240,8 +240,8 @@ IndexPageTemplate.propTypes = {
   tictactoe_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   tictactoe_name: PropTypes.string,
   tictactoe_description: PropTypes.string,
-  tictactoe_techs: PropTypes.shape({
-    tech: PropTypes.arrayOf(PropTypes.string)
+  tictactoe_tech_list: PropTypes.shape({
+    tictactoe_techs: PropTypes.arrayOf(PropTypes.string)
   }),
   tictactoe_website_link: PropTypes.string,
   tictactoe_repo_link: PropTypes.string,
@@ -249,8 +249,8 @@ IndexPageTemplate.propTypes = {
   simon_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   simon_name: PropTypes.string,
   simon_description: PropTypes.string,
-  simon_techs: PropTypes.shape({
-    tech: PropTypes.arrayOf(PropTypes.string)
+  simon_tech_list: PropTypes.shape({
+    simon_techs: PropTypes.arrayOf(PropTypes.string)
   }),
   simon_website_link: PropTypes.string,
   simon_repo_link: PropTypes.string,
@@ -258,8 +258,8 @@ IndexPageTemplate.propTypes = {
   pomodoro_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   pomodoro_name: PropTypes.string,
   pomodoro_description: PropTypes.string,
-  pomodoro_techs: PropTypes.shape({
-    tech: PropTypes.arrayOf(PropTypes.string)
+  pomodoro_tech_list: PropTypes.shape({
+    pomodoro_techs: PropTypes.arrayOf(PropTypes.string)
   }),
   pomodoro_website_link: PropTypes.string,
   pomodoro_repo_link: PropTypes.string,
@@ -363,9 +363,9 @@ export const pageQuery = graphql`
               }
             }
             name
-            tech_list {
-              techs {
-                tech
+            tictactoe_tech_list {
+              tictactoe_techs {
+                tictactoe_tech
               }
             }
             description
@@ -382,9 +382,9 @@ export const pageQuery = graphql`
               }
             }
             name
-            tech_list {
-              techs {
-                tech
+            simon_tech_list {
+              simon_techs {
+                simon_tech
               }
             }
             description
@@ -401,9 +401,9 @@ export const pageQuery = graphql`
               }
             }
             name
-            tech_list {
-              techs {
-                tech
+            pomodoro_tech_list {
+              pomodoro_techs {
+                pomodoro_tech
               }
             }
             description

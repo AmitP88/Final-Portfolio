@@ -7,13 +7,13 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const entrySkills = entry.getIn(['data', 'skills_list', 'skills'])
   const skills = entrySkills ? entrySkills.toJS() : []
 
-  const entryTechs_tictactoe = entry.getIn(['data', 'personal_projects', 'tictactoe' , 'tech_list', 'techs'])
+  const entryTechs_tictactoe = entry.getIn(['data', 'tictactoe_tech_list', 'tictactoe_techs'])
   const techs_tictactoe = entryTechs_tictactoe ? entryTechs_tictactoe.toJS() : []
 
-  const entryTechs_simon = entry.getIn(['data', 'personal_projects', 'simon' , 'tech_list', 'techs'])
+  const entryTechs_simon = entry.getIn(['data', 'simon_tech_list', 'simon_techs'])
   const techs_simon = entryTechs_simon ? entryTechs_simon.toJS() : []
 
-  const entryTechs_pomodoro = entry.getIn(['data', 'personal_projects', 'pomodoro' , 'tech_list', 'techs'])
+  const entryTechs_pomodoro = entry.getIn(['data', 'pomodoro_tech_list', 'pomodoro_techs'])
   const techs_pomodoro = entryTechs_pomodoro ? entryTechs_pomodoro.toJS() : []
 
   if (data) {
