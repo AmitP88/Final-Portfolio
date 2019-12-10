@@ -46,6 +46,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         dh_website={data.middlestate.dataharvest.website_link}
         dh_repo={data.middlestate.dataharvest.repo_link}
 
+        personal_background_image={data.personal_projects.personal_background_image}
         personal_heading={data.personal_projects.personal_heading}
         tictactoe_screenshot={data.personal_projects.tictactoe.screenshot}
         tictactoe_name={data.personal_projects.tictactoe.name}

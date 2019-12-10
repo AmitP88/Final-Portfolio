@@ -43,6 +43,7 @@ middlestate:
   logo: /img/white_mdst_logo.jpg
   mdst_heading: 'MiddleState, LLC Projects'
 personal_projects:
+  personal_background_image: /img/projectSectionBackground.jpg
   personal_heading: Personal Projects
   tictactoe:
     screenshot: /img/TicTacToe.png

@@ -78,6 +78,7 @@ collections:
               name: personal_projects,
               widget: object,
               fields: [
+                {label: Background Image, name: personal_background_image, widget: image},
                 {label: Heading, name: personal_heading, widget: string},
                 {
                   label: Unbeatable Tic Tac toe,

@@ -34,6 +34,7 @@ export const IndexPageTemplate = ({
   dh_website,
   dh_repo,
 
+  personal_background_image,
   personal_heading,
 
   tictactoe_screenshot,
@@ -109,6 +110,11 @@ export const IndexPageTemplate = ({
       dh_repo={dh_repo}
     />
     <PersonalProjects
+      personal_background_image={
+        !!personal_background_image.childImageSharp ?
+        personal_background_image.childImageSharp.fluid.src :
+        personal_background_image
+      }
       personal_heading={personal_heading}
 
       tictactoe_screenshot={
@@ -180,6 +186,7 @@ const IndexPage = ({ data }) => {
         dh_website={frontmatter.middlestate.dataharvest.website_link}
         dh_repo={frontmatter.middlestate.dataharvest.repo_link}
 
+        personal_background_image={frontmatter.personal_projects.personal_background_image}
         personal_heading={frontmatter.personal_projects.personal_heading}
         tictactoe_screenshot={frontmatter.personal_projects.tictactoe.screenshot}
         tictactoe_name={frontmatter.personal_projects.tictactoe.name}
@@ -236,6 +243,7 @@ IndexPageTemplate.propTypes = {
   dh_website: PropTypes.string,
   dh_repo: PropTypes.string,
 
+  personal_background_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   personal_heading: PropTypes.string,
   tictactoe_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   tictactoe_name: PropTypes.string,
@@ -353,6 +361,13 @@ export const pageQuery = graphql`
         }
 
         personal_projects {
+          personal_background_image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           personal_heading
           tictactoe {
             screenshot {

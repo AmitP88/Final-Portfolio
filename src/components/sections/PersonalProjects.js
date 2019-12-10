@@ -5,8 +5,8 @@ import { Animated } from 'react-animated-css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
-const PersonalProjects = ({ personal_heading, tictactoe_screenshot, tictactoe_name, tictactoe_techItems, tictactoe_description, tictactoe_website_link, tictactoe_repo_link, simon_screenshot, simon_name, simon_techItems, simon_description, simon_website_link, simon_repo_link, pomodoro_screenshot, pomodoro_name, pomodoro_techItems, pomodoro_description, pomodoro_website_link, pomodoro_repo_link }) => (
-  <div className="Projects-container" id="Projects">
+const PersonalProjects = ({ personal_background_image, personal_heading, tictactoe_screenshot, tictactoe_name, tictactoe_techItems, tictactoe_description, tictactoe_website_link, tictactoe_repo_link, simon_screenshot, simon_name, simon_techItems, simon_description, simon_website_link, simon_repo_link, pomodoro_screenshot, pomodoro_name, pomodoro_techItems, pomodoro_description, pomodoro_website_link, pomodoro_repo_link }) => (
+  <div className="Projects-container" id="Projects" style={{personal_background_image}}>
     <Animated className="projects-animated" animationIn="fadeInDown" isVisible={true}>
         <h1 className="Projects-title">{personal_heading}</h1>
     </Animated>
@@ -99,6 +99,7 @@ const PersonalProjects = ({ personal_heading, tictactoe_screenshot, tictactoe_na
 )
 
 PersonalProjects.propTypes = {
+  personal_background_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   personal_heading: PropTypes.string,
   tictactoe_screenshot: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   tictactoe_name: PropTypes.string,
