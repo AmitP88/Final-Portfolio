@@ -50,21 +50,21 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         tictactoe_screenshot={data.personal_projects.tictactoe.screenshot}
         tictactoe_name={data.personal_projects.tictactoe.name}
         tictactoe_description={data.personal_projects.tictactoe.description}
-        tictactoe_techs={{ techs_tictactoe }}
+        tictactoe_tech_list={{ techs_tictactoe }}
         tictactoe_website_link={data.personal_projects.tictactoe.website_link}
         tictactoe_repo_link={data.personal_projects.tictactoe.repo_link}
 
         simon_screenshot={data.personal_projects.simon.screenshot}
         simon_name={data.personal_projects.simon.name}
         simon_description={data.personal_projects.simon.description}
-        simon_techs={{ techs_simon }}
+        simon_tech_list={{ techs_simon }}
         simon_website_link={data.personal_projects.simon.website_link}
         simon_repo_link={data.personal_projects.simon.repo_link}
 
         pomodoro_screenshot={data.personal_projects.pomodoro.screenshot}
         pomodoro_name={data.personal_projects.pomodoro.name}
         pomodoro_description={data.personal_projects.pomodoro.description}
-        pomodoro_techs={{ techs_pomodoro }}
+        pomodoro_tech_list={{ techs_pomodoro }}
         pomodoro_website_link={data.personal_projects.pomodoro.website_link}
         pomodoro_repo_link={data.personal_projects.pomodoro.repo_link}
 
