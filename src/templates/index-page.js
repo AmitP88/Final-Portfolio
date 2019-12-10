@@ -117,7 +117,7 @@ export const IndexPageTemplate = ({
         tictactoe_screenshot
       }
       tictactoe_name={tictactoe_name}
-      tictactoe_tech_list={tictactoe_tech_list.tictactoe_techs}
+      tictactoe_techItems={tictactoe_tech_list.tictactoe_techs}
       tictactoe_description={tictactoe_description}
       tictactoe_website_link={tictactoe_website_link}
       tictactoe_repo_link={tictactoe_repo_link}
@@ -128,7 +128,7 @@ export const IndexPageTemplate = ({
         simon_screenshot
       }
       simon_name={simon_name}
-      simon_tech_list={simon_tech_list.simon_techs}
+      simon_techItems={simon_tech_list.simon_techs}
       simon_description={simon_description}
       simon_website_link={simon_website_link}
       simon_repo_link={simon_repo_link}
@@ -139,7 +139,7 @@ export const IndexPageTemplate = ({
         pomodoro_screenshot
       }
       pomodoro_name={pomodoro_name}
-      pomodoro_tech_list={pomodoro_tech_list.pomodoro_techs}
+      pomodoro_techItems={pomodoro_tech_list.pomodoro_techs}
       pomodoro_description={pomodoro_description}
       pomodoro_website_link={pomodoro_website_link}
       pomodoro_repo_link={pomodoro_repo_link}
