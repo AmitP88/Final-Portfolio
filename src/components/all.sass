@@ -223,7 +223,28 @@ ul
   color: -webkit-linear-gradient(to right, #48b1bf, #06beb6)
   color: linear-gradient(to right, #48b1bf, #06beb6)
 
+.btn:link,
+.btn:visited
+  text-transform: uppercase
+  text-decoration: none
+  padding: 15px 40px
+  display: inline-block
+  width: 100px
+  border-radius: 100px
+  transition: all .2s
+  position: relative
 
+.btn:hover
+  transform: translateY(-3px)
+  box-shadow: 0 20px 30px rgba(0,0,0,.2)
+
+.btn:active
+  transform: translateY(-1px)
+  box-shadow: 0 10px 20px rgba(0,0,0,.2)
+
+.btn-white
+  background-color: white
+  color: #777
 
 
 
@@ -317,12 +338,36 @@ ul
     .project_content
       background-color: white
 
+  /* Projects */
+  .Projects-container
+    padding-bottom: 5%
+
+  .Projects-title
+    letter-spacing: 10px
+    font-size: 8vw
+    padding: 20% 5% 10% 5%
+
+  .cards-row
+    width: 90%
+    margin: 5%
+
+  .flip-card
+    margin: 0 auto
+    margin-bottom: 50%
+
+  .description
+    padding: 2px
+
+
 @media screen and (min-width: 375px)
   .cellardoor
     margin-top: 230% !important
 
   .dataharvest
     margin-top: 460% !important
+
+  .description
+    padding: 7px
 
 @media screen and (min-width: 425px)
   .cellardoor
@@ -331,12 +376,22 @@ ul
   .dataharvest
     margin-top: 400% !important
 
+  .Projects-title
+    letter-spacing: 5px
+    font-size: 40px
+    padding: 15% 5% 5% 5%
+
 @media screen and (min-width: 500px)
   .cellardoor
     margin-top: 170% !important
 
   .dataharvest
     margin-top: 340% !important
+
+@media only screen and (min-width: 667px) and (max-width: 767px)
+  .flip-card
+    padding-left: 5%
+    padding-right: 5%
 
 @media screen and (min-width: 600px)
   .cellardoor
@@ -468,8 +523,19 @@ ul
       button
         cursor: pointer
 
+  .Projects-title
+    letter-spacing: 5px
+    padding: 10% 5% 0 5%
 
+  .flip-card
+    margin-bottom: 15%
 
+@media only screen and (min-width: 1000px) and (max-width: 1023px)
+  .flip-card
+    padding: 5%
+
+  .ProfilePhoto-container
+    padding-left: 5%
 
 @media screen and (min-width: 1024px)
   .navbar
@@ -521,3 +587,21 @@ ul
       padding-bottom: 20px
     p
       padding: 0% 30% 2% 10%
+
+  .Projects-title
+    letter-spacing: 4px
+    font-size: 3.5vw
+    padding: 10% 5% 5% 5%
+
+  .arrow
+    display: none
+
+  .cards-row
+    width: 100%
+    margin: 0 auto
+
+@media only screen and (min-width: 1440px)
+  .Projects-title
+    letter-spacing: 4px
+    font-size: 3vw
+    padding: 10% 5% 5% 5%
