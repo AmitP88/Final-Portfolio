@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  background_image: /img/farther_background.jpg
+  background_image: /img/background_photo.jpg
   skills_list:
     skills:
       - skill: HTML5
