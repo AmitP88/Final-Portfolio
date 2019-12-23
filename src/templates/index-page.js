@@ -109,47 +109,52 @@ export const IndexPageTemplate = ({
       dh_website={dh_website}
       dh_repo={dh_repo}
     />
-    <PersonalProjects
-      personal_background_image={
-        !!personal_background_image.childImageSharp ?
-        personal_background_image.childImageSharp.fluid.src :
-        personal_background_image
-      }
-      personal_heading={personal_heading}
 
-      tictactoe_screenshot={
-        !!tictactoe_screenshot.childImageSharp ?
-        tictactoe_screenshot.childImageSharp.fluid.src :
-        tictactoe_screenshot
-      }
-      tictactoe_name={tictactoe_name}
-      tictactoe_techItems={tictactoe_tech_list.tictactoe_techs}
-      tictactoe_description={tictactoe_description}
-      tictactoe_website_link={tictactoe_website_link}
-      tictactoe_repo_link={tictactoe_repo_link}
-    
-      simon_screenshot={
-        !!simon_screenshot.childImageSharp ?
-        simon_screenshot.childImageSharp.fluid.src :
-        simon_screenshot
-      }
-      simon_name={simon_name}
-      simon_techItems={simon_tech_list.simon_techs}
-      simon_description={simon_description}
-      simon_website_link={simon_website_link}
-      simon_repo_link={simon_repo_link}
-    
-      pomodoro_screenshot={
-        !!pomodoro_screenshot.childImageSharp ?
-        pomodoro_screenshot.childImageSharp.fluid.src :
-        pomodoro_screenshot
-      }
-      pomodoro_name={pomodoro_name}
-      pomodoro_techItems={pomodoro_tech_list.pomodoro_techs}
-      pomodoro_description={pomodoro_description}
-      pomodoro_website_link={pomodoro_website_link}
-      pomodoro_repo_link={pomodoro_repo_link}
-    />
+    {/*
+      <PersonalProjects
+        personal_background_image={
+          !!personal_background_image.childImageSharp ?
+          personal_background_image.childImageSharp.fluid.src :
+          personal_background_image
+        }
+        personal_heading={personal_heading}
+
+        tictactoe_screenshot={
+          !!tictactoe_screenshot.childImageSharp ?
+          tictactoe_screenshot.childImageSharp.fluid.src :
+          tictactoe_screenshot
+        }
+        tictactoe_name={tictactoe_name}
+        tictactoe_techItems={tictactoe_tech_list.tictactoe_techs}
+        tictactoe_description={tictactoe_description}
+        tictactoe_website_link={tictactoe_website_link}
+        tictactoe_repo_link={tictactoe_repo_link}
+      
+        simon_screenshot={
+          !!simon_screenshot.childImageSharp ?
+          simon_screenshot.childImageSharp.fluid.src :
+          simon_screenshot
+        }
+        simon_name={simon_name}
+        simon_techItems={simon_tech_list.simon_techs}
+        simon_description={simon_description}
+        simon_website_link={simon_website_link}
+        simon_repo_link={simon_repo_link}
+      
+        pomodoro_screenshot={
+          !!pomodoro_screenshot.childImageSharp ?
+          pomodoro_screenshot.childImageSharp.fluid.src :
+          pomodoro_screenshot
+        }
+        pomodoro_name={pomodoro_name}
+        pomodoro_techItems={pomodoro_tech_list.pomodoro_techs}
+        pomodoro_description={pomodoro_description}
+        pomodoro_website_link={pomodoro_website_link}
+        pomodoro_repo_link={pomodoro_repo_link}
+      />    
+    */}
+
+
 
 
   </div>
