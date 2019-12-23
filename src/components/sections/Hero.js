@@ -6,7 +6,7 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
     {
       background: `url(${background_image})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center center'
+      backgroundPosition: 'top center'
     }
   }>
     <div className='intro animate fadeInLeft one'>
