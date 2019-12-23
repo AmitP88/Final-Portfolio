@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  background_image: /img/background-image-1273097_1280.jpg
+  background_image: /img/background_photo.jpg
   skills_list:
     skills:
       - skill: HTML5
@@ -45,34 +45,11 @@ middlestate:
 personal_projects:
   personal_background_image: /img/projectSectionBackground.jpg
   personal_heading: Personal Projects
-  tictactoe:
-    screenshot: /img/TicTacToe.png
-    name: Unbeatable Tic Tac Toe
-    tictactoe_tech_list:
-      tictactoe_techs:
-        - tictactoe_tech: React
-        - tictactoe_tech: Redux
-        - tictactoe_tech: CSS3
-        - tictactoe_tech: JavaScript(ES6)
-    description: An unbeatable tic tac toe game built with React and Redux.
-      The unbeatable AI was developed using the minimax algorithm.
-    website_link: https://amitp88.github.io/Tic-Tac-Toe-React-Redux/
-    repo_link: https://github.com/AmitP88/Tic-Tac-Toe-React-Redux
-  simon:
-    screenshot: /img/Simon.png
-    name: Simon Game
-    simon_tech_list:
-      simon_techs:
-        - simon_tech: React
-        - simon_tech: Redux
-        - simon_tech: CSS3
-        - simon_tech: JavaScript(ES6)
-    description: A classic Simon game with a modern style to it.
-      The game can be set to Hard mode for a greater challenge.
-    website_link: https://amitp88.github.io/Simon-Game-React-Redux/
-    repo_link: https://github.com/AmitP88/Simon-Game-React-Redux
   pomodoro:
-    screenshot: /img/Pomodoro.png
+    description: >-
+      A timer to set one countdown for work time, and one for break time that
+      starts once work timer ends and vice versa. Comes with SVG countdown
+      rings.
     name: Pomodoro Timer
     pomodoro_tech_list:
       pomodoro_techs:
@@ -80,10 +57,36 @@ personal_projects:
         - pomodoro_tech: CSS3
         - pomodoro_tech: JavaScript(ES6)
         - pomodoro_tech: SVG
-    description: A timer to set one countdown for work time,
-      and one for break time that starts once work timer ends and vice versa.
-      Comes with SVG countdown rings.
-    website_link: https://amitp88.github.io/Pomodoro-Timer/
-    repo_link: https://github.com/AmitP88/Pomodoro-Timer
+    repo_link: 'https://github.com/AmitP88/Pomodoro-Timer'
+    screenshot: /img/Pomodoro.png
+    website_link: 'https://amitp88.github.io/Pomodoro-Timer/'
+  simon:
+    description: >-
+      A classic Simon game with a modern style to it. The game can be set to
+      Hard mode for a greater challenge.
+    name: Simon Game
+    repo_link: 'https://github.com/AmitP88/Simon-Game-React-Redux'
+    screenshot: /img/Simon.png
+    simon_tech_list:
+      simon_techs:
+        - simon_tech: React
+        - simon_tech: Redux
+        - simon_tech: CSS3
+        - simon_tech: JavaScript(ES6)
+    website_link: 'https://amitp88.github.io/Simon-Game-React-Redux/'
+  tictactoe:
+    description: >-
+      An unbeatable tic tac toe game built with React and Redux. The unbeatable
+      AI was developed using the minimax algorithm.
+    name: Unbeatable Tic Tac Toe
+    repo_link: 'https://github.com/AmitP88/Tic-Tac-Toe-React-Redux'
+    screenshot: /img/TicTacToe.png
+    tictactoe_tech_list:
+      tictactoe_techs:
+        - tictactoe_tech: React
+        - tictactoe_tech: Redux
+        - tictactoe_tech: CSS3
+        - tictactoe_tech: JavaScript(ES6)
+    website_link: 'https://amitp88.github.io/Tic-Tac-Toe-React-Redux/'
 ---
 
