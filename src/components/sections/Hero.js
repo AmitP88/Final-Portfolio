@@ -12,12 +12,13 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
   }>
     <div className="layer" style={
       {
-        background: 'linear-gradient(45deg, rgb(0, 34, 72), rgb(43, 55, 117), transparent)',
+        background: 'linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(0,212,255,1) 99%)',
         position: 'absolute',
         top: '0',
         left: '0',
         width: '100%',
-        height: '100%'
+        height: '100%',
+        opacity: '0.7'
       }
     }/>
     <div className='intro animate fadeInLeft one'>
