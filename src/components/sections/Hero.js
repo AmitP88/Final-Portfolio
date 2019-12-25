@@ -6,9 +6,20 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
     {
       background: `url(${background_image})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'top center'
+      backgroundPosition: 'top center',
+      position: 'relative'
     }
   }>
+    <div className="layer" style={
+      {
+        background: 'linear-gradient(45deg, rgb(0, 34, 72), rgb(43, 55, 117), transparent)',
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        width: '100%',
+        height: '100%'
+      }
+    }/>
     <div className='intro animate fadeInLeft one'>
       <h1 className='hero_title'>{title}</h1>
       <h3 className='hero_subtitle'>{subtitle}</h3>    
