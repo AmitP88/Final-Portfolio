@@ -13,22 +13,53 @@ collections:
         label: "Home Page"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - label: Hero Section
-            name: hero
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+        - label: Hero Section
+          name: hero
+          widget: object
+          fields:
+          - {label: Background Image, name: background_image, widget: image}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: text}
+          - label: Skills List
+            name: skills_list
             widget: object
             fields:
-            - {label: Background Image, name: background_image, widget: image}
+            - label: Skills
+              name: skills
+              widget: list
+              fields:
+              - label: Skill
+                name: skill
+                widget: string
+          - label: MiddleState Section
+            name: middlestate
+            widget: object
+            fields:
             - {label: Title, name: title, widget: string}
-            - {label: Subtitle, name: subtitle, widget: text}
-            - label: Skills List
-              name: skills_list
+            - label: MiddleState Projects
+              name: mdst_projects
               widget: object
               fields:
-              - label: Skills
-                name: skills
+              - label: MiddleState Projects List
+                name: mdst_projects_list
                 widget: list
                 fields:
-                - label: Skill
-                  name: skill
-                  widget: string
+                - label: Project
+                  name: project
+                  widget: object
+                  fields:
+                  - {label: Image, name: image, widget: image}
+                  - {label: Title, name: title, widget: string}
+                  - label: Tech Used
+                    name: tech_used
+                    widget: object
+                    fields:
+                    - label: Tech List
+                      name: tech_list
+                      widget: list
+                      fields:
+                      - {label: Tech, name: tech, widget: string}
+                  - {label: Description, name: description, widget: text}
+                  - {label: Website Link, name: website_link, widget: string}
+                  - {label: Repo Link, name: repo_link, widget: string}
