@@ -36,6 +36,7 @@ collections:
             name: middlestate
             widget: object
             fields:
+            - {label: Icon, name: icon, widget: image}
             - {label: Title, name: title, widget: string}
             - label: MiddleState Projects
               name: mdst_projects
