@@ -32,6 +32,26 @@ middlestate:
               - tech: Pug
           title: Grizzlyfest
           website_link: 'https://grizzlyfestival.com/'
+      - project:
+          description: >-
+            This was a website I originally coded using HTML, CSS, and some
+            JavaScript. Per clients' request, I later rebuilt it using
+            NetlifyCMS, Gatsby, Sass, and GraphQL in order for the client to be
+            able to edit the sites' content using the CMS dashboard. I was also
+            able to integrate the clients' Google Calendar events into the
+            website to display upcoming events and display uploaded PDF files
+            with pagination functionality. 
+          image: /img/cellardoor.png
+          repo_link: >-
+            https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
+          tech_used:
+            tech_list:
+              - tech: NetlifyCMS
+              - tech: Gatsby
+              - tech: Sass
+              - tech: GraphQL
+          title: Cellar Door
+          website_link: 'https://cellardoor101.com/'
   title: 'MiddleState, LLC Projects'
 ---
 
