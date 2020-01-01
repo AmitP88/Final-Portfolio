@@ -52,6 +52,21 @@ middlestate:
               - tech: GraphQL
           title: Cellar Door
           website_link: 'https://cellardoor101.com/'
+      - project:
+          description: >-
+            This was a website I built for a blockchain company using
+            NetlifyCMS, Gatsby, Sass, and GraphQL to enable the client to be
+            able to edit the sites' content using the CMS Dashboard.
+          image: /img/dataharvest.png
+          repo_link: 'https://github.com/middlestate/new-dataharvest'
+          tech_used:
+            tech_list:
+              - tech: NetlifyCMS
+              - tech: Gatsby
+              - tech: Sass
+              - tech: GraphQL
+          title: DataHarvest
+          website_link: 'http://dataharvest.co/'
   title: 'MiddleState, LLC Projects'
 ---
 
