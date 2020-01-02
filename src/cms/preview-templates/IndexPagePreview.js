@@ -7,6 +7,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const entrySkills = entry.getIn(['data', 'hero' ,'skills_list', 'skills'])
   const skills = entrySkills ? entrySkills.toJS() : []
 
+  const entryMDSTprojects = entry.getIn(['data', 'middlestate', 'mdst_projects', 'mdst_projects_list'])
+  const mdst_projects_list = entryMDSTprojects ? entryMDSTprojects.toJS() : []
+
 
   if (data) {
     return (
@@ -15,6 +18,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         title={data.hero.title}
         subtitle={data.hero.subtitle}
         skills_list={{ skills }}
+        mdst_projects={{ mdst_projects_list }}
       />
     )
   } else {

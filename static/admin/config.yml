@@ -52,15 +52,7 @@ collections:
                 fields:
                 - {label: Image, name: image, widget: image}
                 - {label: Title, name: title, widget: string}
-                - label: Tech Used
-                  name: tech_used
-                  widget: object
-                  fields:
-                  - label: Tech List
-                    name: tech_list
-                    widget: list
-                    fields:
-                    - {label: Tech, name: tech, widget: string}
+                - {label: Tech Used, name: tech_used, widget: string}
                 - {label: Description, name: description, widget: text}
                 - {label: Website Link, name: website_link, widget: string}
                 - {label: Repo Link, name: repo_link, widget: string}

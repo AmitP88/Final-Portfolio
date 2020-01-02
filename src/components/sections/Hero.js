@@ -37,7 +37,7 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
 )
 
 Hero.propTypes = {
-  background_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  background_image: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   skills: PropTypes.shape({
