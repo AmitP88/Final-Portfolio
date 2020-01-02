@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const MiddleState = ({ gridItems }) => {
+const MiddleState = ({ icon, title, gridItems }) => {
   return (
     <div className="middlestate">
+      <img src={icon} alt="middlestate_icon" />
+      <h1>{title}</h1>
       {gridItems.map(({ project = {image: '', title: '', tech_used: '', description: '', website_link: '', repo_link: ''} }, keys) => {
         return (
           <div key={keys} className="project_container">
@@ -32,6 +34,8 @@ const MiddleState = ({ gridItems }) => {
 }
 
 MiddleState.propTypes = {
+  icon: PropTypes.string,
+  title: PropTypes.string,
   mdst_projects: PropTypes.shape({
     mdst_projects_list: PropTypes.shape({
       project: PropTypes.shape({

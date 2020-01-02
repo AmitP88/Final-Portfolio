@@ -8,7 +8,7 @@ import MiddleState from '../components/sections/MiddleState'
 import Layout from '../components/Layout'
 
 
-export const IndexPageTemplate = ({ background_image, title, subtitle, skills_list, mdst_projects }) => (
+export const IndexPageTemplate = ({ background_image, title, subtitle, skills_list, mdst_icon, mdst_title, mdst_projects }) => (
   <div className='homepage'>
     <Hero 
       background_image={background_image}
@@ -17,6 +17,8 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, skills_li
       skillItems={skills_list.skills}
     />
     <MiddleState
+      icon={mdst_icon}
+      title={mdst_title}
       gridItems={mdst_projects.mdst_projects_list}
     />
   </div>
@@ -32,6 +34,8 @@ const IndexPage = ({ data }) => {
         title={frontmatter.hero.title}
         subtitle={frontmatter.hero.subtitle}
         skills_list={frontmatter.hero.skills_list}
+        mdst_icon={frontmatter.middlestate.icon}
+        mdst_title={frontmatter.middlestate.title}
         mdst_projects={frontmatter.middlestate.mdst_projects}
       />
     </Layout>
@@ -45,6 +49,8 @@ IndexPageTemplate.propTypes = {
   skills_list: PropTypes.shape({
     skills: PropTypes.array,
   }),
+  mdst_icon: PropTypes.string,
+  mdst_title: PropTypes.string,
   mdst_projects: PropTypes.shape({
     mdst_projects_list: PropTypes.array,
   }),
@@ -77,7 +83,8 @@ export const pageQuery = graphql`
         }
 
         middlestate {
-
+          icon
+          title
           mdst_projects {
             mdst_projects_list {
               project {
@@ -90,7 +97,6 @@ export const pageQuery = graphql`
               }
             }
           }
-
         }
 
       }
