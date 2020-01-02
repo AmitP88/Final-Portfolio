@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const MiddleState = ({ gridItems }) => {
   return (
     <div className="middlestate">
-      {gridItems.map(({ project }, keys) => {
+      {gridItems.map(({ project = {image: '', title: '', tech_used: '', description: '', website_link: '', repo_link: ''} }, keys) => {
         return (
           <div key={keys} className="project_container">
             {console.log(project)}
