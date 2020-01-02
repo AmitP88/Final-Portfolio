@@ -4,8 +4,10 @@ import PropTypes from 'prop-types'
 const MiddleState = ({ icon, title, gridItems }) => {
   return (
     <div className="middlestate">
-      <img src={icon} alt="middlestate_icon" />
-      <h1>{title}</h1>
+      <div className="header">
+        <img src={icon} alt="middlestate_icon" />
+        <h1>{title}</h1>      
+      </div>
       {gridItems.map(({ project = {image: '', title: '', tech_used: '', description: '', website_link: '', repo_link: ''} }, keys) => {
         return (
           <div key={keys} className="project_container">

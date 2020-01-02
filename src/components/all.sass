@@ -68,16 +68,14 @@
 /* Hero Section */
 .intro
   padding: 5% 3%
-
-.hero_title
-  color: white
-  font-weight: bold
-  font-size: x-large
-
-.hero_subtitle
-  color: aliceblue
-  font-size: larger
-  padding-top: 10px
+  .hero_title
+    color: white
+    font-weight: bold
+    font-size: x-large
+  .hero_subtitle
+    color: aliceblue
+    font-size: larger
+    padding-top: 10px
 
 .skills_list_container
   width: fit-content
@@ -88,77 +86,91 @@
     text-align: center
     font-size: larger
     padding: 10px
+    .skill
+      color: white
 
-.skill
-  color: white
+/* MiddleState Section */
+.middlestate
+  margin: 10%
+  .header
+    height: 90%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: none
+    text-align: center
+    img
+      height: 2em
+      width: auto
+  .project_container
+    margin: 10% 0
 
 
-
-@media screen and (min-width: 200px) and (max-width: 600px)
+@media screen and (min-width: 320px) and (max-width: 600px)
+  /* Hero Section */
   .Hero
     background-image: url('/img/background-image-1273097_1280.jpg') !important
     background-size: cover
     background-position: top center
     position: relative
-
-  .layer
-    background: none !important
-
-  .skills_list_container
-    position: absolute
-    left: 50%
-    bottom: 20%
-    -webkit-transform: translateX(-50%)
-    transform: translateX(-50%)
-
-@media screen and (min-width: 200px) and (max-width: 767px)
-  .Hero
     height: 120vh
+    .hero_title, .hero_subtitle
+      text-align: center
+    .layer
+      background: none !important
+    .skills_list_container
+      margin: 0 auto
 
-  .hero_title
-    text-align: center
-
-  .hero_subtitle
-    text-align: center
+  /* MiddleState Section */
+  .middlestate
+    .header
+      font-size: x-large
 
 @media screen and (min-width: 601px)
+  /* Hero Section */
   .Hero
     height: 80vh
+    .intro
+      width: 50%
+    .skills_list_container
+      position: absolute
+      bottom: 10%
+      right: 10%
 
-  .intro
-    width: 50%
-
-  .skills_list_container
-    position: absolute
-    bottom: 10%
-    right: 10%
+  /* MiddleState Section */
+  .middlestate
+    .header
+      font-size: xx-large
 
 @media screen and (min-width: 1024px)
+  /* NavBar */
   .navbar
     padding-top: 15px
     padding-bottom: 15px
     height: 70px
+    .navbar-menu
+      display: flex
+      justify-content: flex-end
+      padding-right: 10%
+      padding-top: 20px
+      padding-bottom: 20px
+      position: fixed
+      top: 0
+    .navItem
+      padding-bottom: 5px
+      height: 50px
+    .navItem:after
+      display: block
+      content: ''
+      border-bottom: solid 1px deepskyblue
+      transform: scaleX(0)
+      transition: transform 250ms ease-in-out
+      padding-top: 5px
+    .navItem:hover:after
+      transform: scaleX(1)
 
-  .navbar-menu
-    display: flex
-    justify-content: flex-end
-    padding-right: 10%
-    padding-top: 20px
-    padding-bottom: 20px
-    position: fixed
-    top: 0
-
-  .navItem
-    padding-bottom: 5px
-    height: 50px
-
-  .navItem:after
-    display: block
-    content: ''
-    border-bottom: solid 1px deepskyblue
-    transform: scaleX(0)
-    transition: transform 250ms ease-in-out
-    padding-top: 5px
-
-  .navItem:hover:after
-    transform: scaleX(1)
+  /* MiddleState */
+  .middlestate
+    .header
+      font-size: -webkit-xxx-large
