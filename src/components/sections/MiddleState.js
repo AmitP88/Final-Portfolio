@@ -10,7 +10,7 @@ const MiddleState = ({ icon, title, gridItems }) => {
       </div>
       {gridItems.map(({ project = {image: '', title: '', tech_used: '', description: '', website_link: '', repo_link: ''} }, keys) => {
         return (
-          <div key={keys} className="project_container">
+          <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
             {console.log(project)}
             <div className="column-1">
               <img src={project.image} alt="project_image" />
