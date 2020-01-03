@@ -26,7 +26,7 @@ middlestate:
             how to work with another developers' code.
           image: /img/grizzlyfest.png
           repo_link: 'https://github.com/middlestate/grizzlyfest'
-          tech_used: Jade, Pug
+          tech_used: 'Jade, Pug'
           title: Grizzlyfest
           website_link: 'https://grizzlyfestival.com/'
       - project:
@@ -41,7 +41,7 @@ middlestate:
           image: /img/cellardoor.png
           repo_link: >-
             https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
-          tech_used: NetlifyCMS, Gatsby, Sass, GraphQL
+          tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: Cellar Door
           website_link: 'https://cellardoor101.com/'
       - project:
@@ -49,9 +49,9 @@ middlestate:
             This was a website I built for a blockchain company using
             NetlifyCMS, Gatsby, Sass, and GraphQL to enable the client to be
             able to edit the sites' content using the CMS Dashboard.
-          image: /img/dataharvest.png
+          image: /img/new_dataharvest.png
           repo_link: 'https://github.com/middlestate/new-dataharvest'
-          tech_used: NetlifyCMS, Gatsby, Sass, GraphQL
+          tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: DataHarvest
           website_link: 'http://dataharvest.co/'
   title: 'MiddleState, LLC Projects'
