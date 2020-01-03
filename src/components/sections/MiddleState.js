@@ -31,10 +31,10 @@ const MiddleState = ({ icon, title, gridItems }) => {
                 <div className="description">{project.description}</div>
                 <div className="buttons_container">
                   <a href={project.website_link}>
-                    <button>Website</button>
+                    <button className="website_button">Website</button>
                   </a>
                   <a href={project.repo_link}>
-                    <button>Repo</button>
+                    <button className="repo_button">Repo</button>
                   </a>
                 </div>              
               </div>
