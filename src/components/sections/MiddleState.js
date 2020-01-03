@@ -16,18 +16,20 @@ const MiddleState = ({ icon, title, gridItems }) => {
               <img src={project.image} alt="project_image" />
             </div>
             <div className="column-2">
-              <div className="project_header">
-                <div className="title">{project.title}</div>
-                <div className="tech_used"><span>Tech Used: </span>{project.tech_used}</div>              
-              </div>
-              <div className="description">{project.description}</div>
-              <div className="buttons_container">
-                <a href={project.website_link}>
-                  <button>Website</button>
-                </a>
-                <a href={project.repo_link}>
-                  <button>Repo</button>
-                </a>
+              <div className="col-2-content">
+                <div className="project_header">
+                  <div className="title">{project.title}</div>
+                  <div className="tech_used"><span>Tech Used: </span>{project.tech_used}</div>              
+                </div>
+                <div className="description">{project.description}</div>
+                <div className="buttons_container">
+                  <a href={project.website_link}>
+                    <button>Website</button>
+                  </a>
+                  <a href={project.repo_link}>
+                    <button>Repo</button>
+                  </a>
+                </div>              
               </div>
             </div>
           </div>
