@@ -15,7 +15,7 @@ const MiddleState = ({ icon, title, gridItems }) => {
               <div className="col-1-background" style={
                 {
                   background: `url(${project.image})`,
-                  backgroundPosition: 'top center',
+                  backgroundPosition: 'left',
                   backgroundSize: 'cover',
                   height: '100%'
                 }
