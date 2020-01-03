@@ -11,7 +11,7 @@ const MiddleState = ({ icon, title, gridItems }) => {
       {gridItems.map(({ project = {image: '', title: '', tech_used: '', description: '', website_link: '', repo_link: ''} }, keys) => {
         return (
           <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
-            <div className="column-1">
+            <div className="column-1" style={keys % 2 === 0 ? {clipPath: 'polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 20% 0%)'} : {clipPath: 'polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%, 0% 0%)'}}>
               <div className="col-1-background" style={
                 {
                   background: `url(${project.image})`,

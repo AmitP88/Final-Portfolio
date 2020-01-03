@@ -107,7 +107,10 @@
   .project_container
     margin: 10% 0
     border: 1px solid lightgray
+    .column-1
+      z-index: 0
     .column-2
+      z-index: 1
       .project_header
         text-align: center
         padding: 20px
@@ -151,6 +154,7 @@
     .project_container
       .column-1
         height: 50vh
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%) !important
       .column-2
         .buttons_container
           display: flex
@@ -174,6 +178,14 @@
     .project_container
       .column-1
         height: 50vh
+
+@media screen and (min-width: 601px) and (max-width: 767px)
+  /* MiddleState Section */
+  .middlestate
+    .project_container
+      .column-1
+        height: 50vh
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%) !important
 
 @media screen and (min-width: 768px)
   .middlestate
