@@ -149,6 +149,8 @@
     .header
       font-size: x-large
     .project_container
+      .column-1
+        height: 50vh
       .column-2
         .buttons_container
           display: flex
@@ -169,6 +171,9 @@
   .middlestate
     .header
       font-size: xx-large
+    .project_container
+      .column-1
+        height: 50vh
 
 @media screen and (min-width: 768px)
   .middlestate
@@ -177,8 +182,9 @@
       .column-1, .column-2
         width: 50%
       .column-1
-        img
-          min-height: 100%
+        height: inherit
+        .col-1-background
+          height: 100%
       .column-2
         .col-2-content
           position: relative
