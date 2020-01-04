@@ -19,6 +19,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         subtitle={data.hero.subtitle}
         skills_list={{ skills }}
         mdst_icon={data.middlestate.icon}
+        mdst_icon_link={data.middlestate.icon_link}
         mdst_title={data.middlestate.title}
         mdst_projects={{ mdst_projects_list }}
       />

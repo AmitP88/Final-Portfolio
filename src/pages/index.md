@@ -16,6 +16,7 @@ hero:
   title: Hi! I'm Amit and I'm a Front End Developer
 middlestate:
   icon: /img/white_mdst_logo.jpg
+  icon_link: https://www.middlestate.com/
   mdst_projects:
     mdst_projects_list:
       - project:
