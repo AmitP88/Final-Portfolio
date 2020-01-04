@@ -2,3 +2,8 @@
   font-family: Gilroy-Bold;
   src: url(fonts/Gilroy-Bold.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(fonts/Montserrat-Light.ttf) format("truetype");
+}
