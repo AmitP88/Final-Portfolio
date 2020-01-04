@@ -12,15 +12,16 @@ const MiddleState = ({ icon, title, gridItems }) => {
         return (
           <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
             <div className="column-1" style={keys % 2 === 0 ? {clipPath: 'polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 20% 0%)'} : {clipPath: 'polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%, 0% 0%)'}}>
-              <div className="col-1-background" style={
-                {
-                  background: `url(${project.image})`,
-                  backgroundPosition: 'left',
-                  backgroundSize: 'cover',
-                  height: '100%'
-                }
-              }/>
-              {/* <img src={project.image} alt="project_image" /> */}
+              <a href={project.website_link}>
+                <div className="col-1-background" style={
+                  {
+                    background: `url(${project.image})`,
+                    backgroundPosition: 'left',
+                    backgroundSize: 'cover',
+                    height: '100%'
+                  }
+                }/>              
+              </a>
             </div>
             <div className="column-2">
               <div className="col-2-content">
