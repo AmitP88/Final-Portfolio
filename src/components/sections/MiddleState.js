@@ -29,6 +29,7 @@ const MiddleState = ({ icon, icon_link, title, gridItems }) => {
               <div className="col-2-content">
                 <div className="project_header">
                   <div className="title">{project.title}</div>
+                  <div className="business_type">{project.business_type}</div>
                   <div className="tech_used"><span>Tech Used: </span>{project.tech_used}</div>              
                 </div>
                 <div className="description">{project.description}</div>
@@ -58,6 +59,7 @@ MiddleState.propTypes = {
       project: PropTypes.shape({
         image: PropTypes.string,
         title: PropTypes.string,
+        business_type: PropTypes.string,
         tech_used: PropTypes.string,
         description: PropTypes.string,
         website_link: PropTypes.string,

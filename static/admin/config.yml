@@ -53,6 +53,7 @@ collections:
                 fields:
                 - {label: Image, name: image, widget: image}
                 - {label: Title, name: title, widget: string}
+                - {label: Business Type, name: business_type, widget: string}
                 - {label: Tech Used, name: tech_used, widget: string}
                 - {label: Description, name: description, widget: text}
                 - {label: Website Link, name: website_link, widget: string}

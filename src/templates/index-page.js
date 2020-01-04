@@ -92,6 +92,7 @@ export const pageQuery = graphql`
           mdst_projects {
             mdst_projects_list {
               project {
+                business_type
                 description
                 image
                 repo_link

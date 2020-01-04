@@ -20,6 +20,7 @@ middlestate:
   mdst_projects:
     mdst_projects_list:
       - project:
+          business_type: Music Festival
           description: >-
             This project was a completed website that was handed to me to revamp
             the homepage layout and include updated content. I learned about
@@ -31,6 +32,7 @@ middlestate:
           title: Grizzlyfest
           website_link: 'https://grizzlyfestival.com/'
       - project:
+          business_type: Music Lounge & Bar
           description: >-
             This was a website I originally coded using HTML, CSS, and some
             JavaScript. Per clients' request, I later rebuilt it using
@@ -46,6 +48,7 @@ middlestate:
           title: Cellar Door
           website_link: 'https://cellardoor101.com/'
       - project:
+          business_type: Blockchain Company
           description: >-
             This was a website I built for a blockchain company using
             NetlifyCMS, Gatsby, Sass, and GraphQL to enable the client to be
