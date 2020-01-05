@@ -16,7 +16,7 @@ hero:
   title: Hi! I'm Amit and I'm a Front End Developer
 middlestate:
   icon: /img/white_mdst_logo.jpg
-  icon_link: https://www.middlestate.com/
+  icon_link: 'https://www.middlestate.com/'
   mdst_projects:
     mdst_projects_list:
       - project:
@@ -53,7 +53,7 @@ middlestate:
             This was a website I built for a blockchain company using
             NetlifyCMS, Gatsby, Sass, and GraphQL to enable the client to be
             able to edit the sites' content using the CMS Dashboard.
-          image: /img/new_dataharvest.png
+          image: /img/dh_tablet.png
           repo_link: 'https://github.com/middlestate/new-dataharvest'
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: DataHarvest
