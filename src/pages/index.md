@@ -11,8 +11,9 @@ hero:
       - skill: Redux
       - skill: Git
   subtitle: >-
-    I enjoy building React projects, working with JavaScript, and making UI that
-    looks interesting. Let's make something awesome.  
+    I'm currently working for MiddleState, LLC - a design company in Visalia,
+    CA. I enjoy building React projects, working with JavaScript, and creating
+    UIs that look interesting. Let's build something awesome.  
   title: Hi! I'm Amit and I'm a Front End Developer
 middlestate:
   icon: /img/white_mdst_logo.jpg
