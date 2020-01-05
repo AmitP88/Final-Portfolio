@@ -104,6 +104,7 @@
     text-align: center
     color: #6E6F73
     font-family: Gilroy-Bold
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2)
     a > img
       height: 2em
       width: auto
@@ -129,6 +130,7 @@
           color: #6E6F73
           font-family: Gilroy-Bold
           letter-spacing: 1.5px
+          text-shadow: 1px 1px 1px rgba(0,0,0,0.2)
         .business_type
           padding-bottom: 15px
         .tech_used
@@ -191,13 +193,17 @@
         .col-1-background
           background-position: top center !important
       .column-2
-        .buttons_container
-          display: flex
-          flex-direction: column
-          button
-            margin-bottom: 30px
-            color: white
-            background-color: deepskyblue
+        .col-2-content
+          .project_header
+            .tech_used
+              padding: 0 30px
+          .buttons_container
+            display: flex
+            flex-direction: column
+            button
+              margin-bottom: 30px
+              color: white
+              background-color: deepskyblue
 
 @media screen and (min-width: 437px)
   /* MiddleState Section */
