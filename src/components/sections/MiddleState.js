@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const MiddleState = ({ icon, icon_link, title, gridItems }) => {
   return (
     <div className="middlestate">
@@ -35,10 +37,16 @@ const MiddleState = ({ icon, icon_link, title, gridItems }) => {
                 <div className="description">{project.description}</div>
                 <div className="buttons_container">
                   <a href={project.website_link}>
-                    <button className="website_button">Website</button>
+                    <button className="website_button">
+                      <FontAwesomeIcon icon={['fab', 'link']} size="2x" />
+                      Website
+                    </button>
                   </a>
                   <a href={project.repo_link}>
-                    <button className="repo_button">Repo</button>
+                    <button className="repo_button">
+                      <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+                      <div className="button_text">Repo</div>
+                    </button>
                   </a>
                 </div>              
               </div>

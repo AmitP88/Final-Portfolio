@@ -6,6 +6,12 @@ import './all.sass'
 import './fonts.css'
 import useSiteMetadata from './SiteMetadata'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faLink, faGithub)
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
