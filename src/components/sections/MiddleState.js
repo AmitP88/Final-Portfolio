@@ -38,14 +38,14 @@ const MiddleState = ({ icon, icon_link, title, gridItems }) => {
                 <div className="buttons_container">
                   <a href={project.website_link}>
                     <button className="website_button">
-                      <FontAwesomeIcon icon={['fab', 'link']} size="2x" />
-                      Website
+                      <FontAwesomeIcon icon={'link'} size="2x" />
+                      <div className="button_text">Website</div>
                     </button>
                   </a>
                   <a href={project.repo_link}>
                     <button className="repo_button">
                       <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-                      <div className="button_text">Repo</div>
+                      <div className="button_text">GitHub</div>
                     </button>
                   </a>
                 </div>              

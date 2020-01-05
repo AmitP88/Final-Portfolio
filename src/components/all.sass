@@ -146,10 +146,14 @@
       .buttons_container
         padding: 20px
         text-align: center
+        a > .repo_button
+          width: 180px
+        a > .website_button
+          widows: 180px
         a > .website_button, a > .repo_button
           display: inline-flex
-          width: 160px
           border: none
+          border-radius: 2px
           padding: 10px 40px
           letter-spacing: 2px
           transition: 0.3s
@@ -222,6 +226,10 @@
     .project_container
       .column-1
         height: 50vh
+      .column-2
+        .buttons_container
+          button
+            margin-bottom: 30px
 
 @media screen and (min-width: 601px) and (max-width: 767px)
   /* MiddleState Section */
