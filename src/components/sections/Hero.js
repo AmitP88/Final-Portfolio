@@ -28,7 +28,7 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
         <legend>Skills</legend>
         {skillItems.map(({ skill }, keys) => {
           return (
-            <h4 key={keys} className='skill'>{skill}</h4>
+            <p key={keys} className='skill'>{skill}</p>
           )
         })}
       </fieldset>
