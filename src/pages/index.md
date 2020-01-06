@@ -10,6 +10,9 @@ hero:
       - skill: React
       - skill: Redux
       - skill: Git
+      - skill: NetlifyCMS
+      - skill: Gatsby
+      - skill: Sass
   subtitle: >-
     I'm currently working for MiddleState, LLC - a design company in Visalia,
     CA. I enjoy building React projects, working with JavaScript, and creating
