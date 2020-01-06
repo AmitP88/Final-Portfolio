@@ -21,10 +21,10 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
         opacity: '0.7'
       }
     }/>
-    <div className='intro animate fadeInLeft one'>
-      <h1 className='hero_title'>{title}</h1>
-      <h3 className='hero_subtitle'>{subtitle}</h3>
-      <fieldset className='skills_list_container'>
+    <div className='intro'>
+      <h1 className='hero_title animate fadeInLeft one'>{title}</h1>
+      <h3 className='hero_subtitle animate fadeInLeft two'>{subtitle}</h3>
+      <fieldset className='skills_list_container animate fadeInLeft three'>
         <legend>Skills</legend>
         {skillItems.map(({ skill }, keys) => {
           return (
