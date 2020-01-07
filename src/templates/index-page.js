@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 
 import Hero from '../components/sections/Hero'
 import MiddleState from '../components/sections/MiddleState'
+import Testimonials from '../components/sections/Testimonials'
 
 import Layout from '../components/Layout'
 
@@ -22,6 +23,7 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, skills_li
       title={mdst_title}
       gridItems={mdst_projects.mdst_projects_list}
     />
+    <Testimonials />
   </div>
 )
 
