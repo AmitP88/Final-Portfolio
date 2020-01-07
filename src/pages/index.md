@@ -63,5 +63,8 @@ middlestate:
           title: DataHarvest
           website_link: 'http://dataharvest.co/'
   title: 'MiddleState, LLC Projects'
+testimonials:
+  ryan: "Amit has a great work ethic, anytime day or night he is ready to help.  He's always looking to learn and try new stuff.  His attitude about new challenges is great and works well in a group or solo."
+  tom: Quote goes here
 ---
 

@@ -58,3 +58,9 @@ collections:
                 - {label: Description, name: description, widget: text}
                 - {label: Website Link, name: website_link, widget: string}
                 - {label: Repo Link, name: repo_link, widget: string}
+        - label: Testimonials Section
+          name: testimonials
+          widget: object
+          fields:
+          - {label: Ryan, name: ryan, widget: text}
+          - {label: Tom, name: tom, widget: text}
