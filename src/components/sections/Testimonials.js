@@ -5,20 +5,20 @@ const Testimonials = ({ ryan, tom }) => {
   return (
     <div className="testimonials">
       <div className="ryan">
-        <img src={ryan.image} alt="ryan" />
-        <p className="quote">{ryan.quote}</p>
-        <div className="name_box">
+        <div className="profile">
+          <img src={ryan.image} alt="ryan" />
           <h1 className="name">{ryan.name}</h1>    
           <h3 className="title">{ryan.title}</h3>      
         </div>
+        <p className="quote">{ryan.quote}</p>        
       </div>
       <div className="tom">
-        <img src={tom.image} alt="tom" />
-        <p className="quote">{tom.quote}</p>
-        <div className="name_box">
+        <div className="profile">
+          <img src={tom.image} alt="tom" />        
           <h1 className="name">{tom.name}</h1>    
           <h3 className="title">{tom.title}</h3>      
         </div>
+        <p className="quote">{tom.quote}</p>        
       </div>
     </div>
   )
