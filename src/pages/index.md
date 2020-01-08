@@ -71,11 +71,11 @@ testimonials:
       "Amit has a great work ethic, anytime day or night he is ready to help.
       He's always looking to learn and try new stuff.  His attitude about new
       challenges is great and works well in a group or solo." 
-    title: Founder - Director of Technology
+    title: MiddleState Founder - Director of Technology
   tom:
     image: /img/tom.png
     name: Tom Price
     quote: (Quote goes here)
-    title: Founder - Director of Design
+    title: MiddleState Founder - Director of Design
 ---
 

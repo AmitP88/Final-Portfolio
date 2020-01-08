@@ -183,8 +183,8 @@
 
 /* Testimonials */
 .testimonials
-  padding: 5%
-  background-color: aliceblue
+  padding: 0 5% 5% 5%
+  background-color: white
   .ryan, .tom
     padding: 5% 10%
     .profile
@@ -193,16 +193,21 @@
         clip-path: circle()
         max-width: 200px
         max-height: 200px
+        display: block
+        margin-left: auto
+        margin-right: auto
       .name
         font-size: large
         font-weight: bold
         text-align: center
+        padding-top: 10px
       .title
         font-size: medium
         text-align: center
         font-weight: 400
         font-style: italic
         letter-spacing: 0.5px
+        max-width: 200px
     .quote
       width: fit-content
       padding: 5%
@@ -252,6 +257,14 @@
               color: white
               background-color: deepskyblue
 
+  /* Testimonials */
+  .testimonials
+    .ryan, .tom
+      .profile
+        margin: 0 auto
+      .quote
+        text-align: center
+
 @media screen and (min-width: 437px)
   /* MiddleState Section */
   .middlestate
@@ -270,15 +283,6 @@
       .skills_list_container
         .skill
           font-size: larger
-
-  /* Testimonials */
-  .testimonials
-    .ryan
-      display: flex
-      flex-direction: inherit
-    .tom
-      display: flex
-      flex-direction: row-reverse
 
   /* MiddleState Section */
   .middlestate
@@ -319,6 +323,14 @@
             margin-right: 30px
           .repo_button
             margin-left: 30px
+
+  /* Testimonials */
+  .testimonials
+    .ryan, .tom
+      .profile
+        margin: 0 auto
+      .quote
+        text-align: center
 
 @media screen and (min-width: 768px)
   /* Hero */
@@ -378,6 +390,18 @@
               background-color: deepskyblue
             .repo_button
               margin-left: 10%
+
+  /* Testimonials */
+  .testimonials
+    .ryan
+      display: flex
+      flex-direction: inherit
+    .tom
+      display: flex
+      flex-direction: row-reverse
+    .ryan, .tom
+      .quote
+        font-size: x-large
 
 @media screen and (min-width: 1024px)
   /* NavBar */
