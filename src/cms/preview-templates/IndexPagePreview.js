@@ -22,6 +22,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         mdst_icon_link={data.middlestate.icon_link}
         mdst_title={data.middlestate.title}
         mdst_projects={{ mdst_projects_list }}
+        ryan={data.testimonials.ryan}
+        tom={data.testimonials.tom}
       />
     )
   } else {

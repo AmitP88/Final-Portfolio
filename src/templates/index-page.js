@@ -9,7 +9,18 @@ import Testimonials from '../components/sections/Testimonials'
 import Layout from '../components/Layout'
 
 
-export const IndexPageTemplate = ({ background_image, title, subtitle, skills_list, mdst_icon, mdst_icon_link, mdst_title, mdst_projects }) => (
+export const IndexPageTemplate = ({ 
+  background_image,
+  title,
+  subtitle,
+  skills_list,
+  mdst_icon,
+  mdst_icon_link,
+  mdst_title,
+  mdst_projects,
+  ryan,
+  tom
+}) => (
   <div className='homepage'>
     <Hero 
       background_image={background_image}
@@ -23,7 +34,10 @@ export const IndexPageTemplate = ({ background_image, title, subtitle, skills_li
       title={mdst_title}
       gridItems={mdst_projects.mdst_projects_list}
     />
-    <Testimonials />
+    <Testimonials
+      ryan={ryan}
+      tom={tom}
+    />
   </div>
 )
 
@@ -41,6 +55,8 @@ const IndexPage = ({ data }) => {
         mdst_icon_link={frontmatter.middlestate.icon_link}
         mdst_title={frontmatter.middlestate.title}
         mdst_projects={frontmatter.middlestate.mdst_projects}
+        ryan={frontmatter.testimonials.ryan}
+        tom={frontmatter.testimonials.tom}
       />
     </Layout>
   )
@@ -59,6 +75,8 @@ IndexPageTemplate.propTypes = {
   mdst_projects: PropTypes.shape({
     mdst_projects_list: PropTypes.array,
   }),
+  ryan: PropTypes.object,
+  tom: PropTypes.object
 }
 
 IndexPage.propTypes = {
@@ -104,6 +122,23 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+
+        testimonials {
+          ryan {
+            image
+            quote
+            name
+            title
+          }
+
+          tom {
+            image
+            quote
+            name
+            title
+          }
+
         }
 
       }
