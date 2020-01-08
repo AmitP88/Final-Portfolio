@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  background_image: /img/background_photo_sized_down.jpg
+  background_image: /img/background_140kb.jpg
   skills_list:
     skills:
       - skill: HTML5
@@ -57,7 +57,7 @@ middlestate:
             This was a website I built for a blockchain company using
             NetlifyCMS, Gatsby, Sass, and GraphQL to enable the client to be
             able to edit the sites' content using the CMS Dashboard.
-          image: /img/dh_600.png
+          image: /img/dh_760.png
           repo_link: 'https://github.com/middlestate/new-dataharvest'
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: DataHarvest
