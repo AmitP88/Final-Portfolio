@@ -57,7 +57,7 @@ middlestate:
             This was a website I built for a blockchain company using
             NetlifyCMS, Gatsby, Sass, and GraphQL to enable the client to be
             able to edit the sites' content using the CMS Dashboard.
-          image: /img/dh_medium.png
+          image: /img/dh_600.png
           repo_link: 'https://github.com/middlestate/new-dataharvest'
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: DataHarvest
