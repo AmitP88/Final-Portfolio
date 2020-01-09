@@ -72,7 +72,7 @@ middlestate:
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: DataHarvest
           website_link: 'https://new-dataharvest.netlify.com/'
-  title: 'MiddleState, LLC Projects'
+  title: MiddleState Projects
 testimonials:
   ryan:
     image: /img/ryan.png
