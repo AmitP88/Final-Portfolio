@@ -88,6 +88,7 @@ testimonials:
     quote: (Quote goes here)
     title: MiddleState Founder - Director of Design
 personal_projects:
+  background_image: /img/projectSectionBackground.jpg
   projects:
     projects_list:
       - project:
