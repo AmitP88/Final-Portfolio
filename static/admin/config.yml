@@ -88,7 +88,7 @@ collections:
           name: personal_projects
           widget: object
           fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title, name: title, widget: string},
           - label: Projects
             name: projects
             widget: object
@@ -101,9 +101,9 @@ collections:
                 name: project
                 widget: object
                 fields:
-                - {label: Image, name: image, widget: image}
-                - {label: Title, name: title, widget: string}
-                - {label: Description, name: description, widget: text}
+                - {label: Image, name: image, widget: image},
+                - {label: Title, name: title, widget: string},
+                - {label: Description, name: description, widget: text},
                 - label: Tech Used
                   name: tech_used
                   widget: object
