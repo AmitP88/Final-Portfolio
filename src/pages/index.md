@@ -39,18 +39,20 @@ middlestate:
           business_type: Music Lounge & Bar
           description: >-
             This was a website I originally coded using HTML, CSS, and some
-            JavaScript. Per clients' request, I later rebuilt it using
-            NetlifyCMS, Gatsby, Sass, and GraphQL in order for the client to be
-            able to edit the sites' content using the CMS dashboard. I was also
-            able to integrate the clients' Google Calendar events into the
-            website to display upcoming events and display uploaded PDF files
-            with pagination functionality. 
+            JavaScript. I later rebuilt it using NetlifyCMS, Gatsby, Sass, and
+            GraphQL in order for the client to be able to edit the sites'
+            content using the CMS dashboard. I was also able to integrate the
+            clients' Google Calendar events into the website to display upcoming
+            events and display uploaded PDF files with pagination
+            functionality.  The current live site (https://cellardoor101.com) is
+            the version I built with HTML, CSS, and JavaScript. The website
+            linked below is the rebuild that will launch soon.
           image: /img/cellardoor.png
           repo_link: >-
             https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: Cellar Door
-          website_link: 'https://cellardoor101.com/'
+          website_link: 'https://cellar-door-rebuild.netlify.com/'
       - project:
           business_type: Blockchain Company
           description: >-
@@ -77,5 +79,9 @@ testimonials:
     name: Tom Price
     quote: (Quote goes here)
     title: MiddleState Founder - Director of Design
+personal_projects:
+  projects:
+    projects_list: []
+  title: Personal Projects
 ---
 
