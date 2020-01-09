@@ -52,7 +52,7 @@ middlestate:
 
             code for the current live site version, please visit
             https://github.com/middlestate/CellarDoor . The website linked below
-            is the rebuild that will launch soon.
+            is the rebuild and is expected to launch soon.
           image: /img/cellardoor.png
           repo_link: >-
             https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
@@ -62,14 +62,16 @@ middlestate:
       - project:
           business_type: Blockchain Company
           description: >-
-            This was a website I built for a blockchain company using
-            NetlifyCMS, Gatsby, Sass, and GraphQL to enable the client to be
-            able to edit the sites' content using the CMS Dashboard.
+            This is a rebuild for a website that was originally built using
+            WordPress. That website can visited at http://dataharvest.co/.  I
+            developed the rebuild using NetlifyCMS, Gatsby, Sass, and GraphQL.
+            The website for the rebuild is linked below (along with the link to
+            the GitHub code) and is expected to launch soon.
           image: /img/dh_760.png
           repo_link: 'https://github.com/middlestate/new-dataharvest'
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: DataHarvest
-          website_link: 'http://dataharvest.co/'
+          website_link: 'https://new-dataharvest.netlify.com/'
   title: 'MiddleState, LLC Projects'
 testimonials:
   ryan:
