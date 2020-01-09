@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Hero from '../components/sections/Hero'
 import MiddleState from '../components/sections/MiddleState'
 import Testimonials from '../components/sections/Testimonials'
+import PersonalProjects from '../components/sections/PersonalProjects'
 
 import Layout from '../components/Layout'
 
@@ -19,7 +20,9 @@ export const IndexPageTemplate = ({
   mdst_title,
   mdst_projects,
   ryan,
-  tom
+  tom,
+  personal_background,
+  personal_title
 }) => (
   <div className='homepage'>
     <Hero 
@@ -37,6 +40,10 @@ export const IndexPageTemplate = ({
     <Testimonials
       ryan={ryan}
       tom={tom}
+    />
+    <PersonalProjects
+      background_image={personal_background}
+      title={personal_title}
     />
   </div>
 )
@@ -57,6 +64,8 @@ const IndexPage = ({ data }) => {
         mdst_projects={frontmatter.middlestate.mdst_projects}
         ryan={frontmatter.testimonials.ryan}
         tom={frontmatter.testimonials.tom}
+        personal_background={frontmatter.personal_projects.background_image}
+        personal_title={frontmatter.personal_projects.title}
       />
     </Layout>
   )
@@ -76,7 +85,9 @@ IndexPageTemplate.propTypes = {
     mdst_projects_list: PropTypes.array,
   }),
   ryan: PropTypes.object,
-  tom: PropTypes.object
+  tom: PropTypes.object,
+  personal_background: PropTypes.string,
+  personal_title: PropTypes.string
 }
 
 IndexPage.propTypes = {
@@ -138,7 +149,11 @@ export const pageQuery = graphql`
             name
             title
           }
+        }
 
+        personal_projects {
+          background_image
+          title
         }
 
       }
