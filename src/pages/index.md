@@ -43,10 +43,16 @@ middlestate:
             GraphQL in order for the client to be able to edit the sites'
             content using the CMS dashboard. I was also able to integrate the
             clients' Google Calendar events into the website to display upcoming
-            events and display uploaded PDF files with pagination
-            functionality.  The current live site (https://cellardoor101.com) is
-            the version I built with HTML, CSS, and JavaScript. The website
-            linked below is the rebuild that will launch soon.
+            events and using react-pdf npm package, display uploaded PDF files
+            with pagination functionality.  
+
+
+            The current live site (https://cellardoor101.com) is the version I
+            built with HTML, CSS, and JavaScript. To view the
+
+            code for the current live site version, please visit
+            https://github.com/middlestate/CellarDoor . The website linked below
+            is the rebuild that will launch soon.
           image: /img/cellardoor.png
           repo_link: >-
             https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
