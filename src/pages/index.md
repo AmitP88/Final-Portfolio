@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  background_image: /img/background_140kb.jpg
+  background_image: /img/background_84kb.jpg
   skills_list:
     skills:
       - skill: HTML5
