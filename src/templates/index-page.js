@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => {
         mdst_title={frontmatter.middlestate.title}
         mdst_projects={frontmatter.middlestate.mdst_projects}
         ryan={frontmatter.testimonials.ryan}
-        tom={frontmatter.testimonials.tom}
+        // tom={frontmatter.testimonials.tom}
         personal_background={frontmatter.personal_projects.background_image}
         personal_title={frontmatter.personal_projects.title}
       />
@@ -85,7 +85,7 @@ IndexPageTemplate.propTypes = {
     mdst_projects_list: PropTypes.array,
   }),
   ryan: PropTypes.object,
-  tom: PropTypes.object,
+  // tom: PropTypes.object,
   personal_background: PropTypes.string,
   personal_title: PropTypes.string
 }
