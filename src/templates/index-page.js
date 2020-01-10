@@ -168,7 +168,9 @@ export const pageQuery = graphql`
                 tech_list {
                   tech
                 }
-                title                
+                title
+                demo
+                github             
               }
             }
           }

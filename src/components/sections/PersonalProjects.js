@@ -35,13 +35,13 @@ const PersonalProjects = ({ background_image, title, gridItems }) => {
                         )
                       })}</ul>
                       <div className="Card-Demo-button">
-                        <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">
+                        <a href={project.demo} className="btn btn-white" target="_blank" rel="noopener noreferrer">
                           <FontAwesomeIcon className="fontawesome-icon" icon={'link'} size="2x" />
                           <span className="button-label">Demo</span>                      
                         </a>                
                       </div>
                       <div className="Card-Repo-button">
-                        <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">
+                        <a href={project.github} className="btn btn-white" target="_blank" rel="noopener noreferrer">
                           <FontAwesomeIcon className="fontawesome-icon" icon={['fab', 'github']} size="2x" />
                           <span className="button-label">GitHub</span>
                         </a>                
@@ -71,7 +71,9 @@ PersonalProjects.propTypes = {
         description: PropTypes.string,
         tech_list: PropTypes.shape({
           tech: PropTypes.arrayOf(PropTypes.string)
-        })
+        }),
+        demo: PropTypes.string,
+        github: PropTypes.string,
       }),
     }),
   }),
