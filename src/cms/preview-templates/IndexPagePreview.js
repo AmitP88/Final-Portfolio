@@ -10,6 +10,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const entryMDSTprojects = entry.getIn(['data', 'middlestate', 'mdst_projects', 'mdst_projects_list'])
   const mdst_projects_list = entryMDSTprojects ? entryMDSTprojects.toJS() : []
 
+  const entryPersonalprojects = entry.getIn(['data', 'personal', 'personal_projects', 'personal_projects_list'])
+  const personal_projects_list = entryPersonalprojects ? entryPersonalprojects.toJS() : []
+
 
   if (data) {
     return (
@@ -24,8 +27,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         mdst_projects={{ mdst_projects_list }}
         ryan={data.testimonials.ryan}
         // tom={data.testimonials.tom}
-        personal_background={data.personal_projects.background_image}
-        personal_title={data.personal_projects.title}
+        personal_background={data.personal.background_image}
+        personal_title={data.personal.title}
+        personal_projects={{ personal_projects_list }}
       />
     )
   } else {

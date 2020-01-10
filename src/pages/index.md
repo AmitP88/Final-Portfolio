@@ -87,33 +87,31 @@ testimonials:
     name: Tom Price
     quote: (Quote goes here)
     title: MiddleState Founder - Director of Design
-personal_projects:
+personal:
   background_image: /img/projectSectionBackground.jpg
-  projects:
-    projects_list:
+  personal_projects:
+    personal_projects_list:
       - project:
           description: |-
             An unbeatable tic tac toe game built with React and Redux.
              The unbeatable AI was developed using the minimax algorithm.
           image: /img/TicTacToe.png
-          tech_used:
-            tech_list:
-              - tech: React
-              - tech: Redux
-              - tech: CSS3
-              - tech: JavaScript(ES6)
+          tech_list:
+            - tech: React
+            - tech: Redux
+            - tech: CSS3
+            - tech: JavaScript(ES6)
           title: Unbeatable Tic Tac Toe
       - project:
           description: |-
             A classic Simon game with a modern style to it.
              The game can be set to Hard mode for a greater challenge.
           image: /img/Simon.png
-          tech_used:
-            tech_list:
-              - tech: React
-              - tech: Redux
-              - tech: CSS3
-              - tech: JavaScript(ES6)
+          tech_list:
+            - tech: React
+            - tech: Redux
+            - tech: CSS3
+            - tech: JavaScript(ES6)
           title: Simon Game
       - project:
           description: >-
@@ -121,12 +119,11 @@ personal_projects:
             that starts once work timer ends and vice versa. Comes with SVG
             countdown rings.
           image: /img/Pomodoro.png
-          tech_used:
-            tech_list:
-              - tech: HTML5
-              - tech: CSS3
-              - tech: JavaScript(ES6)
-              - tech: SVG
+          tech_list:
+            - tech: HTML5
+            - tech: CSS3
+            - tech: JavaScript(ES6)
+            - tech: SVG
           title: Pomodoro Timer
   title: Personal Projects
 ---

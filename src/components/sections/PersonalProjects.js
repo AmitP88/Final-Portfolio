@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const PersonalProjects = ({ background_image, title }) => {
+const PersonalProjects = ({ background_image, title, gridItems }) => {
   return (
     <div className="personal_projects" style={
       {
@@ -12,13 +12,54 @@ const PersonalProjects = ({ background_image, title }) => {
       }
     }>
       <div className="title">{title}</div>
+      {gridItems.map(({ project }, keys) => {
+        return (
+          <div key={keys} className="project_card">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img className="project-img" src={project.image} alt="project_image" />
+                  <h3 className="projectName">{project.title}</h3>
+                  <p className="description">{project.description}</p>
+                </div>
+                <div className="flip-card-back">
+                  <h3 className="techList-title">Tech Used</h3>
+                  <ul>{project.tech_list.map(({ tech }, keys2) => {
+                    return (
+                      <li key={keys2}>{tech}</li>
+                    )
+                  })}</ul>
+                  <div className="Card-Demo-button">
+                      <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">Demo</a>                
+                  </div>
+                  <div className="Card-Repo-button">
+                    <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">Repo</a>                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }
 
 PersonalProjects.propTypes = {
   background_image: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  personal_projects: PropTypes.shape({
+    personal_projects_list: PropTypes.shape({
+      project: PropTypes.shape({
+        image: PropTypes.string,
+        title: PropTypes.string,
+        description: PropTypes.string,
+        tech_list: PropTypes.shape({
+          tech: PropTypes.arrayOf(PropTypes.string)
+        })
+      }),
+    }),
+  }),
 }
 
 export default PersonalProjects

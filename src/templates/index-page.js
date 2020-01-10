@@ -22,7 +22,8 @@ export const IndexPageTemplate = ({
   ryan,
   tom,
   personal_background,
-  personal_title
+  personal_title,
+  personal_projects,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -44,6 +45,7 @@ export const IndexPageTemplate = ({
     <PersonalProjects
       background_image={personal_background}
       title={personal_title}
+      gridItems={personal_projects.personal_projects_list}
     />
   </div>
 )
@@ -64,8 +66,9 @@ const IndexPage = ({ data }) => {
         mdst_projects={frontmatter.middlestate.mdst_projects}
         ryan={frontmatter.testimonials.ryan}
         // tom={frontmatter.testimonials.tom}
-        personal_background={frontmatter.personal_projects.background_image}
-        personal_title={frontmatter.personal_projects.title}
+        personal_background={frontmatter.personal.background_image}
+        personal_title={frontmatter.personal.title}
+        personal_projects={frontmatter.personal.personal_projects}
       />
     </Layout>
   )
@@ -87,7 +90,10 @@ IndexPageTemplate.propTypes = {
   ryan: PropTypes.object,
   // tom: PropTypes.object,
   personal_background: PropTypes.string,
-  personal_title: PropTypes.string
+  personal_title: PropTypes.string,
+  personal_projects: PropTypes.shape({
+    personal_projects_list: PropTypes.array,
+  }),
 }
 
 IndexPage.propTypes = {
@@ -151,9 +157,21 @@ export const pageQuery = graphql`
           }
         }
 
-        personal_projects {
+        personal {
           background_image
           title
+          personal_projects {
+            personal_projects_list {
+              project {
+                description
+                image
+                tech_list {
+                  tech
+                }
+                title                
+              }
+            }
+          }
         }
 
       }

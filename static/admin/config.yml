@@ -85,17 +85,17 @@ collections:
               ]
             }
         - label: Personal Projects Section
-          name: personal_projects
+          name: personal
           widget: object
           fields:
           - {label: Title, name: title, widget: string}
           - {label: Background Image, name: background_image, widget: image}
           - label: Projects
-            name: projects
+            name: personal_projects
             widget: object
             fields:
             - label: Projects List
-              name: projects_list
+              name: personal_projects_list
               widget: list
               fields:
               - label: Project
@@ -105,14 +105,10 @@ collections:
                 - {label: Image, name: image, widget: image}
                 - {label: Title, name: title, widget: string}
                 - {label: Description, name: description, widget: text}
-                - label: Tech Used
-                  name: tech_used
-                  widget: object
+                - label: Tech List
+                  name: tech_list
+                  widget: list
                   fields:
-                  - label: Tech List
-                    name: tech_list
-                    widget: list
-                    fields:
-                    - label: Tech
-                      name: tech
-                      widget: string
+                  - label: Tech
+                    name: tech
+                    widget: string
