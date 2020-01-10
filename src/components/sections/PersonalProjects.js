@@ -35,10 +35,16 @@ const PersonalProjects = ({ background_image, title, gridItems }) => {
                         )
                       })}</ul>
                       <div className="Card-Demo-button">
-                          <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">Demo</a>                
+                        <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon className="fontawesome-icon" icon={'link'} size="2x" />
+                          <span className="button-label">Demo</span>                      
+                        </a>                
                       </div>
                       <div className="Card-Repo-button">
-                        <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">Repo</a>                
+                        <a href="#" className="btn btn-white" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon className="fontawesome-icon" icon={['fab', 'github']} size="2x" />
+                          <span className="button-label">GitHub</span>
+                        </a>                
                       </div>
                     </div>
                   </div>
