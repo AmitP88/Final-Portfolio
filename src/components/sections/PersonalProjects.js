@@ -28,7 +28,7 @@ const PersonalProjects = ({ background_image, title, gridItems }) => {
                       <h3 className="techList-title">Tech Used</h3>
                       <ul>{project.tech_list.map(({ tech }, keys2) => {
                         return (
-                          <li key={keys2}>{tech}</li>
+                          <li className="techListItem" key={keys2}>{tech}</li>
                         )
                       })}</ul>
                       <div className="Card-Demo-button">

@@ -318,6 +318,16 @@ ul
   text-align: center
   margin-right: 35px
   position: relative
+  padding: 0 20px 20px 20px
+  margin: 0 auto
+
+.techList-title
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif
+  font-size: larger
+  font-weight: bold
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  padding: 20px 20px 10px 20px
 
 .techListItem
   font-size: 20px
@@ -327,14 +337,49 @@ ul
   -webkit-box-shadow: 0 2.5px 6px -6px #222
   -moz-box-shadow: 0 2.5px 6px -6px #222
   box-shadow: 0 2.5px 6px -6px #222
+  width: 250px
+  margin: 0 auto
 
 .cards-row
   display: flex
   flex-wrap: wrap
   justify-content: space-between
 
+/* personal project card buttons */
+@keyframes moveInBottom
+  0%
+    opacity: 0
+    transform: translateY(30px)
+  100%
+    opacity: 1
+    transform: translate(0)
 
+.btn:link,
+.btn:visited
+  text-transform: uppercase
+  text-decoration: none
+  padding: 15px 40px
+  display: inline-block
+  width: 150px
+  border-radius: 100px
+  transition: all .2s
+  position: relative
 
+.btn:hover
+  transform: translateY(-3px)
+  box-shadow: 0 20px 30px rgba(0,0,0,.2)
+
+.btn:active
+  transform: translateY(-1px)
+  box-shadow: 0 10px 20px rgba(0,0,0,.2)
+
+.btn-white
+  background-color: white
+  color: #777
+
+.btn-animated
+  animation: moveInBottom .5s ease-out 3s
+  animation-fill-mode: backwards
 
 
 
