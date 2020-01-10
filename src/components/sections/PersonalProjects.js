@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const PersonalProjects = ({ background_image, title, gridItems }) => {
   return (
     <div className="personal_projects" style={
@@ -23,6 +25,7 @@ const PersonalProjects = ({ background_image, title, gridItems }) => {
                       <img className="project-img" src={project.image} alt="project_image" />
                       <h3 className="projectName">{project.title}</h3>
                       <p className="card-description">{project.description}</p>
+                      <FontAwesomeIcon className="arrow" icon={'angle-right'} size="2x" />
                     </div>
                     <div className="flip-card-back">
                       <h3 className="techList-title">Tech Used</h3>

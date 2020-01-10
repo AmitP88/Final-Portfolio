@@ -8,9 +8,9 @@ import useSiteMetadata from './SiteMetadata'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faLink, faGithub)
+library.add(fab, faLink, faAngleRight, faGithub)
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
