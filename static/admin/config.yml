@@ -112,3 +112,5 @@ collections:
                   - label: Tech
                     name: tech
                     widget: string
+                - {label: Demo Link, name: demo, widget: string}
+                - {label: GitHub Link, name: github, widget: string}
