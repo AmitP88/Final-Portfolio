@@ -13,6 +13,14 @@ const ContactForm = () => {
         <label htmlFor="email">Email</label>
         <input type="text" name="email" id="email" />
       </div>
+      <div className="field half">
+        <label htmlFor="phone-number">Phone Number</label>
+        <input type="text" name="phone-number" id="phone-number" />
+      </div>
+      <div className="field half">
+        <label htmlFor="company">Company</label>
+        <input type="text" name="company" id="company" />
+      </div>
       <div className="field">
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" rows="6" />
