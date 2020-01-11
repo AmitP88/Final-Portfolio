@@ -6,6 +6,7 @@ import Hero from '../components/sections/Hero'
 import MiddleState from '../components/sections/MiddleState'
 import Testimonials from '../components/sections/Testimonials'
 import PersonalProjects from '../components/sections/PersonalProjects'
+import ContactForm from '../components/sections/ContactForm'
 
 import Layout from '../components/Layout'
 
@@ -47,6 +48,7 @@ export const IndexPageTemplate = ({
       title={personal_title}
       gridItems={personal_projects.personal_projects_list}
     />
+    <ContactForm />
   </div>
 )
 
