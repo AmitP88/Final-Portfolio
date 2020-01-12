@@ -397,17 +397,24 @@ footer
   width: 100%
   padding: 20px 10px
   display: flex
-  justify-content: center  
-  .footer-icon
-    line-height: 125px
+  justify-content: space-around
+  .icon-container
+    .footer-icon
+      line-height: 125px
+      vertical-align: middle
+      margin-left: 40px
+      margin-right: 40px
+      color: white
+      transition: 0.3s
+    .footer-icon:hover
+      cursor: pointer
+      color: black
+  p
+    line-height: 100px
     vertical-align: middle
-    margin-left: 40px
-    margin-right: 40px
-    color: black
-    transition: 0.3s
-  .footer-icon:hover
-    cursor: pointer
     color: white
+    font-weight: bold
+
 
 
 
