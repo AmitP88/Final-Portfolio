@@ -397,13 +397,10 @@ footer
   width: 100%
   padding: 20px 10px
   display: flex
-  justify-content: space-around
   .icon-container
     .footer-icon
       line-height: 125px
       vertical-align: middle
-      margin-left: 40px
-      margin-right: 40px
       color: white
       transition: 0.3s
     .footer-icon:hover
@@ -474,6 +471,16 @@ footer
     margin: 0 auto
     margin-bottom: 50%
 
+  /* Footer */
+  footer
+    justify-content: center
+  .icon-container
+    .footer-icon
+      margin-left: 30px
+      margin-right: 30px
+  p
+    display: none
+
 @media screen and (min-width: 437px)
   /* MiddleState Section */
   .middlestate
@@ -508,6 +515,13 @@ footer
           button
             margin-bottom: 30px
 
+  /* Footer */
+  footer
+  .icon-container
+    .footer-icon
+      margin-left: 40px
+      margin-right: 40px
+
 @media screen and (min-width: 601px) and (max-width: 767px)
   /* Hero Section */
   .Hero
@@ -541,6 +555,16 @@ footer
       .quote
         text-align: center
         padding: 5%
+
+  /* Footer */
+  footer
+    justify-content: center
+  .icon-container
+    .footer-icon
+      margin-left: 30px
+      margin-right: 30px
+  p
+    display: none
 
 @media screen and (min-width: 768px)
   /* Hero Section */
@@ -612,6 +636,10 @@ footer
       .quote
         font-size: x-large
         padding: 2% 5%
+
+  /* Footer */
+  footer
+    justify-content: space-between
 
 @media screen and (min-width: 1024px)
   /* NavBar */
