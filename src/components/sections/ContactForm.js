@@ -3,6 +3,14 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <div className="ContactForm">
+      <div className="message">
+        <h1 className="title">Get In Touch</h1>
+        <p className="exit_message">
+          Thank you for checking out my website!
+          If you're hiring, please send me a message using the form below.
+          Have an awesome day!
+        </p>
+      </div>
       <div className="form-container">
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
