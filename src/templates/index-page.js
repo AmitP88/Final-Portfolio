@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
       tom={tom}
     />
     <PersonalProjects
-      background_image={personal_background}
+      // background_image={personal_background}
       title={personal_title}
       gridItems={personal_projects.personal_projects_list}
     />
@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
         mdst_projects={frontmatter.middlestate.mdst_projects}
         ryan={frontmatter.testimonials.ryan}
         // tom={frontmatter.testimonials.tom}
-        personal_background={frontmatter.personal.background_image}
+        // personal_background={frontmatter.personal.background_image}
         personal_title={frontmatter.personal.title}
         personal_projects={frontmatter.personal.personal_projects}
       />
@@ -91,7 +91,7 @@ IndexPageTemplate.propTypes = {
   }),
   ryan: PropTypes.object,
   // tom: PropTypes.object,
-  personal_background: PropTypes.string,
+  // personal_background: PropTypes.string,
   personal_title: PropTypes.string,
   personal_projects: PropTypes.shape({
     personal_projects_list: PropTypes.array,

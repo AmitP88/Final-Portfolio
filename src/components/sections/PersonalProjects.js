@@ -5,14 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PersonalProjects = ({ background_image, title, gridItems }) => {
   return (
-    <div className="personal_projects" style={
-      {
+    <div className="personal_projects">
+    {/*
         background: `url(${background_image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
-        position: 'relative'
-      }
-    }>
+        position: 'relative'    
+    */}
       <div className="title">{title}</div>
       <div className="cards-container">
         <div className="cards-row">
@@ -61,7 +60,7 @@ const PersonalProjects = ({ background_image, title, gridItems }) => {
 }
 
 PersonalProjects.propTypes = {
-  background_image: PropTypes.string,
+  // background_image: PropTypes.string,
   title: PropTypes.string,
   personal_projects: PropTypes.shape({
     personal_projects_list: PropTypes.shape({
