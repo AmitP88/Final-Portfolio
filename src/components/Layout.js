@@ -7,10 +7,10 @@ import './fonts.css'
 import useSiteMetadata from './SiteMetadata'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLink, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLink, faAngleRight, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faLink, faAngleRight, faGithub)
+library.add(fab, faLink, faAngleRight, faEnvelopeSquare, faGithub, faLinkedin)
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
