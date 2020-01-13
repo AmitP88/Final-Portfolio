@@ -60,9 +60,11 @@ const Navbar = class extends React.Component {
             <li className='navItem'>
               <Link to='/#middlestate'>MiddleState</Link>            
             </li>
-            <li className='navItem'>
-              <Link to='/#personal'>Personal Projects</Link>            
-            </li>
+            {/*
+              <li className='navItem'>
+                <Link to='/#personal'>Personal Projects</Link>            
+              </li>            
+            */}
             <li className='navItem'>
               <Link to='/#messageme'>Message Me</Link>            
             </li>
