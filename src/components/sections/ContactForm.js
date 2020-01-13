@@ -12,6 +12,10 @@ const ContactForm = () => {
         </p>
       </div>
       <div className="form-container">
+        <div className="form-header">
+          <h2 className="form-title">Send Me a Message</h2>
+          <img className="send-image" src="/img/send.png" alt="send" />        
+        </div>
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
