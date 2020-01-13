@@ -427,11 +427,26 @@ ul
     .row
       display: flex
       justify-content: space-between
+      margin-bottom: 25px
       .field
         display: grid
         width: 40%
+        margin-bottom: 0.75rem
+        label
+          margin-bottom: 10px
+          font-weight: 100
+          color: lightslategray
+        textarea, input
+          padding: 10px
+        textarea:focus, input:focus
+          outline: none
+        input
+          border: none
+          border-bottom: 1px solid lightgray
         textarea
           resize: none
+          border: none
+          border-bottom: 1px solid lightgray
 
 
 /* Footer */

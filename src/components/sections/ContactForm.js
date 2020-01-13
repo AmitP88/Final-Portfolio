@@ -21,17 +21,17 @@ const ContactForm = () => {
           <input type="hidden" name="form-name" value="contact" />
           <div className="row">
             <div className="field">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Your Name</label>
               <input type="text" name="name" id="name" />
             </div>
             <div className="field">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email Address</label>
               <input type="text" name="email" id="email" />
             </div>          
           </div>
           <div className="row">
             <div className="field">
-              <label htmlFor="phone-number">Phone Number</label>
+              <label htmlFor="phone-number">Phone</label>
               <input type="text" name="phone-number" id="phone-number" />
             </div>
             <div className="field">
