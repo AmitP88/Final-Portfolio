@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ContactForm = () => {
+const MessageMe = () => {
   return (
-    <div className="ContactForm">
+    <div className="MessageMe">
       <div className="message">
         <h1 className="title">Get In Touch</h1>
         <p className="exit_message">
@@ -61,4 +61,4 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm
+export default MessageMe
