@@ -55,16 +55,16 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <li className='navItem'>
-              <Link to='/'>Home</Link>            
+              <Link to='/#home'>Home</Link>            
             </li>
             <li className='navItem'>
-              <Link to='/'>MiddleState</Link>            
+              <Link to='/#middlestate'>MiddleState</Link>            
             </li>
             <li className='navItem'>
-              <Link to='/'>Personal Projects</Link>            
+              <Link to='/#personal'>Personal Projects</Link>            
             </li>
             <li className='navItem'>
-              <Link to='/'>Message Me</Link>            
+              <Link to='/#messageme'>Message Me</Link>            
             </li>
           </ul>
         </div>

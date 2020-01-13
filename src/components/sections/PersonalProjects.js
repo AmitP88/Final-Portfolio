@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PersonalProjects = ({ background_image, title, gridItems }) => {
   return (
-    <div className="personal_projects">
+    <div className="personal_projects" id="personal">
     {/*
         background: `url(${background_image})`,
         backgroundSize: 'cover',

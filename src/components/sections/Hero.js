@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Hero = ({ background_image, title, subtitle, skillItems }) => (
-  <section className='Hero section' style={
+  <section className='Hero section' id="home" style={
     {
       background: `url(${background_image})`,
       backgroundSize: 'cover',

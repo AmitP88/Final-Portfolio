@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const MiddleState = ({ icon, icon_link, title, gridItems }) => {
   return (
-    <div className="middlestate">
+    <div className="middlestate" id="middlestate">
       <div className="header">
         <a href={icon_link}>
           <img src={icon} alt="middlestate_icon" />        

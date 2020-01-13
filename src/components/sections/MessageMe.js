@@ -2,7 +2,7 @@ import React from 'react'
 
 const MessageMe = () => {
   return (
-    <div className="MessageMe">
+    <div className="MessageMe" id="messageme">
       <div className="message">
         <h1 className="title">Get In Touch</h1>
         <p className="exit_message">
