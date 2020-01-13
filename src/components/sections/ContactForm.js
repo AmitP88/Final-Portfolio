@@ -8,7 +8,7 @@ const ContactForm = () => {
         <p className="exit_message">
           Thank you for checking out my website!
           If you're hiring, please send me a message using the form below.
-          Have an awesome day!
+          I look forward to hearing from you!
         </p>
       </div>
       <div className="form-container">
