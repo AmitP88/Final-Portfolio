@@ -32,7 +32,7 @@ const MiddleState = ({ icon, icon_link, title, gridItems }) => {
                 <div className="project_header">
                   <div className="title">{project.title}</div>
                   <div className="business_type">{project.business_type}</div>
-                  <div className="tech_used"><span>Tech Used: </span>{project.tech_used}</div>              
+                  <div className="tech_used"><span>Built with: </span>{project.tech_used}</div>              
                 </div>
                 <div className="description">{project.description}</div>
                 <div className="buttons_container">
