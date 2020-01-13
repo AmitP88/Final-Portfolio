@@ -46,9 +46,11 @@ const ContactForm = () => {
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+                <button type="submit">
+                  <img src="/img/paper-rocket-solid.png" type="submit" alt="paper-rocket" />                
+                </button>
               </li>
-              <li>
+              <li className="clear">
                 <input type="reset" value="Clear" />
               </li>
             </ul>          

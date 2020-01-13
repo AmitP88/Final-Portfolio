@@ -447,7 +447,40 @@ ul
           resize: none
           border: none
           border-bottom: 1px solid lightgray
-
+      .actions
+        display: flex
+        flex-direction: row-reverse
+        margin: 0
+        position: relative
+        right: 0
+        bottom: 0
+        height: fit-content
+        margin-top: 15%
+        width: 50%
+        li
+          button
+            background: transparent
+            border: 2px solid #037cf5
+            border-radius: 50%
+            padding: 15px
+            transition: 0.3s
+            img
+              width: 50px         
+          button:hover
+            cursor: pointer
+            background: aquamarine
+            border: 2px solid aquamarine
+        .clear
+          margin-right: 50px
+          input
+            border: none
+            background: transparent
+            font-size: large
+            color: cadetblue
+          input:hover
+            cursor: pointer
+            color: blue
+            padding-bottom: 5px
 
 /* Footer */
 footer
