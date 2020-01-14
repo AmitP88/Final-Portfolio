@@ -16,17 +16,15 @@ const MiddleState = ({ icon, icon_link, title, gridItems }) => {
         return (
           <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
             <div className="column-1">
-              <a href={project.website_link}>
-                <div className="col-1-background" style={
-                  {
-                    background: `url(${project.image})`,
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'no-repeat',
-                    height: '100%'
-                  }
-                }/>              
-              </a>
+              <div className="col-1-background" style={
+                {
+                  background: `url(${project.image})`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  height: '100%'
+                }
+              }/>
             </div>
             <div className="column-2">
               <div className="col-2-content">
