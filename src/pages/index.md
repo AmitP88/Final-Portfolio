@@ -7,9 +7,10 @@ hero:
       - skill: HTML5
       - skill: CSS3
       - skill: JavaScript (ES6)
+      - skill: Responsive Design
+      - skill: Git
       - skill: React
       - skill: Redux
-      - skill: Git
       - skill: NetlifyCMS
       - skill: Gatsby
       - skill: Sass
