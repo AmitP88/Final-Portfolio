@@ -411,7 +411,6 @@ ul
     border: 0.5px solid lightgray
     box-shadow: 7px 7px 6px -7px #607D8B
     padding: 5%
-    max-width: 85%
     margin: 0 auto
     .form-header
       display: flex
@@ -423,7 +422,7 @@ ul
         font-weight: bold
         color: darkcyan
       .send-image
-        width: 50px
+        width: 70px
     .row
       display: flex
       justify-content: space-between
@@ -575,6 +574,9 @@ footer
     .message
       margin: 20% 0
     .form-container
+      .form-header
+        .form-title
+          line-height: normal
       .row
         display: block
         .field
@@ -823,18 +825,12 @@ footer
     .header
       font-size: -webkit-xxx-large
     .project_container
-      // .column-1
-      //   .col-1-background
-      //     transition: transform .2s
-      //   .col-1-background:hover
-      //     transform: scale(1.2)
       .column-2
         .col-2-content
           .buttons_container
             button
               color: black
               background-color: white
-              // border: 0.5px solid deepskyblue
               font-size: medium
             a> button:hover
               cursor: pointer
@@ -845,3 +841,8 @@ footer
   .personal_projects
     .title
       font-size: -webkit-xxx-large
+
+  /* Message Me */  
+  .MessageMe
+    .form-container
+      max-width: 85%
