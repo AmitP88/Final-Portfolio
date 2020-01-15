@@ -40,21 +40,19 @@ middlestate:
       - project:
           business_type: Music Lounge & Bar
           description: >-
-            This was a website I originally coded using HTML, CSS, and some
-            JavaScript. I later rebuilt it using NetlifyCMS, Gatsby, Sass, and
-            GraphQL in order for the client to be able to edit the sites'
-            content using the CMS dashboard. I was also able to integrate the
-            clients' Google Calendar events into the website to display upcoming
-            events and using react-pdf npm package, display uploaded PDF files
-            with pagination functionality.  
+            This website was originally a PSD to HTML project that I developed.
+            I later rebuilt it using Netlify & Gatsby. Doing this, I was able to
+            increase the speed of the website from 32% (according to Google
+            PageSpeed Insights) to 66%, while also enabling the client to
+            publish changes to the sites' content using Netlify's CMS dashboard.
 
 
-            The current live site (https://cellardoor101.com) is the version I
-            built with HTML, CSS, and JavaScript. To view the
+            The current live site (https://cellardoor101.com) is the original
+            PSD to HTML version of the project. To view the
 
-            code for the current live site version, please visit
-            https://github.com/middlestate/CellarDoor . The website linked below
-            is the rebuild and is expected to launch soon.
+            code for the live site version, please visit
+            https://github.com/middlestate/CellarDoor . Linked below is the
+            Netlify/Gatsby rebuild and is expected to launch soon.
           image: /img/cellardoor.png
           repo_link: >-
             https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
