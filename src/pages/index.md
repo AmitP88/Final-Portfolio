@@ -43,8 +43,9 @@ middlestate:
             This website was originally a PSD to HTML project that I developed.
             I later rebuilt it using Netlify & Gatsby. Doing this, I was able to
             increase the speed of the website from 32% (according to Google
-            PageSpeed Insights) to 66%, while also enabling the client to
-            publish changes to the sites' content using Netlify's CMS dashboard.
+            PageSpeed Insights) to 66% for mobile and from 92% to 94% for
+            desktop, while also enabling the client to publish changes to the
+            sites' content using Netlify's CMS dashboard.
 
 
             The current live site (https://cellardoor101.com) is the original
