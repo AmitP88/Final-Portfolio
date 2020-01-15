@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Gilroy-Light;
+  src: url(fonts/Gilroy-Light.otf) format("opentype");
+}
+
+@font-face {
   font-family: Montserrat-Light;
   src: url(fonts/Montserrat-Light.ttf) format("truetype");
 }
