@@ -85,7 +85,7 @@ html
   .hero_title
     color: white
     font-weight: bold
-    font-size: x-large
+    font-size: xx-large
   .hero_subtitle
     color: aliceblue
     font-size: larger
@@ -115,6 +115,7 @@ html
     height: 90%
     width: 100%
     padding: 10px
+    margin: 0 auto
     margin-bottom: 20px
     display: flex
     align-items: center
@@ -123,17 +124,12 @@ html
     text-align: center
     color: #6E6F73
     font-family: Gilroy-Bold
-    // text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.2)
     a > img
-      height: 2em
+      height: 3em
       width: auto
       max-width: fit-content
   .project_container
     margin-bottom: 10%
-    // border: 0.1px solid darkgray
-    // -webkit-box-shadow: 10px 10px 6px -7px rgba(186,186,186,1)
-    // -moz-box-shadow: 10px 10px 6px -7px rgba(186,186,186,1)
-    // box-shadow: 10px 10px 6px -7px rgba(186,186,186,1)
     .column-1
       z-index: 0
     .column-2
@@ -507,8 +503,15 @@ footer
     font-weight: bold
     padding: 0 20px
 
+// @media screen and (min-width: 320px) and (max-width: 425px)
+//   .middlestate
+//     .header
+//       width: 100%
 
-
+@media screen and (min-width: 375px) and (max-width: 795px)
+  .middlestate
+    .header
+      width: min-content
 
 @media screen and (min-width: 320px) and (max-width: 600px)
   /* Hero Section */
@@ -518,8 +521,6 @@ footer
     background-position: top center
     position: relative
     height: 100%
-    .hero_title, .hero_subtitle
-      text-align: center
     .layer
       background: none !important
     .skills_list_container
@@ -528,13 +529,13 @@ footer
   /* MiddleState Section */
   .middlestate
     .header
-      font-size: x-large
+      font-size: xx-large
+      margin: 0 auto
     .project_container
       .column-2
         .col-2-content
-          .project_header
-            .tech_used
-              padding: 0 30px
+          .description
+            padding: 0
           .buttons_container
             display: flex
             flex-direction: column
@@ -580,12 +581,13 @@ footer
   .built-with, .copyright
     display: none
 
-@media screen and (min-width: 437px)
-  /* MiddleState Section */
+@media screen and (min-width: 525px) and (max-width: 600px)
   .middlestate
     .header
+      a > img
+        height: 5em
       h1
-        height: 2em
+        font-size: -webkit-xxx-large
 
 @media screen and (min-width: 601px)
   /* Hero Section */
@@ -603,9 +605,9 @@ footer
   .middlestate
     margin-top: 5%
     .header
-      font-size: xx-large
+      font-size: -webkit-xxx-large
       h1
-        height: 2em
+        height: 3em
     .project_container
       .column-2
         .buttons_container
@@ -758,6 +760,20 @@ footer
   /* Footer */
   footer
     justify-content: space-between
+
+@media screen and (min-width: 779px) and (max-width: 795px)
+  /* MiddleState Section */
+  .middlestate
+    .header
+      h1
+        height: 3em
+
+@media screen and (min-width: 796px)
+  /* MiddleState Section */
+  .middlestate
+    .header
+      h1
+        height: 2em
 
 @media screen and (min-width: 1024px)
   /* NavBar */
