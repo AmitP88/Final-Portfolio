@@ -29,9 +29,10 @@ middlestate:
           business_type: Music Festival
           description: >-
             This project was a completed website that was handed to me to revamp
-            the homepage layout and include updated content. I learned about
-            Jade and Pug, their similarities compared to HTML and CSS, and also
-            how to work with another developers' code.
+            the homepage using a new layout and new content.
+
+            I learned about Jade and Pug, their similarities compared to HTML
+            and CSS, and also how to work with another developers' code.
           image: /img/grizzlyfest.png
           repo_link: 'https://github.com/middlestate/grizzlyfest'
           tech_used: 'Jade, Pug'
