@@ -73,44 +73,4 @@ collections:
                 {label: Title, name: title, widget: string}
               ]
             }
-          - {
-              label: Tom,
-              name: tom,
-              widget: object,
-              fields: [
-                {label: Image, name: image, widget: image},
-                {label: Quote, name: quote, widget: text},
-                {label: Name, name: name, widget: string},
-                {label: Title, name: title, widget: string}
-              ]
-            }
-        - label: Personal Projects Section
-          name: personal
-          widget: object
-          fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Background Image, name: background_image, widget: image}
-          - label: Projects
-            name: personal_projects
-            widget: object
-            fields:
-            - label: Projects List
-              name: personal_projects_list
-              widget: list
-              fields:
-              - label: Project
-                name: project
-                widget: object
-                fields:
-                - {label: Image, name: image, widget: image}
-                - {label: Title, name: title, widget: string}
-                - {label: Description, name: description, widget: text}
-                - label: Tech List
-                  name: tech_list
-                  widget: list
-                  fields:
-                  - label: Tech
-                    name: tech
-                    widget: string
-                - {label: Demo Link, name: demo, widget: string}
-                - {label: GitHub Link, name: github, widget: string}
+            

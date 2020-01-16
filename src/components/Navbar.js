@@ -39,7 +39,6 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -60,11 +59,6 @@ const Navbar = class extends React.Component {
             <li className='navItem'>
               <Link to='/#middlestate'>MiddleState</Link>            
             </li>
-            {/*
-              <li className='navItem'>
-                <Link to='/#personal'>Personal Projects</Link>            
-              </li>            
-            */}
             <li className='navItem'>
               <Link to='/#messageme'>Message Me</Link>            
             </li>

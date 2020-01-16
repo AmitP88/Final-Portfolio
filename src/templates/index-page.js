@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import Hero from '../components/sections/Hero'
 import MiddleState from '../components/sections/MiddleState'
 import Testimonials from '../components/sections/Testimonials'
-import PersonalProjects from '../components/sections/PersonalProjects'
 import MessageMe from '../components/sections/MessageMe'
 
 import Layout from '../components/Layout'
@@ -21,10 +20,6 @@ export const IndexPageTemplate = ({
   mdst_title,
   mdst_projects,
   ryan,
-  tom,
-  personal_background,
-  personal_title,
-  personal_projects,
 }) => (
   <div className='homepage'>
     <Hero 
@@ -41,15 +36,7 @@ export const IndexPageTemplate = ({
     />
     <Testimonials
       ryan={ryan}
-      tom={tom}
     />
-    {/*
-      <PersonalProjects
-        // background_image={personal_background}
-        title={personal_title}
-        gridItems={personal_projects.personal_projects_list}
-      />    
-    */}
     <MessageMe />
   </div>
 )
@@ -69,10 +56,6 @@ const IndexPage = ({ data }) => {
         mdst_title={frontmatter.middlestate.title}
         mdst_projects={frontmatter.middlestate.mdst_projects}
         ryan={frontmatter.testimonials.ryan}
-        // tom={frontmatter.testimonials.tom}
-        // personal_background={frontmatter.personal.background_image}
-        // personal_title={frontmatter.personal.title}
-        // personal_projects={frontmatter.personal.personal_projects}
       />
     </Layout>
   )
@@ -92,12 +75,6 @@ IndexPageTemplate.propTypes = {
     mdst_projects_list: PropTypes.array,
   }),
   ryan: PropTypes.object,
-  // tom: PropTypes.object,
-  // personal_background: PropTypes.string,
-  // personal_title: PropTypes.string,
-  // personal_projects: PropTypes.shape({
-  //   personal_projects_list: PropTypes.array,
-  // }),
 }
 
 IndexPage.propTypes = {
@@ -114,7 +91,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-
         hero {
           background_image
           title
@@ -125,7 +101,6 @@ export const pageQuery = graphql`
             }
           }
         }
-
         middlestate {
           icon
           icon_link
@@ -144,7 +119,6 @@ export const pageQuery = graphql`
             }
           }
         }
-
         testimonials {
           ryan {
             image
@@ -152,34 +126,7 @@ export const pageQuery = graphql`
             name
             title
           }
-
-          tom {
-            image
-            quote
-            name
-            title
-          }
         }
-
-        personal {
-          background_image
-          title
-          personal_projects {
-            personal_projects_list {
-              project {
-                description
-                image
-                tech_list {
-                  tech
-                }
-                title
-                demo
-                github             
-              }
-            }
-          }
-        }
-
       }
     }
   }
