@@ -26,7 +26,7 @@ const MessageMe = () => {
             </div>
             <div className="field">
               <label htmlFor="email">Email Address</label>
-              <input type="text" name="email" id="email" required />
+              <input type="email" name="email" id="email" required />
             </div>          
           </div>
           <div className="row">
