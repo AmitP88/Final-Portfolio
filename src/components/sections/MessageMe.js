@@ -22,27 +22,27 @@ const MessageMe = () => {
           <div className="row">
             <div className="field">
               <label htmlFor="name">Your Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" required />
             </div>
             <div className="field">
               <label htmlFor="email">Email Address</label>
-              <input type="text" name="email" id="email" />
+              <input type="text" name="email" id="email" required />
             </div>          
           </div>
           <div className="row">
             <div className="field">
               <label htmlFor="phone-number">Phone</label>
-              <input type="text" name="phone-number" id="phone-number" />
+              <input type="text" name="phone-number" id="phone-number" required />
             </div>
             <div className="field">
               <label htmlFor="company">Company</label>
-              <input type="text" name="company" id="company" />
+              <input type="text" name="company" id="company" required />
             </div>          
           </div>
           <div className="row">
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="6" />
+              <textarea name="message" id="message" rows="6" required />
             </div>
             <ul className="actions">
               <li>
