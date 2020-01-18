@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// Load method categories.
+var array = require('lodash/array')
+
 const Hero = ({ background_image, title, subtitle, skillItems }) => (
   <section className='Hero section' id="home" style={
     {
@@ -26,11 +29,21 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
       <h3 className='hero_subtitle animate fadeInLeft two'>{subtitle}</h3>
       <fieldset className='skills_list_container animate fadeInLeft three'>
         <legend>Skills</legend>
-        {skillItems.map(({ skill }, keys) => {
-          return (
-            <p key={keys} className='skill'>{skill}</p>
-          )
-        })}
+        {
+          (array.chunk(skillItems, 5)).map(skilledColumn => {
+            return (
+              <div className="skilledColumn">
+                {
+                  skilledColumn.map(({ skill }, keys) => {
+                    return (
+                      <p key={keys} className='skill'>{skill}</p>                      
+                    )
+                  })
+                }
+              </div>
+            )
+          })
+        }
       </fieldset>
     </div>
 
