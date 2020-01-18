@@ -42,7 +42,7 @@ const MessageMe = () => {
             <div className="field">
               <label htmlFor="company">Company</label>
               <input type="text" name="company" id="company" required />
-            </div>          
+            </div>
           </div>
           <div className="row">
             <div className="field">
