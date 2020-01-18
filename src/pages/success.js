@@ -1,8 +1,8 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import Layout from '../../src/components/Layout';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Layout from '../../src/components/Layout'
 
-import pic11 from '../../static/img/cellardoor.png';
+import message_received from '../../static/img/message_received.png'
 
 const Success = props => (
   <Layout>
@@ -15,10 +15,10 @@ const Success = props => (
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h1>Success/Thank You Page</h1>
+            <h1>Message received! I will get back to you as soon as possible! :)</h1>
           </header>
           <span className="image main">
-            <img src={pic11} alt="" />
+            <img src={message_received} alt="message_received" />
           </span>
           <p>Thank you for contacting us!</p>
         </div>
