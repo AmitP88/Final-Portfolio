@@ -30,9 +30,9 @@ const Hero = ({ background_image, title, subtitle, skillItems }) => (
       <fieldset className='skills_list_container animate fadeInLeft three'>
         <legend>Skills</legend>
         {
-          (array.chunk(skillItems, 5)).map(skilledColumn => {
+          (array.chunk(skillItems, 5)).map((skilledColumn, index) => {
             return (
-              <div className="skilledColumn">
+              <div key={index} className="skilledColumn">
                 {
                   skilledColumn.map(({ skill }, keys) => {
                     return (
