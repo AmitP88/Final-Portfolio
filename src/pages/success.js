@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/layout';
+import Layout from '../../src/components/Layout';
 
 import pic11 from '../../static/img/cellardoor.png';
 
