@@ -1,5 +1,10 @@
 import React from 'react'
 import PhoneInput from "react-phone-input-auto-format"
+import styled from "styled-components"
+ 
+const Input = styled.input`
+  font-size: large;
+`
 
 const onChange = phoneNumber => {
   // do something with the phone number
@@ -37,7 +42,7 @@ const MessageMe = () => {
           <div className="row">
             <div className="field">
               <label htmlFor="phone-number">Phone</label>
-              <PhoneInput onChange={onChange} required />
+              <PhoneInput onChange={onChange} inputComponent={Input} required />
             </div>
             <div className="field">
               <label htmlFor="company">Company</label>
