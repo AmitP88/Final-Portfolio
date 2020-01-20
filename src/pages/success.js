@@ -15,7 +15,7 @@ const Success = props => (
     </Helmet>
 
     <div className="success_container">
-      <h1>Message received! I'll get back to you as soon as possible! :)</h1>
+      <h1>Message received! I'll get back to you as soon as possible :)</h1>
       <img src={message_received} alt="message_received" />
       <Link className="home_icon" to='/'>
         <FontAwesomeIcon icon={'arrow-left'} size="2x" />
