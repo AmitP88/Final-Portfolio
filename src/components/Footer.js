@@ -17,7 +17,10 @@ const Footer = class extends React.Component {
             <FontAwesomeIcon icon={'envelope-square'} size="2x" />        
           </a>        
         </div>
-        <p className="copyright">&copy; 2020 Amit </p>
+        <p className="copyright">
+          <img src="/img/white_logo_transparent_background.png" alt="white_logo" />
+          &copy; 2020
+        </p>
       </footer>
     )
   }
