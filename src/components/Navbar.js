@@ -53,14 +53,21 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <li className='navItem'>
-              <Link to='/#home'>Home</Link>            
+            <li className='logo-header'>
+              <Link to='/#home'>
+                <img src="/img/logo_transparent_background.png" alt="logo" />
+              </Link>            
             </li>
-            <li className='navItem'>
-              <Link to='/#middlestate'>MiddleState</Link>            
-            </li>
-            <li className='navItem'>
-              <Link to='/#messageme'>Message Me</Link>            
+            <li className="navItem_container">
+              <div className='navItem'>
+                <Link to='/#home'>Home</Link>            
+              </div>
+              <div className='navItem'>
+                <Link to='/#middlestate'>MiddleState</Link>            
+              </div>
+              <div className='navItem'>
+                <Link to='/#messageme'>Message Me</Link>            
+              </div>            
             </li>
           </ul>
         </div>

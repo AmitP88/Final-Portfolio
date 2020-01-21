@@ -126,6 +126,12 @@ html
   a
     color: black
 
+.logo-header
+  width: 200px
+.logo-header:hover
+  border-bottom: none
+  cursor: pointer
+
 /* Hero Section */
 .intro
   padding: 2.5% 8%
@@ -714,21 +720,31 @@ footer
     height: 70px
     .navbar-menu
       display: flex
-      justify-content: flex-end
+      justify-content: space-between
       padding-right: 10%
-      padding-top: 20px
-      padding-bottom: 20px
+      padding-left: 10%
+      padding-top: 10px
+      padding-bottom: 10px
       position: fixed
       top: 0
-    .navItem:after
-      display: block
-      content: ''
-      border-bottom: 1px solid deepskyblue
-      transform: scaleX(0)
-      transition: transform 250ms ease-in-out
-      padding-top: 2px
-    .navItem:hover:after
-      transform: scaleX(1)
+    .navItem_container
+      display: flex
+      .navItem
+        position: relative
+        top: 40%
+        height: fit-content
+        -webkit-transform: translateY(-60%)
+        -ms-transform: translateY(-60%)
+        transform: translateY(-60%)
+      .navItem:after
+        display: block
+        content: ''
+        border-bottom: 1px solid deepskyblue
+        transform: scaleX(0)
+        transition: transform 250ms ease-in-out
+        padding-top: 2px
+      .navItem:hover:after
+        transform: scaleX(1)
 
   /* Hero Section */
   .Hero
