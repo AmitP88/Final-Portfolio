@@ -54,7 +54,9 @@ middlestate:
 
             code for the live site version, please visit
             https://github.com/middlestate/CellarDoor . Linked below is the
-            Netlify/Gatsby rebuild and is expected to launch soon.
+            Netlify/Gatsby rebuild and is expected to launch soon. In the
+            meantime, I am continuing to make improvements to the optimization
+            and other areas of the site.
           image: /img/cellardoor.png
           repo_link: >-
             https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
