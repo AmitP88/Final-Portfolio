@@ -46,23 +46,13 @@ middlestate:
             increase the speed of the website from 32% (according to Google
             PageSpeed Insights) to 66% for mobile and from 92% to 94% for
             desktop, while also enabling the client to publish changes to the
-            sites' content using Netlify's CMS dashboard.
-
-
-            The current live site (https://cellardoor101.com) is the original
-            PSD to HTML version of the project. To view the
-
-            code for the live site version, please visit
-            https://github.com/middlestate/CellarDoor . Linked below is the
-            Netlify/Gatsby rebuild and is expected to launch soon. I'm
-            continuing to make improvements to the performance of the site, as
-            well as other areas.
+            sites' content using Netlify's CMS dashboard. I'm continuing to make
+            improvements to the performance of the site, as well as other areas.
           image: /img/cellardoor.png
-          repo_link: >-
-            https://github.com/middlestate/Cellar-Door-netlify-gatsby/tree/the-doors
+          repo_link: 'https://github.com/middlestate/Cellar-Door-netlify-gatsby'
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: Cellar Door
-          website_link: 'https://cellar-door-rebuild.netlify.com/'
+          website_link: 'https://cellardoor101.com/'
       - project:
           business_type: Blockchain Company
           description: >-
