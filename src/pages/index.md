@@ -15,7 +15,7 @@ hero:
       - skill: Gatsby
       - skill: Sass
   subtitle: >-
-    I'm currently working for MiddleState, LLC - a design company in Visalia,
+    I'm currently working for Middlestate, LLC - a design company in Visalia,
     CA. I'm also on the job hunt and looking to take my skills to the next
     level. I enjoy building React projects, working with JavaScript, and
     creating UIs that look interesting. Let's build something awesome.  
@@ -66,7 +66,7 @@ middlestate:
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: DataHarvest
           website_link: 'https://new-dataharvest.netlify.com/'
-  title: MiddleState Projects
+  title: Middlestate Projects
 testimonials:
   ryan:
     image: /img/ryan.png
@@ -75,6 +75,6 @@ testimonials:
       "Amit has a great work ethic, anytime day or night he is ready to help.
       He's always looking to learn and try new stuff.  His attitude about new
       challenges is great and works well in a group or solo." 
-    title: MiddleState Founder - Director of Technology
+    title: Middlestate Founder - Director of Technology
 ---
 

@@ -68,7 +68,7 @@ const Navbar = class extends React.Component {
                 <Link to='/#home'>Home</Link>            
               </div>
               <div className='navItem' onClick={() => this.toggleHamburger()}>
-                <Link to='/#middlestate'>MiddleState</Link>            
+                <Link to='/#middlestate'>Middlestate</Link>            
               </div>
               <div className='navItem' onClick={() => this.toggleHamburger()}>
                 <Link to='/#messageme'>Message Me</Link>            
