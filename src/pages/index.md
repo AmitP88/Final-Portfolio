@@ -19,9 +19,8 @@ hero:
       - skill: Sass
   subtitle: >-
     I'm currently working for Middlestate, LLC - a design company in Visalia,
-    CA. I'm also on the job hunt and looking to take my skills to the next
-    level. I enjoy building React projects, working with JavaScript, and
-    creating UIs that look interesting. Let's build something awesome.  
+    CA. Due to the pandemic and the demand for e-commerce, I've learned Shopify
+    theme development and am looking to get hired as a Shopify Developer.
   title: Hi! I'm Amit and I'm a Front End Developer
 middlestate:
   icon: /img/white_mdst_logo.jpg
