@@ -7,16 +7,16 @@ hero:
       - skill: HTML5
       - skill: CSS3
       - skill: JavaScript (ES6)
-      - skill: Responsive Design
       - skill: Git
+      - skill: Responsive Design
+      - skill: Shopify
+      - skill: Liquid
+      - skill: ThemeKit
+      - skill: jQuery
       - skill: React
       - skill: NetlifyCMS
       - skill: Gatsby
       - skill: Sass
-      - skill: Shopify
-      - skill: Liquid
-      - skill: jQuery
-      - skill: ThemeKit
   subtitle: >-
     I'm currently working for Middlestate, LLC - a design company in Visalia,
     CA. I'm also on the job hunt and looking to take my skills to the next
