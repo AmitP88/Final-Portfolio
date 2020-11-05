@@ -17,6 +17,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         title={data.hero.title}
         subtitle={data.hero.subtitle}
         skills_list={{ skills }}
+        shopify_icon={data.shopify.icon}
+        shopify_title={data.shopify.title}
         mdst_icon={data.middlestate.icon}
         mdst_icon_link={data.middlestate.icon_link}
         mdst_title={data.middlestate.title}
