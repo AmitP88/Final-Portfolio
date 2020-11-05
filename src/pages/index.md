@@ -22,6 +22,9 @@ hero:
     CA. Due to the pandemic and the demand for e-commerce, I've learned Shopify
     theme development and am looking to get hired as a Shopify Developer.
   title: Hi! I'm Amit and I'm a Front End Developer
+shopify:
+  icon: /img/shopify_icon.png
+  title: Shopify Projects
 middlestate:
   icon: /img/white_mdst_logo.jpg
   icon_link: 'https://www.middlestate.com/'

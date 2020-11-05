@@ -170,6 +170,28 @@ html
       letter-spacing: 1.5px
       font-size: larger
 
+/* Shopify Section */
+.shopify
+  margin: 10%
+    .header
+    height: 90%
+    width: 100%
+    padding: 10px
+    margin: 0 auto
+    margin-bottom: 10%
+    border-bottom: 1px solid deepskyblue
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: none
+    text-align: center
+    color: #6E6F73
+    font-family: Gilroy-Bold
+    img
+      height: 3em
+      width: auto
+      max-width: fit-content
+
 /* MiddleState Section */
 .middlestate
   margin: 10%
@@ -401,7 +423,7 @@ footer
       margin-right: 10px
 
 @media screen and (min-width: 375px) and (max-width: 795px)
-  .middlestate
+  .shopify, .middlestate
     .header
       width: min-content
 
@@ -440,7 +462,7 @@ footer
             width: max-content
 
   /* MiddleState Section */
-  .middlestate
+  .shopify, .middlestate
     .header
       font-size: xx-large
       margin: 0 auto
@@ -499,6 +521,12 @@ footer
     display: none
 
 @media screen and (min-width: 525px) and (max-width: 600px)
+  .shopify
+    .header
+      img
+        height: 5em
+      h1
+        font-size: -webkit-xxx-large
   .middlestate
     .header
       a > img
@@ -522,8 +550,8 @@ footer
         .skill
           font-size: larger
 
-  /* MiddleState Section */
-  .middlestate
+  /* Shopify & MiddleState Section */
+  .shopify, .middlestate
     margin-top: 5%
     .header
       font-size: -webkit-xxx-large
@@ -723,15 +751,15 @@ footer
             transform: translateY(-50%)
 
 @media screen and (min-width: 779px) and (max-width: 795px)
-  /* MiddleState Section */
-  .middlestate
+  /* Shopify & MiddleState Section */
+  .shopify, .middlestate
     .header
       h1
         height: 3em
 
 @media screen and (min-width: 796px)
-  /* MiddleState Section */
-  .middlestate
+  /* Shopify & MiddleState Section */
+  .shopify, .middlestate
     .header
       h1
         height: 2em
@@ -795,8 +823,8 @@ footer
             margin-right: 10%
             font-size: x-large          
 
-  /* MiddleState */
-  .middlestate
+  /* Shopify & MiddleState */
+  .shopify, .middlestate
     .header
       font-size: -webkit-xxx-large
     .project_container

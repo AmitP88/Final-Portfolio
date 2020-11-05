@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Hero from '../components/sections/Hero'
+import Shopify from '../components/sections/Shopify'
 import MiddleState from '../components/sections/MiddleState'
 import Testimonials from '../components/sections/Testimonials'
 import MessageMe from '../components/sections/MessageMe'
@@ -15,6 +16,8 @@ export const IndexPageTemplate = ({
   title,
   subtitle,
   skills_list,
+  shopify_icon,
+  shopify_title,
   mdst_icon,
   mdst_icon_link,
   mdst_title,
@@ -27,6 +30,10 @@ export const IndexPageTemplate = ({
       title={title}
       subtitle={subtitle}
       skillItems={skills_list.skills}
+    />
+    <Shopify
+      icon={shopify_icon}
+      title={shopify_title}
     />
     <MiddleState
       icon={mdst_icon}
@@ -51,6 +58,8 @@ const IndexPage = ({ data }) => {
         title={frontmatter.hero.title}
         subtitle={frontmatter.hero.subtitle}
         skills_list={frontmatter.hero.skills_list}
+        shopify_icon={frontmatter.shopify.icon}
+        shopify_title={frontmatter.shopify.title}
         mdst_icon={frontmatter.middlestate.icon}
         mdst_icon_link={frontmatter.middlestate.icon_link}
         mdst_title={frontmatter.middlestate.title}
@@ -68,6 +77,8 @@ IndexPageTemplate.propTypes = {
   skills_list: PropTypes.shape({
     skills: PropTypes.array,
   }),
+  shopify_icon: PropTypes.string,
+  shopify_title: PropTypes.string,
   mdst_icon: PropTypes.string,
   mdst_icon_link: PropTypes.string,
   mdst_title: PropTypes.string,
@@ -100,6 +111,10 @@ export const pageQuery = graphql`
               skill
             }
           }
+        }
+        shopify {
+          icon
+          title
         }
         middlestate {
           icon

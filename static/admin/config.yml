@@ -32,6 +32,12 @@ collections:
               - label: Skill
                 name: skill
                 widget: string
+        - label: Shopify Section
+          name: shopify
+          widget: object
+          fields:
+          - {label: Icon, name: icon, widget: image}
+          - {label: Title, name: title, widget: string}
         - label: MiddleState Section
           name: middlestate
           widget: object
