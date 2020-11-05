@@ -12,3 +12,8 @@
   font-family: Montserrat-Light;
   src: url(fonts/Montserrat-Light.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: Myriad-Pro-Black-Italic;
+  src: url(fonts/Myriad-Pro-Black-Italic.otf) format("opentype");
+}
