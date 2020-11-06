@@ -38,6 +38,7 @@ collections:
           fields:
           - {label: Icon, name: icon, widget: image}
           - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
         - label: MiddleState Section
           name: middlestate
           widget: object

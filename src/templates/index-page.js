@@ -18,6 +18,7 @@ export const IndexPageTemplate = ({
   skills_list,
   shopify_icon,
   shopify_title,
+  shopify_description,
   mdst_icon,
   mdst_icon_link,
   mdst_title,
@@ -35,6 +36,7 @@ export const IndexPageTemplate = ({
     <Shopify
       icon={shopify_icon}
       title={shopify_title}
+      description={shopify_description}
     />
     <MiddleState
       icon={mdst_icon}
@@ -62,6 +64,7 @@ const IndexPage = ({ data }) => {
         skills_list={frontmatter.hero.skills_list}
         shopify_icon={frontmatter.shopify.icon}
         shopify_title={frontmatter.shopify.title}
+        shopify_description={frontmatter.shopify.description}
         mdst_icon={frontmatter.middlestate.icon}
         mdst_icon_link={frontmatter.middlestate.icon_link}
         mdst_title={frontmatter.middlestate.title}
@@ -82,6 +85,7 @@ IndexPageTemplate.propTypes = {
   }),
   shopify_icon: PropTypes.string,
   shopify_title: PropTypes.string,
+  shopify_description: PropTypes.string,
   mdst_icon: PropTypes.string,
   mdst_icon_link: PropTypes.string,
   mdst_title: PropTypes.string,
@@ -119,6 +123,7 @@ export const pageQuery = graphql`
         shopify {
           icon
           title
+          description
         }
         middlestate {
           icon

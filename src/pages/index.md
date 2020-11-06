@@ -25,6 +25,8 @@ hero:
 shopify:
   icon: /img/shopify_icon.png
   title: Shopify Projects
+  description: >-
+    These are Shopify development stores that I've customized from downloaded free themes from the Shopify Theme store. Below is the process that I took to convert downloaded PSDs of e-commerce sites to Shopify sites, as well as installing and customizing required Shopify plugins. Below the process description are the actual Shopify store projects. They are still a work in progress, but here's what I have so far.
 middlestate:
   description: >-
     These were the projects I did for Middlestate, LLC. These were contract jobs
