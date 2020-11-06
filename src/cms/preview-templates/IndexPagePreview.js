@@ -22,6 +22,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         mdst_icon={data.middlestate.icon}
         mdst_icon_link={data.middlestate.icon_link}
         mdst_title={data.middlestate.title}
+        mdst_description={data.middlestate.description}
         mdst_projects={{ mdst_projects_list }}
         ryan={data.testimonials.ryan}
       />

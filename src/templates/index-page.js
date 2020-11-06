@@ -21,6 +21,7 @@ export const IndexPageTemplate = ({
   mdst_icon,
   mdst_icon_link,
   mdst_title,
+  mdst_description,
   mdst_projects,
   ryan,
 }) => (
@@ -39,6 +40,7 @@ export const IndexPageTemplate = ({
       icon={mdst_icon}
       icon_link={mdst_icon_link}
       title={mdst_title}
+      description={mdst_description}
       gridItems={mdst_projects.mdst_projects_list}
     />
     <Testimonials
@@ -63,6 +65,7 @@ const IndexPage = ({ data }) => {
         mdst_icon={frontmatter.middlestate.icon}
         mdst_icon_link={frontmatter.middlestate.icon_link}
         mdst_title={frontmatter.middlestate.title}
+        mdst_description={frontmatter.middlestate.description}
         mdst_projects={frontmatter.middlestate.mdst_projects}
         ryan={frontmatter.testimonials.ryan}
       />
@@ -82,6 +85,7 @@ IndexPageTemplate.propTypes = {
   mdst_icon: PropTypes.string,
   mdst_icon_link: PropTypes.string,
   mdst_title: PropTypes.string,
+  mdst_description: PropTypes.string,
   mdst_projects: PropTypes.shape({
     mdst_projects_list: PropTypes.array,
   }),
@@ -120,6 +124,7 @@ export const pageQuery = graphql`
           icon
           icon_link
           title
+          description
           mdst_projects {
             mdst_projects_list {
               project {

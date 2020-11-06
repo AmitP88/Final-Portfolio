@@ -3,15 +3,16 @@ import PropTypes from 'prop-types'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const MiddleState = ({ icon, icon_link, title, gridItems }) => {
+const MiddleState = ({ icon, icon_link, title, description, gridItems }) => {
   return (
     <div className="middlestate" id="middlestate">
       <div className="header">
         <a href={icon_link}>
           <img src={icon} alt="middlestate_icon" />        
         </a>
-        <h1>{title}</h1>      
+        <h1>{title}</h1>
       </div>
+      <p className="section_description">{description}</p>       
       {gridItems.map(({ project = {image: '', title: '', tech_used: '', description: '', website_link: '', repo_link: ''} }, keys) => {
         return (
           <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
@@ -55,6 +56,7 @@ MiddleState.propTypes = {
   icon: PropTypes.string,
   icon_link: PropTypes.string,
   title: PropTypes.string,
+  description: PropTypes.string,
   mdst_projects: PropTypes.shape({
     mdst_projects_list: PropTypes.shape({
       project: PropTypes.shape({
