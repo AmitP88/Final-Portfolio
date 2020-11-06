@@ -26,11 +26,12 @@ shopify:
   icon: /img/shopify_icon.png
   title: Shopify Projects
 middlestate:
+  description: >-
+    These were the projects I did for Middlestate, LLC. These were contract jobs
+    for which I also did periodic updates to add new content/features. The
+    technologies that I used were mainly NetlifyCMS, Gatsby, and Sass. 
   icon: /img/white_mdst_logo.jpg
   icon_link: 'https://www.middlestate.com/'
-  description: >-
-    These were the projects I did for Middlestate, LLC. These were
-    contract jobs for which I also did periodic updates to add new content/features.
   mdst_projects:
     mdst_projects_list:
       - project:
