@@ -19,6 +19,15 @@ export const IndexPageTemplate = ({
   shopify_icon,
   shopify_title,
   shopify_description,
+  shopify_subsection_1_title,
+  shopify_step_1,
+  shopify_step_1_image,
+  shopify_step_2_image,
+  shopify_step_3_image,
+  shopify_step_4_image,
+  shopify_step_5_image,
+  shopify_step_6_image,
+  shopify_step_7_image,
   mdst_icon,
   mdst_icon_link,
   mdst_title,
@@ -37,6 +46,14 @@ export const IndexPageTemplate = ({
       icon={shopify_icon}
       title={shopify_title}
       description={shopify_description}
+      subsection_1_title={shopify_subsection_1_title}
+      step_1_image={shopify_step_1_image}
+      step_2_image={shopify_step_2_image}
+      step_3_image={shopify_step_3_image}
+      step_4_image={shopify_step_4_image}
+      step_5_image={shopify_step_5_image}
+      step_6_image={shopify_step_6_image}
+      step_7_image={shopify_step_7_image}
     />
     <MiddleState
       icon={mdst_icon}
@@ -65,6 +82,14 @@ const IndexPage = ({ data }) => {
         shopify_icon={frontmatter.shopify.icon}
         shopify_title={frontmatter.shopify.title}
         shopify_description={frontmatter.shopify.description}
+        shopify_subsection_1_title={frontmatter.shopify.subsection_1_title}
+        shopify_step_1_image={frontmatter.shopify.step_1_image}
+        shopify_step_2_image={frontmatter.shopify.step_2_image}
+        shopify_step_3_image={frontmatter.shopify.step_3_image}
+        shopify_step_4_image={frontmatter.shopify.step_4_image}
+        shopify_step_5_image={frontmatter.shopify.step_5_image}
+        shopify_step_6_image={frontmatter.shopify.step_6_image}
+        shopify_step_7_image={frontmatter.shopify.step_7_image}
         mdst_icon={frontmatter.middlestate.icon}
         mdst_icon_link={frontmatter.middlestate.icon_link}
         mdst_title={frontmatter.middlestate.title}
@@ -86,6 +111,14 @@ IndexPageTemplate.propTypes = {
   shopify_icon: PropTypes.string,
   shopify_title: PropTypes.string,
   shopify_description: PropTypes.string,
+  shopify_subsection_1_title: PropTypes.string,
+  shopify_step_1_image: PropTypes.string,
+  shopify_step_2_image: PropTypes.string,
+  shopify_step_3_image: PropTypes.string,
+  shopify_step_4_image: PropTypes.string,
+  shopify_step_5_image: PropTypes.string,
+  shopify_step_6_image: PropTypes.string,
+  shopify_step_7_image: PropTypes.string,
   mdst_icon: PropTypes.string,
   mdst_icon_link: PropTypes.string,
   mdst_title: PropTypes.string,
@@ -124,6 +157,14 @@ export const pageQuery = graphql`
           icon
           title
           description
+          subsection_1_title
+          step_1_image
+          step_2_image
+          step_3_image
+          step_4_image
+          step_5_image
+          step_6_image
+          step_7_image
         }
         middlestate {
           icon

@@ -27,6 +27,14 @@ shopify:
   title: Shopify Projects
   description: >-
     These are Shopify development stores that I've customized from downloaded free themes from the Shopify Theme store. Below is the process that I took to convert downloaded PSDs of e-commerce sites to Shopify sites, as well as installing and customizing required Shopify plugins. Below the process description are the actual Shopify store projects. They are still a work in progress, but here's what I have so far.
+  subsection_1_title: The Process
+  step_1_image: /img/mockup_resized.png
+  step_2_image: /img/Brooklyn_theme_small.png
+  step_3_image: /img/setup_themekit.png
+  step_4_image: /img/edit_theme.png
+  step_5_image: /img/online_editor.png
+  step_6_image: /img/apps.png
+  step_7_image: /img/other_pages.png
 middlestate:
   description: >-
     These were the projects I did for Middlestate, LLC. These were contract jobs

@@ -198,9 +198,47 @@ html
     text-align: left
     font-family: Montserrat-Light
     font-size: large
-    letter-spacing: 1px
+    letter-spacing: 0.5px
     word-wrap: break-word
+    margin-bottom: 10%
+  h3
+    font-size: xx-large
+    font-weight: 500
+    border-bottom: 1px solid deeppink
+    color: deeppink
+    margin-bottom: 5%
+  .step:nth-child(odd)
+    display: flex
+    flex-direction: row-reverse
+  .step
+    display: flex
     margin-bottom: 15%
+    .half
+      display: flex
+      align-items: center
+      width: 50%
+      padding-right: 5%
+      img
+        display: block
+        margin: auto
+      .number
+        background-color: transparent
+        margin-bottom: 20px
+        font-family: Montserrat-Light
+        span
+          color: white
+          background-color: cornflowerblue
+          width: 30px
+          border-radius: 50%
+          margin-left: 5px
+      .description
+        margin-left: 20px
+        font-family: Montserrat-Light
+        font-size: 20px
+        .step_name
+          color: deeppink
+          padding-right: 5px
+          border-bottom: 1px solid deeppink
 
 /* MiddleState Section */
 .middlestate
@@ -227,7 +265,7 @@ html
     text-align: left
     font-family: Montserrat-Light
     font-size: large
-    letter-spacing: 1px
+    letter-spacing: 0.5px
     word-wrap: break-word
     margin-bottom: 15%
   .project_container
@@ -266,7 +304,7 @@ html
         padding: 0 10%
         margin-top: 20px
         font-family: Montserrat-Light
-        letter-spacing: 1px
+        letter-spacing: 0.5px
         word-wrap: break-word
       .buttons_container
         padding: 20px
@@ -477,6 +515,29 @@ footer
         .skilledColumn
           .skill
             width: max-content
+  
+  /* Shopify Section */
+  .shopify
+    .step
+      display: flex
+      flex-direction: column
+      .half
+        width: 100%
+        .number
+          width: 100%
+          margin-top: 20%
+        .description
+          margin-bottom: 20%
+    .step:nth-child(odd)
+      display: flex
+      flex-direction: column
+      .half
+        width: 100%
+        .number
+          width: 100%
+          margin-top: 20%
+        .description
+          margin-bottom: 20%
 
   /* MiddleState Section */
   .shopify, .middlestate
@@ -544,6 +605,8 @@ footer
         height: 5em
       h1
         font-size: -webkit-xxx-large
+    h3
+      width: 300px
   .middlestate
     .header
       a > img
@@ -574,6 +637,8 @@ footer
       font-size: -webkit-xxx-large
       h1
         height: 3em
+    h3
+      width: 300px
     .project_container
       .column-2
         .buttons_container

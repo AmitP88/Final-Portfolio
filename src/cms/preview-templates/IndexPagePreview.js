@@ -20,6 +20,14 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         shopify_icon={data.shopify.icon}
         shopify_title={data.shopify.title}
         shopify_description={data.shopify.description}
+        shopify_subsection_1_title={data.shopify.subsection_1_title}
+        shopify_step_1_image={data.shopify.step_1_image}
+        shopify_step_2_image={data.shopify.step_2_image}
+        shopify_step_3_image={data.shopify.step_3_image}
+        shopify_step_4_image={data.shopify.step_4_image}
+        shopify_step_5_image={data.shopify.step_5_image}
+        shopify_step_6_image={data.shopify.step_6_image}
+        shopify_step_7_image={data.shopify.step_7_image}
         mdst_icon={data.middlestate.icon}
         mdst_icon_link={data.middlestate.icon_link}
         mdst_title={data.middlestate.title}

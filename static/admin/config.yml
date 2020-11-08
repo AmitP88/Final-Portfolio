@@ -39,6 +39,14 @@ collections:
           - {label: Icon, name: icon, widget: image}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: text}
+          - {label: Subsection 1 Title, name: subsection_1_title, widget: string}
+          - {label: Step 1 Image, name: step_1_image, widget: image}
+          - {label: Step 2 Image, name: step_2_image, widget: image}
+          - {label: Step 3 Image, name: step_3_image, widget: image}
+          - {label: Step 4 Image, name: step_4_image, widget: image}
+          - {label: Step 5 Image, name: step_5_image, widget: image}
+          - {label: Step 6 Image, name: step_6_image, widget: image}
+          - {label: Step 7 Image, name: step_7_image, widget: image}
         - label: MiddleState Section
           name: middlestate
           widget: object
