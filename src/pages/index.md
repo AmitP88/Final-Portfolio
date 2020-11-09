@@ -35,6 +35,7 @@ shopify:
   step_5_image: /img/online_editor.png
   step_6_image: /img/apps.png
   step_7_image: /img/other_pages.png
+  project_image: /img/fashion_vector_modified.png
 middlestate:
   description: >-
     These were the projects I did for Middlestate, LLC. These were contract jobs

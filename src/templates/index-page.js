@@ -28,6 +28,7 @@ export const IndexPageTemplate = ({
   shopify_step_5_image,
   shopify_step_6_image,
   shopify_step_7_image,
+  shopify_project_image,
   mdst_icon,
   mdst_icon_link,
   mdst_title,
@@ -54,6 +55,7 @@ export const IndexPageTemplate = ({
       step_5_image={shopify_step_5_image}
       step_6_image={shopify_step_6_image}
       step_7_image={shopify_step_7_image}
+      project_image={shopify_project_image}
     />
     <MiddleState
       icon={mdst_icon}
@@ -90,6 +92,7 @@ const IndexPage = ({ data }) => {
         shopify_step_5_image={frontmatter.shopify.step_5_image}
         shopify_step_6_image={frontmatter.shopify.step_6_image}
         shopify_step_7_image={frontmatter.shopify.step_7_image}
+        shopify_project_image={frontmatter.shopify.project_image}
         mdst_icon={frontmatter.middlestate.icon}
         mdst_icon_link={frontmatter.middlestate.icon_link}
         mdst_title={frontmatter.middlestate.title}
@@ -119,6 +122,7 @@ IndexPageTemplate.propTypes = {
   shopify_step_5_image: PropTypes.string,
   shopify_step_6_image: PropTypes.string,
   shopify_step_7_image: PropTypes.string,
+  shopify_project_image: PropTypes.string,
   mdst_icon: PropTypes.string,
   mdst_icon_link: PropTypes.string,
   mdst_title: PropTypes.string,
@@ -165,6 +169,7 @@ export const pageQuery = graphql`
           step_5_image
           step_6_image
           step_7_image
+          project_image
         }
         middlestate {
           icon

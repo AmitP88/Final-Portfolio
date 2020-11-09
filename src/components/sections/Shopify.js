@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image }) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image, project_image }) => {
   return (
     <div className="shopify" id="shopify">
       <div className="header">
@@ -22,7 +24,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         </div>
         <div className="half">
-          <img src={step_1_image} alt="step 1 image" />
+          <img src={step_1_image} alt="step 1" />
         </div>
       </div>
 
@@ -39,7 +41,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         </div>
         <div className="half">
-          <img src={step_2_image} alt="step 2 image" />
+          <img src={step_2_image} alt="step 2" />
         </div>
       </div>
 
@@ -55,7 +57,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         </div>
         <div className="half">
-          <img src={step_3_image} alt="step 3 image" />
+          <img src={step_3_image} alt="step 3" />
         </div>
       </div>
 
@@ -72,7 +74,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         </div>
         <div className="half">
-          <img src={step_4_image} alt="step 4 image" />
+          <img src={step_4_image} alt="step 4" />
         </div>
       </div>
 
@@ -87,7 +89,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         </div>
         <div className="half">
-          <img src={step_5_image} alt="step 5 image" />
+          <img src={step_5_image} alt="step 5" />
         </div>
       </div>
 
@@ -104,7 +106,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         </div>
         <div className="half">
-          <img src={step_6_image} alt="step 6 image" />
+          <img src={step_6_image} alt="step 6" />
         </div>
       </div>
 
@@ -119,10 +121,46 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         </div>
         <div className="half">
-          <img src={step_7_image} alt="step 7 image" />
+          <img src={step_7_image} alt="step 7" />
         </div>
       </div>
 
+      <h3>Projects</h3>
+
+
+
+    <div className="step">
+      <div className="half">
+        <img src={project_image} alt="fashion" />
+      </div>
+      <div className="half">
+        <div className="content">
+          <div className="project_header">
+            <div className="title">Fashion Llorem</div>
+            <div className="tech_used">HTML, CSS, JS, Shopify, Liquid</div>              
+          </div>
+          <div className="description">Customized free Shopify theme Brooklyn</div>
+          <div className="buttons_container">
+            <a href="#">
+              <button className="website_button">
+                <FontAwesomeIcon icon={'link'} size="2x" />
+                <div className="button_text">Website</div>
+              </button>
+            </a>
+            <a href="#">
+              <button className="repo_button">
+                <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+                <div className="button_text">GitHub</div>
+              </button>
+            </a>
+          </div>              
+        </div>
+      </div>
+    </div>
+
+
+
+      
 
     </div>
   )
@@ -139,7 +177,8 @@ Shopify.propTypes = {
   step_4_image: PropTypes.string,
   step_5_image: PropTypes.string,
   step_6_image: PropTypes.string,
-  step_7_image: PropTypes.string
+  step_7_image: PropTypes.string,
+  project_image: PropTypes.string
 }
 
 export default Shopify
