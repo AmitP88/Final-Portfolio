@@ -129,7 +129,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
 
 
 
-    <div className="step">
+    <div className="step project">
       <div className="half">
         <img src={project_image} alt="fashion" />
       </div>
