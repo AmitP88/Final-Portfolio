@@ -19,7 +19,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
             <p className="number">Step <span>1</span></p>
             <p className="description">
               <span className="step_name">Downloaded a PSD file</span>
-              from a website and created a new Shopify store in the Shopify admin.
+              from a website (https://colorlib.com/wp/free-psd-ecommerce-templates/) after a Google search and created a new Shopify store in the Shopify admin.
             </p>          
           </div>
         </div>
@@ -137,7 +137,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
         <div className="content">
           <div className="project_header">
             <div className="title">Fashion Llorem</div>
-            <div className="tech_used"><span>Built with: </span>HTML, CSS, JS, Shopify, Liquid</div>              
+            <div className="tech_used"><span>Built with: </span>HTML, CSS, JS, Sass, Shopify, Liquid</div>              
           </div>
           <div className="description">
             Downloaded the Fashion Llorem e-commerce PSD mockup
