@@ -151,13 +151,13 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
             editor using Liquid Schemas.
           </div>
           <div className="buttons_container">
-            <a href="#">
+            <a href="https://fashion-lorrem.myshopify.com/">
               <button className="website_button">
                 <FontAwesomeIcon icon={'link'} size="2x" />
                 <div className="button_text">Website</div>
               </button>
             </a>
-            <a href="#">
+            <a href="https://github.com/AmitP88/FASHION">
               <button className="repo_button">
                 <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
                 <div className="button_text">GitHub</div>
