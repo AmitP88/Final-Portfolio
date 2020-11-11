@@ -148,7 +148,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
             Also installed the following Shopify plugins into the site: 
             Auto Multi Currency Converter, Product Reviews, ShareThis Share Buttons,
             Wishlist Plus. Created custom sections and customized online content
-            editor using Liquid Schemas.
+            editor using Liquid Schemas. This site is a work in progress.
           </div>
           <div className="buttons_container">
             <a href="https://fashion-lorrem.myshopify.com/">
