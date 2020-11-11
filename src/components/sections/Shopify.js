@@ -147,7 +147,8 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
             the mockup. Also used Shopify Liquid to render store products.
             Also installed the following Shopify plugins into the site: 
             Auto Multi Currency Converter, Product Reviews, ShareThis Share Buttons,
-            Wishlist Plus
+            Wishlist Plus. Created custom sections and customized online content
+            editor using Liquid Schemas.
           </div>
           <div className="buttons_container">
             <a href="#">

@@ -816,6 +816,25 @@ footer
 
   /* Shopify Section */
   .shopify
+    .project
+      .half
+        .content
+          .description
+            overflow-y: scroll
+            max-height: 120px
+          .force-overflow
+            min-height: 450px
+          .description::-webkit-scrollbar-track
+            padding: 2px 0
+            background-color: lavender
+            border-radius: 20px
+          .description::-webkit-scrollbar
+            width: 10px
+          .description::-webkit-scrollbar-thumb
+            border-radius: 20px
+            background-color: lightblue
+          .description::-webkit-scrollbar-thumb:hover
+            background-color: #88a6b0
     .buttons_container
       display: inherit
       a > .repo_button
@@ -1012,10 +1031,12 @@ footer
   .shopify, .middlestate
     .buttons_container
       display: flex
+      justify-content: center
       button
         color: black
         background-color: white
         font-size: medium
+        margin-bottom: 0
       a> button:hover
         cursor: pointer
         color: white
