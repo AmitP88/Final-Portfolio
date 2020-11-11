@@ -137,9 +137,18 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
         <div className="content">
           <div className="project_header">
             <div className="title">Fashion Llorem</div>
-            <div className="tech_used">HTML, CSS, JS, Shopify, Liquid</div>              
+            <div className="tech_used"><span>Built with: </span>HTML, CSS, JS, Shopify, Liquid</div>              
           </div>
-          <div className="description">Customized free Shopify theme Brooklyn</div>
+          <div className="description">
+            Downloaded the Fashion Llorem e-commerce PSD mockup
+            from https://colorlib.com/wp/free-psd-ecommerce-templates/
+            and added the free Shopify theme Brooklyn to my Shopify Admin.
+            Customized the free theme's elements using HTML, CSS, JS to match
+            the mockup. Also used Shopify Liquid to render store products.
+            Also installed the following Shopify plugins into the site: 
+            Auto Multi Currency Converter, Product Reviews, ShareThis Share Buttons,
+            Wishlist Plus
+          </div>
           <div className="buttons_container">
             <a href="#">
               <button className="website_button">
