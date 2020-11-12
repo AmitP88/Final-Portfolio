@@ -577,6 +577,10 @@ footer
         margin-bottom: 30px
         color: white
         background-color: deepskyblue
+    .project
+      .half
+        img
+          margin: 10% 0
     .step
       display: flex
       flex-direction: column
@@ -586,8 +590,11 @@ footer
         .number
           width: 100%
           margin-top: 20%
+          margin-right: 0
         .description
           margin-bottom: 20%
+          font-size: large
+          margin-left: 0
     .step:nth-child(odd)
       display: flex
       flex-direction: column
@@ -745,13 +752,22 @@ footer
 
   /* Shopify Section */
   .shopify
+    .step
+      .half
+        .content
+          .description
+            font-size: medium            
     .project
       display: block
       .half
         width: 100%
+        img
+          margin: 10% 0
         .content
           margin: 0 auto
         .buttons_container
+          display: flex
+          justify-content: center          
           button
             color: white
             background-color: deepskyblue
