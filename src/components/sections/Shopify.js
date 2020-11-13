@@ -66,9 +66,9 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>4</span></p>
             <p className="description">
-              <span className="step_name">Edit site elements and styles</span>
+              <span className="step_name">Edited site elements and styles</span>
               to match the mockup as close to pixel perfect as possible while taking
-              a mobile-first approach. Use ThemeKit with Visual Studio Code to customize
+              a mobile-first approach. Used ThemeKit with Visual Studio Code to customize
               the theme locally.
             </p>
           </div>
@@ -83,7 +83,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>5</span></p>
             <p className="description">
-              <span className="step_name">Customize the content manager in the Admin</span>
+              <span className="step_name">Customized the content manager in the Admin</span>
               by creating and customizing Schemas in the code using Shopify's Liquid templating language.
             </p>
           </div>
@@ -98,10 +98,10 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>6</span></p>
             <p className="description">
-              <span className="step_name">Install any necessary plugins</span>
-              from Shopify's App store and style the plugin elements on the front end
+              <span className="step_name">Installed the necessary plugins</span>
+              from Shopify's App store and styled the plugin elements on the front end
               to match the mockup and the styles of the rest of the site.
-              Test the plugin functionality to make sure it works.
+              Tested the plugin functionality to make sure it works.
             </p>
           </div>
         </div>
@@ -115,7 +115,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>7</span></p>
             <p className="description">
-              <span className="step_name">Style elements on other pages</span>
+              <span className="step_name">Styled the elements on the other pages</span>
               to match styles on mockup so that styles across pages look consistent and uniform.
             </p>
           </div>
