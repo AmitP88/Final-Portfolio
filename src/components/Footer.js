@@ -10,7 +10,7 @@ const Footer = class extends React.Component {
           <a href="https://github.com/AmitP88" className="footer-icon">
             <FontAwesomeIcon icon={['fab', 'github']} size="2x" />        
           </a>
-          <a href="https://www.linkedin.com/in/amit-patel-5a4240104?trk=nav_responsive_tab_profile" className="footer-icon">
+          <a href="https://www.linkedin.com/in/amit-patel-dev/" className="footer-icon">
             <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />        
           </a>
           <a href="mailto: amitpatel_7@msn.com" className="footer-icon">
