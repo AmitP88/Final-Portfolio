@@ -66,7 +66,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>4</span></p>
             <p className="description">
-              <span className="step_name">Edited site elements and styles</span>
+              <span className="step_name">Edited theme elements and styles</span>
               to match the mockup as close to pixel perfect as possible while taking
               a mobile-first approach. Used ThemeKit with Visual Studio Code to customize
               the theme locally.
