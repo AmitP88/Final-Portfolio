@@ -28,8 +28,7 @@ shopify:
     free themes from the Shopify Theme store. Below is the process that I took
     to convert downloaded PSDs of e-commerce sites to Shopify sites, as well as
     installing and customizing required Shopify plugins. Below the process
-    description are the actual Shopify store projects. They are still a work in
-    progress, but here's what I have so far.
+    description are the actual Shopify store projects.
   icon: /img/shopify_icon.png
   project_image: /img/fashion_vector_modified.png
   step_1_image: /img/mockup_resized.png
