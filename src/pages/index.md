@@ -20,7 +20,10 @@ hero:
   subtitle: >-
     I'm currently working for Middlestate, LLC - a design company in Visalia,
     CA. I've used HTML, CSS, JavaScript, as well as Netlify and Gatsby, to
-    develop websites for various businesses in the Central Valley.
+    develop websites for various businesses in the Central Valley. Due to the
+    pandemic, e-commerce development has skyrocketed, with Shopify being the top
+    e-commerce platform. I've learned how to build Shopify themes from the
+    ground up and am looking for a job as a Shopify theme developer.
   title: Hi! I'm Amit and I'm a Front End Developer
 shopify:
   description: >-
