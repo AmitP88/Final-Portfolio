@@ -36,10 +36,10 @@ shopify:
   step_1_image: /img/mockup_resized.png
   step_2_image: /img/Brooklyn_theme_small.png
   step_3_image: /img/api_setup.png
-  step_4_image: /img/edit_theme.png
-  step_5_image: /img/online_editor.png
-  step_6_image: /img/apps.png
-  step_7_image: /img/other_pages.png
+  step_4_image: /img/setup_themekit.png
+  step_5_image: /img/edit_theme.png
+  step_6_image: /img/online_editor.png
+  step_7_image: /img/apps.png
   step_8_image: /img/other_pages.png
   subsection_1_title: The Process
   title: Shopify Projects
