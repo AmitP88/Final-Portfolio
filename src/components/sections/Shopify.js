@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image, project_image }) => {
+const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image, step_8_image, project_image }) => {
   return (
     <div className="shopify" id="shopify">
       <div className="header">
