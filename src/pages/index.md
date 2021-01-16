@@ -35,7 +35,7 @@ shopify:
   project_image: /img/fashion_vector_modified.png
   step_1_image: /img/mockup_resized.png
   step_2_image: /img/Brooklyn_theme_small.png
-  step_3_image: /img/setup_themekit.png
+  step_3_image: /img/api_setup.png
   step_4_image: /img/edit_theme.png
   step_5_image: /img/online_editor.png
   step_6_image: /img/apps.png
