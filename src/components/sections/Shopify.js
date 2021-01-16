@@ -50,9 +50,9 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>3</span></p>
             <p className="description">
-              <span className="step_name">Setup Shopify theme locally</span>
-              using ThemeKit and Powershell terminal and also initialize a new
-              GitHub repository with the theme code.
+              <span className="step_name">Created new private app and setup API.</span>
+              Set permissions of "Theme templates and theme assets" to 
+              "Read and write access" to generate the API credentials.  
             </p>          
           </div>
         </div>
@@ -66,11 +66,10 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>4</span></p>
             <p className="description">
-              <span className="step_name">Edited theme elements and styles</span>
-              to match the mockup as close to pixel perfect as possible while taking
-              a mobile-first approach. Used ThemeKit with Visual Studio Code to customize
-              the theme locally.
-            </p>
+              <span className="step_name">Setup Shopify theme locally</span>
+              using ThemeKit and Powershell terminal and also initialize a new
+              GitHub repository with the theme code.
+            </p>          
           </div>
         </div>
         <div className="half">
@@ -83,8 +82,10 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>5</span></p>
             <p className="description">
-              <span className="step_name">Customized the content manager in the Admin</span>
-              by creating and customizing Schemas in the code using Shopify's Liquid templating language.
+              <span className="step_name">Edited theme elements and styles</span>
+              to match the mockup as close to pixel perfect as possible while taking
+              a mobile-first approach. Used ThemeKit with Visual Studio Code to customize
+              the theme locally.
             </p>
           </div>
         </div>
@@ -98,10 +99,8 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>6</span></p>
             <p className="description">
-              <span className="step_name">Installed the necessary plugins</span>
-              from Shopify's App store and styled the plugin elements on the front end
-              to match the mockup and the styles of the rest of the site.
-              Tested the plugin functionality to make sure it works.
+              <span className="step_name">Customized the content manager in the Admin</span>
+              by creating and customizing Schemas in the code using Shopify's Liquid templating language.
             </p>
           </div>
         </div>
@@ -115,13 +114,30 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           <div className="content">
             <p className="number">Step <span>7</span></p>
             <p className="description">
+              <span className="step_name">Installed the necessary plugins</span>
+              from Shopify's App store and styled the plugin elements on the front end
+              to match the mockup and the styles of the rest of the site.
+              Tested the plugin functionality to make sure it works.
+            </p>
+          </div>
+        </div>
+        <div className="half">
+          <img src={step_7_image} alt="step 7" />
+        </div>
+      </div>
+
+      <div className="step">
+        <div className="half">
+          <div className="content">
+            <p className="number">Step <span>8</span></p>
+            <p className="description">
               <span className="step_name">Styled the elements on the other pages</span>
               to match styles on mockup so that styles across pages look consistent and uniform.
             </p>
           </div>
         </div>
         <div className="half">
-          <img src={step_7_image} alt="step 7" />
+          <img src={step_8_image} alt="step 8" />
         </div>
       </div>
 
@@ -188,6 +204,7 @@ Shopify.propTypes = {
   step_5_image: PropTypes.string,
   step_6_image: PropTypes.string,
   step_7_image: PropTypes.string,
+  step_8_image: PropTypes.string,
   project_image: PropTypes.string
 }
 

@@ -40,6 +40,7 @@ shopify:
   step_5_image: /img/online_editor.png
   step_6_image: /img/apps.png
   step_7_image: /img/other_pages.png
+  step_8_image: /img/other_pages.png
   subsection_1_title: The Process
   title: Shopify Projects
 middlestate:
