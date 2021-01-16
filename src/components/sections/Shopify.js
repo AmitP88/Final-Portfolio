@@ -67,8 +67,8 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
             <p className="number">Step <span>4</span></p>
             <p className="description">
               <span className="step_name">Setup Shopify theme locally</span>
-              using ThemeKit and Powershell terminal and also initialize a new
-              GitHub repository with the theme code.
+              using ThemeKit within Powershell terminal and the theme's API credentials created in Step 3. 
+              Also initialize a new GitHub repository with the theme code.
             </p>          
           </div>
         </div>
