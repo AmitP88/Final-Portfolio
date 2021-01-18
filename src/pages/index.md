@@ -87,7 +87,7 @@ middlestate:
             WordPress. That website can visited at http://dataharvest.co/.  I
             developed the rebuild using NetlifyCMS, Gatsby, Sass, and GraphQL.
             The website for the rebuild is linked below (along with the link to
-            the GitHub code) and is expected to launch soon.
+            the GitHub code).
           image: /img/dataharvest.png
           repo_link: 'https://github.com/middlestate/new-dataharvest'
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
