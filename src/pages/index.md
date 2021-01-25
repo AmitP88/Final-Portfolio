@@ -73,13 +73,16 @@ middlestate:
             increase the speed of the website from 32% (according to Google
             PageSpeed Insights) to 66% for mobile and from 92% to 94% for
             desktop, while also enabling the client to publish changes to the
-            sites' content using Netlify's CMS dashboard. I'm continuing to make
-            improvements to the performance of the site, as well as other areas.
+            sites' content using Netlify's CMS dashboard. Due to the pandemic,
+            the business remodeled their website to another contractor, so the
+            new website can be viewed here:
+            https://cellar-door-rebuild.netlify.app/. The netlify site is the
+            one I built.
           image: /img/cellardoor.png
           repo_link: 'https://github.com/middlestate/Cellar-Door-netlify-gatsby'
           tech_used: 'NetlifyCMS, Gatsby, Sass, GraphQL'
           title: Cellar Door
-          website_link: 'https://cellardoor101.com/'
+          website_link: cellar-door-rebuild.netlify.app
       - project:
           business_type: Blockchain Company
           description: >-
