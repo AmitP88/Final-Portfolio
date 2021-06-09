@@ -103,9 +103,9 @@ testimonials:
     image: /img/ryan.png
     name: Ryan Clark
     quote: >-
-      "Amit has a great work ethic, anytime day or night he is ready to help.
-      He's always looking to learn and try new stuff.  His attitude about new
-      challenges is great and works well in a group or solo." 
+      "Amit has a great work ethic and is always looking to learn and try new
+      stuff.  His attitude about new challenges is great and works well in a
+      group or solo." 
     title: Middlestate Founder - Director of Technology
 ---
 
