@@ -18,10 +18,10 @@ hero:
       - skill: Gatsby
       - skill: Sass
   subtitle: >-
-    I'm currently working for Middlestate, LLC - a design company in Visalia,
-    CA. I've used HTML, CSS, JavaScript, as well as Netlify and Gatsby, to
-    develop websites for various businesses in the Central Valley. I've learned
-    how to build Shopify themes from the ground up and am looking for a job as a
+    I've worked for Middlestate, LLC - a design company in Visalia, CA in 2019.
+    I've used HTML, CSS, JavaScript, as well as Netlify and Gatsby, to develop
+    websites for various businesses in the Central Valley. In 2020, I've learned
+    how to build and customize Shopify themes and am looking for a job as a
     Shopify theme developer.
   title: Hi! I'm Amit and I'm a Front End Developer
 shopify:
