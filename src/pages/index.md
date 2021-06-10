@@ -48,7 +48,7 @@ shopify:
           gif: /img/fashion-customizer-compressed.gif
           image: /img/fashion_vector.png
           repo_link: 'https://github.com/AmitP88/FASHION'
-          tech_used: 'HTML, CSS, JS, Sass, Shopify, Liquid'
+          tech_used: 'HTML, CSS, JS, Jquery, Sass, Shopify, Liquid'
           title: Fashion Llorem
           website_link: 'https://fashion-lorrem.myshopify.com/'
       - theme:
