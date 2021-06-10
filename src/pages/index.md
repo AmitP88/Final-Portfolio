@@ -63,7 +63,7 @@ shopify:
           image: /img/eyewear_vector.png
           repo_link: 'https://github.com/AmitP88/EYECENTER'
           tech_used: 'HTML, CSS, JS, Sass, Shopify, Liquid'
-          title: Eyecenter
+          title: Eyewear
           website_link: 'https://eyecenter-store.myshopify.com/'
   step_1_image: /img/mockup_resized.png
   step_2_image: /img/Brooklyn_theme_small.png
