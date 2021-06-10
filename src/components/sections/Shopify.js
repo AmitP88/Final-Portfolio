@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image, step_8_image, project_image }) => {
+const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image, step_8_image, project_image, gif_image }) => {
   return (
     <div className="shopify" id="shopify">
       <div className="header">
@@ -148,6 +148,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
     <div className="step project">
       <div className="half">
         <img src={project_image} alt="fashion" />
+        <img src={gif_image} alt="content_editor" />
       </div>
       <div className="half">
         <div className="content">
@@ -205,7 +206,8 @@ Shopify.propTypes = {
   step_6_image: PropTypes.string,
   step_7_image: PropTypes.string,
   step_8_image: PropTypes.string,
-  project_image: PropTypes.string
+  project_image: PropTypes.string,
+  gif_image: PropTypes.string
 }
 
 export default Shopify

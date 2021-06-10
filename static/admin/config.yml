@@ -49,6 +49,7 @@ collections:
           - {label: Step 7 Image, name: step_7_image, widget: image}
           - {label: Step 8 Image, name: step_8_image, widget: image}
           - {label: Project Image, name: project_image, widget: image}
+          - {label: Gif Image, name: gif_image, widget: image}
         - label: MiddleState Section
           name: middlestate
           widget: object

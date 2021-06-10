@@ -33,6 +33,7 @@ shopify:
     process description are the actual Shopify store projects.
   icon: /img/shopify_icon.png
   project_image: /img/fashion_vector.png
+  gif_image: /img/fashion_vector.png
   step_1_image: /img/mockup_resized.png
   step_2_image: /img/Brooklyn_theme_small.png
   step_3_image: /img/api_setup.png

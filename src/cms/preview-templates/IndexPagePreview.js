@@ -30,6 +30,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         shopify_step_7_image={data.shopify.step_7_image}
         shopify_step_8_image={data.shopify.step_8_image}
         shopify_project_image={data.shopify.project_image}
+        shopify_gif_image={data.shopify.gif_image}
         mdst_icon={data.middlestate.icon}
         mdst_icon_link={data.middlestate.icon_link}
         mdst_title={data.middlestate.title}
