@@ -53,7 +53,7 @@ shopify:
           website_link: 'https://fashion-lorrem.myshopify.com/'
       - theme:
           description: Put description here
-          gif: /img/fashion-customizer-compressed.gif
+          gif: /img/eyecenter_editor_compressed.gif
           image: /img/eyewear_vector.png
           repo_link: 'https://github.com/AmitP88/EYECENTER'
           tech_used: 'HTML, CSS, JS, Sass, Shopify, Liquid'
