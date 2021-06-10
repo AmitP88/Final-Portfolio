@@ -141,7 +141,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
         </div>
       </div>
 
-      <h3>Projects</h3>
+      <h3>Themes</h3>
 
 
 
