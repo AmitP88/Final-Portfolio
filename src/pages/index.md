@@ -32,6 +32,33 @@ shopify:
     as well as installing and customizing required Shopify plugins. Below the
     process description are the actual Shopify store projects.
   icon: /img/shopify_icon.png
+  shopify_themes:
+    shopify_themes_list:
+      - theme:
+          description: >-
+            Downloaded the Fashion Llorem e-commerce PSD mockup from
+            https://colorlib.com/wp/free-psd-ecommerce-templates/ and added the
+            free Shopify theme Brooklyn to my Shopify Admin. Customized the free
+            theme's elements using HTML, CSS, JS to match the mockup. Also used
+            Shopify Liquid to render store products. Also installed the
+            following Shopify plugins into the site:  Auto Multi Currency
+            Converter, Product Reviews, ShareThis Share Buttons, Wishlist Plus.
+            Created custom sections and customized online content editor using
+            Liquid Schemas.
+          gif: /img/fashion-customizer-compressed.gif
+          image: /img/fashion_vector.png
+          repo_link: 'https://github.com/AmitP88/FASHION'
+          tech_used: 'HTML, CSS, JS, Sass, Shopify, Liquid'
+          title: Fashion Llorem
+          website_link: 'https://fashion-lorrem.myshopify.com/'
+      - theme:
+          description: Put description here
+          gif: /img/fashion-customizer-compressed.gif
+          image: /img/eyewear_vector.png
+          repo_link: 'https://github.com/AmitP88/EYECENTER'
+          tech_used: 'HTML, CSS, JS, Sass, Shopify, Liquid'
+          title: Eyecenter
+          website_link: 'https://eyecenter-store.myshopify.com/'
   step_1_image: /img/mockup_resized.png
   step_2_image: /img/Brooklyn_theme_small.png
   step_3_image: /img/api_setup.png
@@ -42,26 +69,6 @@ shopify:
   step_8_image: /img/other_pages.png
   subsection_1_title: The Process
   title: Shopify Projects
-  shopify_themes:
-    shopify_themes_list:
-      - theme:
-          description: >-
-            Downloaded the Fashion Llorem e-commerce PSD mockup
-            from https://colorlib.com/wp/free-psd-ecommerce-templates/
-            and added the free Shopify theme Brooklyn to my Shopify Admin.
-            Customized the free theme's elements using HTML, CSS, JS to match
-            the mockup. Also used Shopify Liquid to render store products.
-            Also installed the following Shopify plugins into the site: 
-            Auto Multi Currency Converter, Product Reviews, ShareThis Share Buttons,
-            Wishlist Plus. Created custom sections and customized online content
-            editor using Liquid Schemas.
-          image: /img/fashion_vector.png
-          gif: /img/fashion-customizer-compressed.gif
-          website_link: https://fashion-lorrem.myshopify.com/
-          repo_link: https://github.com/AmitP88/FASHION
-          tech_used: 'HTML, CSS, JS, Sass, Shopify, Liquid'
-          title: Fashion Llorem
-
 middlestate:
   description: >-
     These were the projects I did for Middlestate, LLC. These were contract jobs
