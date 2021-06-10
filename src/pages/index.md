@@ -52,7 +52,13 @@ shopify:
           title: Fashion Llorem
           website_link: 'https://fashion-lorrem.myshopify.com/'
       - theme:
-          description: Put description here
+          description: >-
+            Downloaded PSD of mockup here:
+            https://downloadfreepsd.com/free-psd/eyewear-sunglasses-store-website-template-free-psd
+            and used the default Debut shopify theme as a template. Using HTML
+            and Sass, customized the layout of the Debut theme and used Liquid
+            to retrieve and render product data. Also used Liquid to create
+            Schemas to customize the online site editor in the admin.
           gif: /img/eyecenter_editor_compressed.gif
           image: /img/eyewear_vector.png
           repo_link: 'https://github.com/AmitP88/EYECENTER'
