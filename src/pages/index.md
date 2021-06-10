@@ -57,6 +57,7 @@ shopify:
             editor using Liquid Schemas.
           image: /img/fashion_vector.png
           gif: /img/fashion-customizer-compressed.gif
+          website_link: https://fashion-lorrem.myshopify.com/
           repo_link: https://github.com/AmitP88/FASHION
           tech_used: 'HTML, CSS, JS, Sass, Shopify, Liquid'
           title: Fashion Llorem
