@@ -10,6 +10,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const entryMDSTprojects = entry.getIn(['data', 'middlestate', 'mdst_projects', 'mdst_projects_list'])
   const mdst_projects_list = entryMDSTprojects ? entryMDSTprojects.toJS() : []
 
+  const entryShopifythemes = entry.getIn(['data', 'shopify', 'shopify_themes', 'shopify_themes_list'])
+  const shopify_themes_list = entryShopifythemes ? entryShopifythemes.toJS() : []
+
   if (data) {
     return (
       <IndexPageTemplate
@@ -36,6 +39,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         mdst_title={data.middlestate.title}
         mdst_description={data.middlestate.description}
         mdst_projects={{ mdst_projects_list }}
+        shopify_themes={{ shopify_themes_list }}
         ryan={data.testimonials.ryan}
       />
     )

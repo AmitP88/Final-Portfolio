@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image, step_8_image, project_image, gif_image }) => {
+const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, step_2_image, step_3_image, step_4_image, step_5_image, step_6_image, step_7_image, step_8_image, gridItems }) => {
   return (
     <div className="shopify" id="shopify">
       <div className="header">
@@ -143,51 +143,41 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
 
       <h3>Themes</h3>
 
-
-
-    <div className="step project">
-      <div className="half">
-        <img src={project_image} alt="fashion" />
-        <img src={gif_image} class="gif_image" alt="content_editor" />
-      </div>
-      <div className="half">
-        <div className="content">
-          <div className="project_header">
-            <div className="title">Fashion Llorem</div>
-            <div className="tech_used"><span>Built with: </span>HTML, CSS, JS, Sass, Shopify, Liquid</div>              
+      {gridItems.map(({ theme = {image: '', gif: '', title: '', tech_used: '', description: '', website_link: '', repo_link: '' } }, keys) => {
+        return (
+          <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
+            <div className="step project">
+              <div className="half">
+                <img src={theme.image} alt="fashion" />
+                <img src={theme.gif} class="gif_image" alt="content_editor" />
+              </div>
+              <div className="half">
+                <div className="content">
+                  <div className="project_header">
+                    <div className="title">{theme.title}</div>
+                    <div className="tech_used"><span>Built with: </span>{theme.tech_used}</div>              
+                  </div>
+                  <div className="description">{theme.description}</div>
+                  <div className="buttons_container">
+                    <a href={theme.website_link}>
+                      <button className="website_button">
+                        <FontAwesomeIcon icon={'link'} size="2x" />
+                        <div className="button_text">Website</div>
+                      </button>
+                    </a>
+                    <a href={theme.repo_link}>
+                      <button className="repo_button">
+                        <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+                        <div className="button_text">GitHub</div>
+                      </button>
+                    </a>
+                  </div>              
+                </div>
+              </div>
+            </div>          
           </div>
-          <div className="description">
-            Downloaded the Fashion Llorem e-commerce PSD mockup
-            from https://colorlib.com/wp/free-psd-ecommerce-templates/
-            and added the free Shopify theme Brooklyn to my Shopify Admin.
-            Customized the free theme's elements using HTML, CSS, JS to match
-            the mockup. Also used Shopify Liquid to render store products.
-            Also installed the following Shopify plugins into the site: 
-            Auto Multi Currency Converter, Product Reviews, ShareThis Share Buttons,
-            Wishlist Plus. Created custom sections and customized online content
-            editor using Liquid Schemas.
-          </div>
-          <div className="buttons_container">
-            <a href="https://fashion-lorrem.myshopify.com/">
-              <button className="website_button">
-                <FontAwesomeIcon icon={'link'} size="2x" />
-                <div className="button_text">Website</div>
-              </button>
-            </a>
-            <a href="https://github.com/AmitP88/FASHION">
-              <button className="repo_button">
-                <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-                <div className="button_text">GitHub</div>
-              </button>
-            </a>
-          </div>              
-        </div>
-      </div>
-    </div>
-
-
-
-      
+        )
+      })}
 
     </div>
   )
@@ -206,8 +196,19 @@ Shopify.propTypes = {
   step_6_image: PropTypes.string,
   step_7_image: PropTypes.string,
   step_8_image: PropTypes.string,
-  project_image: PropTypes.string,
-  gif_image: PropTypes.string
+  shopify_themes: PropTypes.shape({
+    shopify_themes_list: PropTypes.shape({
+      theme: PropTypes.shape({
+        image: PropTypes.string,
+        gif: PropTypes.string,
+        tech_used: PropTypes.string,
+        description: PropTypes.string,
+        website_link: PropTypes.string,
+        repo_link: PropTypes.string,
+        title: PropTypes.string,
+      }),
+    }),
+  }),
 }
 
 export default Shopify

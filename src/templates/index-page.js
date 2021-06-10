@@ -29,13 +29,12 @@ export const IndexPageTemplate = ({
   shopify_step_6_image,
   shopify_step_7_image,
   shopify_step_8_image,
-  shopify_project_image,
-  shopify_gif_image,
   mdst_icon,
   mdst_icon_link,
   mdst_title,
   mdst_description,
   mdst_projects,
+  shopify_themes,
   ryan,
 }) => (
   <div className='homepage'>
@@ -58,8 +57,7 @@ export const IndexPageTemplate = ({
       step_6_image={shopify_step_6_image}
       step_7_image={shopify_step_7_image}
       step_8_image={shopify_step_8_image}
-      project_image={shopify_project_image}
-      gif_image={shopify_gif_image}
+      gridItems={shopify_themes.shopify_themes_list}
     />
     <MiddleState
       icon={mdst_icon}
@@ -104,6 +102,7 @@ const IndexPage = ({ data }) => {
         mdst_title={frontmatter.middlestate.title}
         mdst_description={frontmatter.middlestate.description}
         mdst_projects={frontmatter.middlestate.mdst_projects}
+        shopify_themes={frontmatter.shopify.shopify_themes}
         ryan={frontmatter.testimonials.ryan}
       />
     </Layout>
@@ -129,8 +128,9 @@ IndexPageTemplate.propTypes = {
   shopify_step_6_image: PropTypes.string,
   shopify_step_7_image: PropTypes.string,
   shopify_step_8_image: PropTypes.string,
-  shopify_project_image: PropTypes.string,
-  shopify_gif_image: PropTypes.string,
+  shopify_themes: PropTypes.shape({
+    shopify_themes_list: PropTypes.array,
+  }),
   mdst_icon: PropTypes.string,
   mdst_icon_link: PropTypes.string,
   mdst_title: PropTypes.string,
@@ -178,8 +178,19 @@ export const pageQuery = graphql`
           step_6_image
           step_7_image
           step_8_image
-          project_image
-          gif_image
+          shopify_themes {
+            shopify_themes_list {
+              theme {
+                image
+                gif
+                tech_used
+                description
+                website_link
+                repo_link
+                title
+              }
+            }
+          }
         }
         middlestate {
           icon

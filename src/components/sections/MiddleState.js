@@ -13,6 +13,9 @@ const MiddleState = ({ icon, icon_link, title, description, gridItems }) => {
         <h1>{title}</h1>
       </div>
       <p className="section_description">{description}</p>       
+
+
+
       {gridItems.map(({ project = {image: '', title: '', tech_used: '', description: '', website_link: '', repo_link: ''} }, keys) => {
         return (
           <div key={keys} className="project_container" style={keys % 2 === 0 ? {flexDirection: 'row-reverse'} : {flexDirection: 'initial'}}>
@@ -48,6 +51,12 @@ const MiddleState = ({ icon, icon_link, title, description, gridItems }) => {
           </div>
         )
       })}
+
+
+
+
+
+      
     </div>
   )
 }
