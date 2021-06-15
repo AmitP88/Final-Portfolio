@@ -141,7 +141,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
         </div>
       </div>
 
-      <h3>Themes</h3>
+      <h3>Customized Themes</h3>
       <h2 className="disclaimer">Note: Shopify development stores are password-protected
         by default. The password for the themes would be the store name in the site's URL. For example, 
         the password for the Eyewear store would be 'eyecenter-store'.
@@ -182,6 +182,10 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
           </div>
         )
       })}
+
+      <div className="certifications">
+        <h3>Certifications (from shopify.dev)</h3>
+      </div>
 
     </div>
   )
