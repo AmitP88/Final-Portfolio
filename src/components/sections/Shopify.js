@@ -184,7 +184,7 @@ const Shopify = ({ icon, title, description, subsection_1_title, step_1_image, s
       })}
 
       <div className="certifications">
-        <h3>Certifications (from shopify.dev)</h3>
+        <h3>Certifications</h3>
         <div className="cert">
           <h4 className="cert-title">Theme Certification</h4>
           <img src="/img/theme-certification.png" alt="theme cert" />        
